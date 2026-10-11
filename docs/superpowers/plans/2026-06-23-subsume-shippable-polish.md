@@ -1091,7 +1091,7 @@ In `README.md`, immediately under the title line `# Subsume` (line 1), insert a 
 ```markdown
 # Subsume
 
-![CI](https://github.com/<user>/subsume/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/harshabala/subsume/actions/workflows/ci.yml/badge.svg)
 ```
 
 Then update the "Current limitations" bullet in the Project Status section (`README.md:138`) that reads `- No CI/CD automated release pipeline` to:
