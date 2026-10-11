@@ -28,3 +28,11 @@ package-lock\ 2.json
 .worktrees/
 __pycache__/
 *.pyc
+xcuserdata/
+*.xcuserstate
+*.tsbuildinfo
+.claude/launch.json
+.superpowers/
+data/app-state.json
+data/app-state.json.lock
+storage/logs/

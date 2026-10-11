@@ -1,7 +1,7 @@
 # Improve Animations — Subsume Motion Audit
 
 **Date:** 2026-08-04  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
+**Repo:** `<local-path>`  
 **Skill:** `improve-animations` (survey + plans only; no source changes)  
 **Commit stamp:** run `git rev-parse --short HEAD` at plan execution time  
 **Motion quality score: 6.5 / 10**

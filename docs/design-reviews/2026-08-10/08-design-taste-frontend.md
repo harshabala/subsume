@@ -256,7 +256,7 @@ Rewrite onboarding, Settings help, Alerts, Stats footnotes, DetailModal, notific
 
 | Field | Value |
 |-------|--------|
-| Path | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/08-design-taste-frontend.md` |
+| Path | `<local-path>` |
 | Score | **6.2 / 10** |
 | Top 3 | Dual-brand unfinished · eyebrow/index slop · type + em-dash |
 | Stance | Hygiene up; taste system still dual — next wave is identity + copy, not tokens |

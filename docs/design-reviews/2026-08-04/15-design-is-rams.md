@@ -5,7 +5,7 @@
 | **Date** | 2026-08-04 |
 | **Method** | design-is (Dieter Rams ten principles) |
 | **Target** | Full Subsume product design (shipped UI + tokens + copy + content-layer overlays) |
-| **Repo** | `/Users/harshabalakrishnan/Subsume` |
+| **Repo** | `<local-path>` |
 | **Surfaces audited** | App shell (`App.tsx`), Archive/Library, Discovery (Home), Poetic Capture, Onboarding, popup grain, content plaques, `tokens.css`, product copy |
 | **Mode** | Static repo evidence (INFERRED visuals from source CSS/components; no live browser session) |
 | **Overall** | **16 / 30** |

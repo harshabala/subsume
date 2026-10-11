@@ -1,8 +1,8 @@
 # Security Review — Subsume (Chrome MV3)
 
 **Date:** 2026-08-10  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
-**Method:** [security-review](file:///Users/harshabalakrishnan/.agents/skills/security-review/SKILL.md) skill — exploitation-focused audit with data-flow research  
+**Repo:** `<local-path>` @ `a5471b5`  
+**Method:** [security-review](<local-path>) skill — exploitation-focused audit with data-flow research  
 **Threat model:** Hostile web pages (content-script host), optional local profile access, malicious/compromised extension updates; no Subsume backend  
 **Scope focus:** XSS, storage, messaging, OAuth Drive, content scripts / Shadow DOM, permissions, LLM keys, CSP  
 

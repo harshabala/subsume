@@ -340,17 +340,17 @@ Authoritative *implementation* is tokens.css; multiple docs still teach the **pr
 
 | Artifact | Path |
 | --- | --- |
-| Live tokens | `/Users/harshabalakrishnan/Subsume/src/shared/tokens.css` |
-| Shadow tokens | `/Users/harshabalakrishnan/Subsume/src/shared/shadowTokens.ts` |
-| Theme labels | `/Users/harshabalakrishnan/Subsume/src/shared/themeLabels.ts` |
-| Theme label test | `/Users/harshabalakrishnan/Subsume/tests/themeLabels.test.ts` |
-| Font loads | `/Users/harshabalakrishnan/Subsume/src/ui/index.html`, `.../popup.html` |
-| Ferrari extract | `/Users/harshabalakrishnan/Subsume/DESIGN.md` |
-| Implementation plan | `/Users/harshabalakrishnan/Subsume/docs/superpowers/plans/2026-08-04-ferrari-design-system.md` |
-| Stale brand | `/Users/harshabalakrishnan/Subsume/brand.md` |
-| Stale product register | `/Users/harshabalakrishnan/Subsume/PRODUCT.md` |
-| Sanctuary philosophy | `/Users/harshabalakrishnan/Subsume/CINEMATIC_JOURNAL_DESIGN_SPEC.md` |
-| This review | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-04/09-brand-design.md` |
+| Live tokens | `<local-path>` |
+| Shadow tokens | `<local-path>` |
+| Theme labels | `<local-path>` |
+| Theme label test | `<local-path>` |
+| Font loads | `<local-path>`, `.../popup.html` |
+| Ferrari extract | `<local-path>` |
+| Implementation plan | `<local-path>` |
+| Stale brand | `<local-path>` |
+| Stale product register | `<local-path>` |
+| Sanctuary philosophy | `<local-path>` |
+| This review | `<local-path>` |
 
 ---
 

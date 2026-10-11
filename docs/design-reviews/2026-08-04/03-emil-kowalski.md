@@ -339,7 +339,7 @@ Sanctuary DetailModal is the good path; legacy `.modal-*` is the cheap path.
 
 | Field | Value |
 | --- | --- |
-| Path | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-04/03-emil-kowalski.md` |
+| Path | `<local-path>` |
 | Score | **6.2 / 10** |
 | Mode | Read-only |
 | Reviewer lens | Emil Kowalski design engineering |

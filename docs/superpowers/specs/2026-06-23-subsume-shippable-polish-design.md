@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-23
 **Status:** Approved (pending spec review)
-**Scope owner:** harshabalakrishnan
+**Scope owner:** harshabala
 
 ## Goal
 

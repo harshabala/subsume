@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10  
 **Skill:** roast-my-product  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo:** `<local-path>` @ `a5471b5`  
 **Frame:** Product critique *after* Ferrari cinematic design system work (Rosso Corsa / Cinema Black / Inter). Design polish is assumed present; this roast asks whether the product survives contact with real users.
 
 **What / who / stage (from repo evidence)**  

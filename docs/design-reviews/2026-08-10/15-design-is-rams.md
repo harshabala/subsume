@@ -5,7 +5,7 @@
 | **Date** | 2026-08-10 |
 | **Method** | design-is (Dieter Rams ten principles) |
 | **Target** | Full Subsume product design (shipped UI + tokens + copy + content-layer overlays) |
-| **Repo** | `/Users/harshabalakrishnan/Subsume` @ `a5471b5` |
+| **Repo** | `<local-path>` @ `a5471b5` |
 | **Surfaces audited** | App shell (`App.tsx`), Archive/Library, Discovery (Home), Poetic Capture, Onboarding, popup grain, content plaques, `tokens.css`, product copy |
 | **Mode** | Static repo evidence (INFERRED visuals from source CSS/components; no live browser session) |
 | **Prior audit** | `docs/design-reviews/2026-08-04/15-design-is-rams.md` (16/30 REDESIGN) — re-scored against current tree |
@@ -297,4 +297,4 @@ Anti-patterns to guard against (specific to REDESIGN):
 | **Total score** | **16 / 30** |
 | **Recommendation** | **REDESIGN** |
 | **Top 3** | (1) Plain language + Now Showing fix + Archive filter model (#4); (2) No default grain + single nav (#5/#10); (3) Drop Ferrari identity for timeless sanctuary (#7) |
-| **Path** | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/15-design-is-rams.md` |
+| **Path** | `<local-path>` |

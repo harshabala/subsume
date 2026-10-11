@@ -260,7 +260,7 @@ Shell has strong `--ease-out`, but many paths still use bare `ease` / 0.2s defau
 
 | Field | Value |
 | --- | --- |
-| Path | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/03-emil-kowalski.md` |
+| Path | `<local-path>` |
 | Score | **7.4 / 10** (prior **6.2**, Δ **+1.2**) |
 | Mode | Read-only |
 | Reviewer lens | Emil Kowalski design engineering |

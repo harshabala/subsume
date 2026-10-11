@@ -5,7 +5,7 @@
 **Branch:** `fix/design-p0-review-wave` @ `a5471b5`  
 **Base:** `main` @ `e8a5287` (Ferrari Phase 1 on main; P0 wave **not yet merged**)  
 **Method:** **28 parallel specialized subagents** (design · interaction · language · icons · product · code/security)  
-**Loadable build:** `~/Desktop/Subsume-dev` (prefer source on branch as truth)  
+**Loadable build:** `<local-path>` (prefer source on branch as truth)  
 **Prior baseline:** `docs/design-reviews/2026-08-04/` (mean craft ≈ **6.5 / 10**)
 
 ---

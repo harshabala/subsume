@@ -2,7 +2,7 @@
 
 **Source roast:** `docs/design-reviews/2026-08-11/20-roast-my-product.md`  
 **Branch:** `feat/roast-fixes-activation-retention`  
-**Repo:** `/Users/harshabalakrishnan/Subsume`
+**Repo:** `<local-path>`
 
 ## Global Constraints
 

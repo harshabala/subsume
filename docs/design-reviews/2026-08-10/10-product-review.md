@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10  
 **Skill:** product-review  
-**Repo / rev:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo / rev:** `<local-path>` @ `a5471b5`  
 **Surfaces reviewed:** Onboarding, activation path, Home (Discovery), Library (Archive) empty states, Poetic Capture Canvas, extension popup, Search, Recommendations empty states, content plaques (museum / book), Settings IA  
 **Product stage:** Ship-ready beta / late MVP (v0.3.0) — multi-medium sanctuary with detection, capture, archive, AI curator, backup  
 
@@ -392,4 +392,4 @@ No activation redesign landed between reviews; scores hold or dip slightly on on
 |-------|--------|
 | **Score** | **7.3 / 10** |
 | **Top 3 fixes** | (1) Collapse onboarding → first inscription (2) Archive empty: Search + Inscribe + demo + plaque how-to (3) First-run land on Discovery + checklist |
-| **Path** | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/10-product-review.md` |
+| **Path** | `<local-path>` |

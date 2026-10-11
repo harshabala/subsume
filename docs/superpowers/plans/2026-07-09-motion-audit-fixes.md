@@ -13,7 +13,7 @@
 - High-frequency (popup search typing) stays ≤220ms, interruptible
 - Use transform/opacity only (not layout width/height anim where avoidable)
 - Do not break existing tests; add tests for exit lifecycle where practical
-- Work in `/Users/harshabalakrishnan/Subsume`
+- Work in `<local-path>`
 - Preact (not React) — use `class` or `className` consistently with file patterns
 - Do not revert unrelated seed-data changes if present
 
