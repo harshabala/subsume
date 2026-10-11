@@ -1,7 +1,7 @@
 # Subsume Chrome Extension — Security Audit Report
 
 **Date:** 2026-07-01  
-**Scope:** `/Users/harshabalakrishnan/subsume-review` (full extension)  
+**Scope:** `<local-path>` (full extension)  
 **Mode:** Daily (confidence gate ≥ 8/10)  
 **Auditor:** CSO Skill v0.2.0
 

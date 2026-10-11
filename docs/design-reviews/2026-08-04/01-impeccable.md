@@ -2,8 +2,8 @@
 
 **Date:** 2026-08-04  
 **Target:** Full product surfaces after Ferrari design-system remap (app shell, popup, sanctuary, content Shadow DOM)  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
-**Desktop loadable:** `~/Desktop/Subsume-dev`  
+**Repo:** `<local-path>`  
+**Desktop loadable:** `<local-path>`  
 **Mode:** Operate (journal / extension UI) with Experience accents (capture, archive plaques)  
 **Method:** ⚠️ DEGRADED: single-context (no sub-agent/Task tool exposed). Assessment A (design director review of source + tokens) + Assessment B (static pattern scan / detector-style greps). Browser overlay injection not run in this session.
 

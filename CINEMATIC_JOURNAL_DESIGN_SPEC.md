@@ -3,7 +3,7 @@
 
 > **Document Status:** Formal Design Specification & Master Product Lock (v2.1 Philosophy Upgrade)  
 > **Target Audience:** Autonomous AI Coding Agents (Claude, Codex, Gemini), Lead Architects, and UI/UX Engineers  
-> **Repository Finder Path:** `/Users/harshabalakrishnan/Documents/Projects/Subsume/CINEMATIC_JOURNAL_DESIGN_SPEC.md`  
+> **Repository Finder Path:** `<local-path>`  
 > **Superseding Clause:** *This specification supersedes all utilitarian or decorative SaaS implementation details wherever there is conflict. Every engineering and UI decision must justify its existence by making contemplation and reflection more meaningful.*
 
 > **Design authority (updated 2026-08-10):** Live implementation is governed by `src/shared/tokens.css`, `DESIGN.md`, and `brand.md`. This cinematic document remains valuable for **theatre philosophy and interaction acts**, but its palette/type blocks (Gilded Night, Newsreader/Outfit, Parchment) are **historical**. Wave 2 identity: Cinema Black + Rosso Corsa, Courier Prime (display) + IBM Plex Mono (UI). Where this file conflicts with `DESIGN.md` / tokens, **tokens win**.
@@ -195,7 +195,7 @@ Before committing any future code slice, autonomous coding agents must verify al
 
 *   **GitHub Profile:** [@harshabala](https://github.com/harshabala)
 *   **Project Repository:** [github.com/harshabala/subsume](https://github.com/harshabala)
-*   **Email Contact:** [harshabalakrishnan@proton.me](mailto:harshabalakrishnan@proton.me)
+*   **Email Contact:** [<user>@proton.me](mailto:<user>@proton.me)
 
 ---
 *Cinema is a sacred sanctuary. Protect your contemplation.*

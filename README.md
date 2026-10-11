@@ -298,7 +298,7 @@ I made this because I wanted it to exist. Not for a market, not for a metric —
 Every architectural pattern, SOLID abstraction, defensive boundary, and Shadow DOM interaction was directed, reviewed, and refined by hand — AI-assisted development was the hands on the keyboard, not the eye behind the decisions.
 
 - **GitHub:** [@harshabala](https://github.com/harshabala)
-- **Email:** [harshabalakrishnan@proton.me](mailto:harshabalakrishnan@proton.me)
+- **Email:** [<user>@proton.me](mailto:<user>@proton.me)
 
 ---
 

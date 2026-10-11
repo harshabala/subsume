@@ -1086,12 +1086,12 @@ Expected: every step exits 0 (this mirrors exactly what CI runs).
 
 - [ ] **Step 3: Add the CI status badge to the README**
 
-In `README.md`, immediately under the title line `# Subsume` (line 1), insert a blank line then the badge. Replace the repo owner/name to match the actual remote if it differs from `harshabalakrishnan/subsume`:
+In `README.md`, immediately under the title line `# Subsume` (line 1), insert a blank line then the badge. Replace the repo owner/name to match the actual remote if it differs from `<user>/subsume`:
 
 ```markdown
 # Subsume
 
-![CI](https://github.com/harshabalakrishnan/subsume/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/<user>/subsume/actions/workflows/ci.yml/badge.svg)
 ```
 
 Then update the "Current limitations" bullet in the Project Status section (`README.md:138`) that reads `- No CI/CD automated release pipeline` to:

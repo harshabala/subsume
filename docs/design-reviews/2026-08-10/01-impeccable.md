@@ -2,9 +2,9 @@
 
 **Date:** 2026-08-10  
 **Target:** Full product surfaces after Ferrari remap + P0 hygiene + open-issues A–H  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
+**Repo:** `<local-path>`  
 **Branch / tip:** `fix/design-p0-review-wave` @ `a5471b5`  
-**Desktop loadable:** `~/Desktop/Subsume-dev` (may lag — source truth preferred)  
+**Desktop loadable:** `<local-path>` (may lag — source truth preferred)  
 **Prior review:** `docs/design-reviews/2026-08-04/01-impeccable.md` (score **6.4/10**)  
 **Companion:** `docs/design-reviews/2026-08-04/17-open-issues-fix-feedback.md` (craft estimate **~7.7**)  
 **Mode:** Operate (journal / extension UI) with Experience accents (capture, archive plaques)  

@@ -1,7 +1,7 @@
 # Animation Vocabulary — Subsume Motion Naming Audit
 
 **Date:** 2026-08-10  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo:** `<local-path>` @ `a5471b5`  
 **Skill:** `animation-vocabulary` (map motions to named terms; flag misnamed / wrong-feel)  
 **Scope:** Tokens, CSS keyframes/classes, design-spec brand lexicon, JS ceremony flags  
 **Mode:** Read-only review → write this doc only  

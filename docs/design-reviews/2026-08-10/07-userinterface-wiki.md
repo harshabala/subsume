@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10  
 **Skill:** userinterface-wiki v3.0.0 (152 rules / 12 categories)  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo:** `<local-path>` @ `a5471b5`  
 **Scope:** Animation principles, timing, exits, CSS pseudo, audio, icons, container motion, Laws of UX, prefetch, typography, visual design  
 **Mode:** Read-only code review  
 

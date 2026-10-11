@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10  
 **Skill:** `design-motion-principles` v1.1  
-**Repo / ref:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo / ref:** `<local-path>` @ `a5471b5`  
 **Scope:** `tokens.css` motion, popup, `dock.ts`, DetailModal, onboarding, library stagger, PRM  
 **Mode:** Read-only  
 **Overall score:** **8.3 / 10**

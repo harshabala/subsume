@@ -23,7 +23,7 @@ Execute the following with maximum possible subagents # Subsume — Books Expans
 
 **Document type:** As-is context (baseline for multi-medium expansion)  
 **Product version:** 0.2.0  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
+**Repo:** `<local-path>`  
 **Branch at snapshot:** `chore/cws-production-ready`  
 **Commit:** `ef659bc`  
 **Date:** 2026-07-20  
@@ -647,7 +647,7 @@ manifest.json          MV3 permissions & content_scripts
 | Tests | ~234 |
 | CI | GitHub Actions typecheck + test + build |
 | Package | `npm run package` → `subsume.zip` |
-| Desktop test kit | `~/Desktop/dev/extension` (Load unpacked) |
+| Desktop test kit | `<local-path>` (Load unpacked) |
 | Privacy | `docs/PRIVACY.md` + `docs/privacy.html` |
 
 ---
@@ -672,7 +672,7 @@ When you write your **instruction package + updated markdown**, please:
 Suggested companion filename for your reply package:
 
 ```text
-~/Desktop/SUBSUME_BOOKS_EXPANSION_INSTRUCTIONS.md
+<local-path>
 ```
 
 (or any name you prefer—this baseline will stay at the path below.)
@@ -683,7 +683,7 @@ Suggested companion filename for your reply package:
 
 | Path | Role |
 |------|------|
-| **`/Users/harshabalakrishnan/Desktop/SUBSUME_CURRENT_INFORMATION_ARCHITECTURE.md`** | This baseline (source of truth for planning) |
+| **`<local-path>`** | This baseline (source of truth for planning) |
 | Optional mirror | Copy into repo `docs/` later if you want it versioned in git |
 
 ---

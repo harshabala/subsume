@@ -1,10 +1,10 @@
 # Subsume — Design Agent Brief (v0.1.5)
 
 **Purpose:** Give this document to your design/coding agent so it can propose the right UI/UX before final implementation.  
-**Repo:** `/Users/harshabalakrishnan/Documents/Projects/Subsume`  
+**Repo:** `<local-path>`  
 **GitHub:** https://github.com/harshabala/Subsume  
 **Current version:** 0.1.5 (`main` branch)  
-**Load in Chrome:** `~/Desktop/Subsume-Dev` (symlink → `dist/`) or `Documents/Projects/Subsume/dist`
+**Load in Chrome:** `<local-path>` (symlink → `dist/`) or `Documents/Projects/Subsume/dist`
 
 ---
 
@@ -299,7 +299,7 @@ src/shared/messages.ts    — IPC contract
 ## 10. Build & test commands (for agents)
 
 ```bash
-cd /Users/harshabalakrishnan/Documents/Projects/Subsume
+cd <local-path>
 npm install
 npm run build          # outputs to dist/
 npm test               # 190 tests

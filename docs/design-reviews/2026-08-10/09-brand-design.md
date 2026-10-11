@@ -311,17 +311,17 @@ Headline **7.0 / 10** reflects resolved root brand contract (skill-critical arti
 
 | Artifact | Path |
 | --- | --- |
-| Live tokens | `/Users/harshabalakrishnan/Subsume/src/shared/tokens.css` |
-| Shadow tokens | `/Users/harshabalakrishnan/Subsume/src/shared/shadowTokens.ts` |
-| Theme labels | `/Users/harshabalakrishnan/Subsume/src/shared/themeLabels.ts` |
-| Brand contract | `/Users/harshabalakrishnan/Subsume/brand.md` |
-| Product register | `/Users/harshabalakrishnan/Subsume/PRODUCT.md` |
-| Ferrari extract | `/Users/harshabalakrishnan/Subsume/DESIGN.md` |
-| Sanctuary philosophy | `/Users/harshabalakrishnan/Subsume/CINEMATIC_JOURNAL_DESIGN_SPEC.md` |
-| README | `/Users/harshabalakrishnan/Subsume/README.md` |
-| Stale agent brief | `/Users/harshabalakrishnan/Subsume/docs/DESIGN_AGENT_BRIEF.md` |
-| Prior review | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-04/09-brand-design.md` |
-| This review | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/09-brand-design.md` |
+| Live tokens | `<local-path>` |
+| Shadow tokens | `<local-path>` |
+| Theme labels | `<local-path>` |
+| Brand contract | `<local-path>` |
+| Product register | `<local-path>` |
+| Ferrari extract | `<local-path>` |
+| Sanctuary philosophy | `<local-path>` |
+| README | `<local-path>` |
+| Stale agent brief | `<local-path>` |
+| Prior review | `<local-path>` |
+| This review | `<local-path>` |
 
 ---
 

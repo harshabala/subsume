@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-10  
 **Skill:** find-animation-opportunities (read-only; propose only)  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo:** `<local-path>` @ `a5471b5`  
 **Stack:** Preact + CSS tokens (no Framer Motion)  
 **Personality:** Private cinematic sanctuary — restrained Slow Dolly / Focus Pull, no bounce, UI ≤300ms
 

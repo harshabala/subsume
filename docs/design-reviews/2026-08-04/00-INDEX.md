@@ -2,7 +2,7 @@
 
 **Subject:** Subsume after Ferrari token remap (Rosso Corsa `#da291c` / Cinema Black `#181818` / Inter)  
 **Method:** 16 parallel specialized review agents, one skill each  
-**Loadable build:** `~/Desktop/Subsume-dev`
+**Loadable build:** `<local-path>`
 
 ## Scoreboard
 
