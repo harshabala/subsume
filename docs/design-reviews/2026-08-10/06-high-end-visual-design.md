@@ -1,7 +1,7 @@
 # High-End Visual Design Audit — Subsume
 
 **Date:** 2026-08-10  
-**Repo:** `/Users/harshabalakrishnan/Subsume` @ `a5471b5`  
+**Repo:** `<local-path>` @ `a5471b5`  
 **Skill bar:** Principal UI / Awwwards-tier (`high-end-visual-design`) — fonts, spacing, shadows, cards, animations; **block generic AI defaults**  
 **Secondary bar:** Ferrari cinematic editorial (`DESIGN.md`)  
 **Surfaces:** App shell, Discovery lobby, sanctuary cards/modals, library grid, popup, content Shadow DOM, onboarding  
@@ -409,27 +409,27 @@ Primary button radius **0** is Ferrari-aligned; weight 600 and no uppercase/trac
 
 ## Files reviewed (primary)
 
-- `/Users/harshabalakrishnan/Subsume/DESIGN.md`
-- `/Users/harshabalakrishnan/Subsume/src/shared/tokens.css`
-- `/Users/harshabalakrishnan/Subsume/src/shared/shadowTokens.ts`
-- `/Users/harshabalakrishnan/Subsume/src/ui/index.html`
-- `/Users/harshabalakrishnan/Subsume/src/ui/popup.html`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/global.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/layout.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/app-nav.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/library.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/discovery-layout.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/discovery-search.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/poetic-sanctuary.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/onboarding.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/emotional-components.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/popup.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/sidebar.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/settings.css`
-- `/Users/harshabalakrishnan/Subsume/src/styles/sanctuary.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/components/FilmGrain.tsx`
-- `/Users/harshabalakrishnan/Subsume/src/ui/pages/Home.tsx`
-- Prior: `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-04/06-high-end-visual-design.md`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- Prior: `<local-path>`
 
 ---
 

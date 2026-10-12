@@ -1,7 +1,7 @@
 # Improve Animations — Subsume Motion Audit
 
 **Date:** 2026-08-10  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
+**Repo:** `<local-path>`  
 **Commit:** `a5471b5`  
 **Skill:** `improve-animations` (survey + plans only; no source changes)  
 **Motion quality score: 7.5 / 10**
@@ -768,4 +768,4 @@ Score moved **6.5 → 7.5** on the strength of transition:all purge, exit lifecy
 | --- | --- |
 | **Score** | **7.5 / 10** |
 | **Top 3** | 1) Plaque max-width kill · 2) Hover:fine lift gates · 3) Popup view soften |
-| **Path** | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/12-improve-animations.md` |
+| **Path** | `<local-path>` |

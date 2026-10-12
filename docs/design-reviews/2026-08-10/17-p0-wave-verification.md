@@ -188,5 +188,5 @@ Branch commits (oldest → newest):
 |---|---|
 | Completeness score | **9.2 / 10** |
 | Residual fails (claimed scope) | **None** |
-| Report path | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/17-p0-wave-verification.md` |
+| Report path | `<local-path>` |
 | Ship readiness | **Ready to merge** after `npm run ci` |

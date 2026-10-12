@@ -4,10 +4,7 @@
 
 **Free core forever on this device.** Optional paid private backup later. Never sells your data.
 
-<!-- Add a screenshot or short GIF here of the Poetic Capture Canvas or the museum plaque hover reveal.
-     This is the single highest-leverage addition to this README — a portfolio reader decides
-     whether to keep reading in about 3 seconds, and a visual does that work instantly.
-     CWS listing frames: store/screenshots/ (see store/screenshots/README.md). -->
+> **TODO (owner):** add a screenshot or short GIF of the Poetic Capture Canvas or the museum plaque hover reveal here. Store listing frames and sizes: [`store/screenshots/README.md`](./store/screenshots/README.md).
 
 ---
 
@@ -75,7 +72,7 @@ The **Hardcover Library Archive** organizes everything you've captured — each 
 
 | Feature | What It Accomplishes | Technical Implementation |
 | :--- | :--- | :--- |
-| **Museum Catalogue Plaques** | Rating badges with hover expansion on any webpage poster or cover | Open Shadow DOM, MutationObserver, spring CSS transitions |
+| **Museum Catalogue Plaques** | Rating badges with hover expansion on any webpage poster or cover | Closed Shadow DOM (`src/content/closedShadow.ts`), MutationObserver, spring CSS transitions |
 | **Poetic Capture Canvas** | Emotion-first capture with progressive disclosure | Preact, URL param routing (`?act=capture`), focus-pull blur keyframes |
 | **Hardcover Library Archive** | Editorial archive grouped by `sanctuaryIntent` with `emotionalRecall` excerpts; All / Screen / Books filters | Preact, `useMemo` intent filtering, medium filter, `isMountedRef` async safety |
 | **Book detection & catalogue** | Notice books on any page; resolve works via Open Library (no key) with optional Google Books enrichment | Content-script stages (JSON-LD, ISBN, domain adapters), Open Library + Google Books background clients |
@@ -205,6 +202,17 @@ OAuth is **not** configured via a `YOUR_CLIENT_ID_HERE` placeholder in `manifest
 - [`docs/GOOGLE_DRIVE_SETUP.md`](./docs/GOOGLE_DRIVE_SETUP.md) — Google Cloud console steps and troubleshooting
 
 **Forks:** create your own **Web application** OAuth client in [Google Cloud Console](https://console.cloud.google.com/), enable the Drive API and the scopes listed in the setup doc, and set the authorized redirect URI to `https://<your-extension-id>.chromiumapp.org/` (from `chrome.identity.getRedirectURL()` / Settings → Data). Update `GOOGLE_CLIENT_ID` (and the registered URI constant) for your fork. Do not reuse the upstream production client for a public fork with a different extension ID.
+
+### Develop and test
+
+```bash
+npm run dev            # vite build --watch (reload the unpacked extension after rebuilds)
+npm run typecheck      # tsc --noEmit
+npm test               # Vitest
+npm run lint:eslint    # ESLint on src
+npm run ci             # typecheck + tests + build
+npm run package        # build + zip for Chrome Web Store upload
+```
 
 ### Loading into Chrome / Brave
 

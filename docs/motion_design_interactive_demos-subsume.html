@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subsume — Motion Design Interactive Demos</title>
+  <style>
+    :root {
+      --bg-base: #0a0a0b;
+      --bg-elevated: #141416;
+      --bg-hover: #222224;
+      --fg-base: #e8e6e1;
+      --fg-muted: #9e9a90;
+      --primary: #c9a84c;
+      --border: #2a2a2c;
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+      --spring-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--fg-base);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    p.sub {
+      color: var(--fg-muted);
+      max-width: 600px;
+      text-align: center;
+      margin: 0 0 24px;
+      line-height: 1.5;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .demo-card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .demo-card h3 {
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .badge--before { background: #ff444433; color: #ff6666; border: 1px solid #ff444455; }
+    .badge--after  { background: #c9a84c33; color: #c9a84c; border: 1px solid #c9a84c55; }
+
+    .stage {
+      height: 220px;
+      background: #00000066;
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+    }
+
+    button.btn {
+      flex: 1;
+      padding: 10px;
+      background: var(--bg-hover);
+      border: 1px solid var(--border);
+      color: var(--fg-base);
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 120ms ease;
+    }
+
+    button.btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* ─── Before Demos ─────────────────────────────────────── */
+    .modal-before {
+      width: 200px;
+      padding: 16px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: none; /* Instant DOM toggle */
+    }
+
+    /* ─── After Demos ──────────────────────────────────────── */
+    .backdrop-after {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms var(--ease-out-expo);
+    }
+
+    .backdrop-after.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-after {
+      width: 200px;
+      padding: 16px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      opacity: 0;
+      transform: scale(0.95) translateY(8px);
+      transition: opacity 180ms var(--ease-out-expo), transform 180ms var(--ease-out-expo);
+    }
+
+    .backdrop-after.active .modal-after {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    /* ─── Shimmer Demo ─────────────────────────────────────── */
+    .chip {
+      padding: 8px 16px;
+      background: #1e1e20;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--fg-muted);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    @keyframes gold-pop {
+      0%   { transform: scale(1); box-shadow: 0 0 0 rgba(201,168,76,0); background: #1e1e20; color: var(--fg-muted); }
+      40%  { transform: scale(1.12); box-shadow: 0 0 20px rgba(201,168,76,0.7); background: #c9a84c; color: #000; border-color: #fff; }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(201,168,76,0); background: rgba(201,168,76,0.15); color: var(--primary); border-color: var(--primary); }
+    }
+
+    .chip.celebrate {
+      animation: gold-pop 450ms var(--spring-pop) forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Subsume Motion Lenses Demos</h1>
+    <p class="sub">Experience the difference between instant DOM snapping (Before) and custom exponential easing curves drawn from the Kowalski & Krehel motion lenses (After).</p>
+  </div>
+
+  <div class="demo-grid">
+    
+    <!-- Before Modal -->
+    <div class="demo-card">
+      <h3>Modal Entrance & Exit <span class="badge badge--before">Before</span></h3>
+      <div class="stage">
+        <div id="modalBefore" class="modal-before">
+          <div style="font-weight: bold; margin-bottom: 4px;">Instant Snap</div>
+          <div style="font-size: 12px; color: #888;">Zero backdrop fade or exit easing.</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="toggleBefore(true)">Open (Instant)</button>
+        <button class="btn" onclick="toggleBefore(false)">Close (Instant)</button>
+      </div>
+    </div>
+
+    <!-- After Modal -->
+    <div class="demo-card">
+      <h3>Modal Entrance & Exit <span class="badge badge--after">After (Krehel/Kowalski)</span></h3>
+      <div class="stage">
+        <div id="backdropAfter" class="backdrop-after">
+          <div class="modal-after">
+            <div style="font-weight: bold; color: var(--primary); margin-bottom: 4px;">Polished Easing</div>
+            <div style="font-size: 12px; color: #aaa;">180ms cubic-bezier entrance & exit.</div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="toggleAfter(true)">Open (180ms)</button>
+        <button class="btn" onclick="toggleAfter(false)">Close (180ms)</button>
+      </div>
+    </div>
+
+    <!-- Shimmer Delight -->
+    <div class="demo-card" style="grid-column: 1 / -1; align-items: center;">
+      <h3 style="width: 100%;">Milestone Logging Celebration <span class="badge badge--after">Tompkins Delight (10%)</span></h3>
+      <div class="stage" style="width: 100%;">
+        <div id="statusChip" class="chip" onclick="triggerCelebrate()">Click to mark "Watched"</div>
+      </div>
+      <div style="font-size: 12px; color: var(--fg-muted);">Demonstrates subtle spring physics pop and golden shimmer celebration on high-reward milestones.</div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleBefore(show) {
+      document.getElementById('modalBefore').style.display = show ? 'block' : 'none';
+    }
+
+    function toggleAfter(show) {
+      const el = document.getElementById('backdropAfter');
+      if (show) el.classList.add('active');
+      else el.classList.remove('active');
+    }
+
+    function triggerCelebrate() {
+      const el = document.getElementById('statusChip');
+      el.classList.remove('celebrate');
+      void el.offsetWidth; // Trigger DOM reflow
+      el.classList.add('celebrate');
+      el.textContent = "⭐ Watched (10/10)";
+    }
+  </script>
+
+</body>
+</html>

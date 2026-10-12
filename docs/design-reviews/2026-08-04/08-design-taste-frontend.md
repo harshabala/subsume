@@ -268,6 +268,6 @@ Until one path is locked, further palette tweaks will keep reading as **template
 
 | Field | Value |
 |-------|--------|
-| Path | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-04/08-design-taste-frontend.md` |
+| Path | `<local-path>` |
 | Score | **5.5 / 10** |
 | Stance | **Templated recolor with intentional sanctuary islands** — not yet tasteful Ferrari-on-sanctuary |

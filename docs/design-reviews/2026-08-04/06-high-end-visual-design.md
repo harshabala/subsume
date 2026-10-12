@@ -323,26 +323,26 @@ Not chaotic, but not the sharp automotive cut of the brief.
 
 ## Files reviewed (primary)
 
-- `/Users/harshabalakrishnan/Subsume/DESIGN.md`
-- `/Users/harshabalakrishnan/Subsume/src/shared/tokens.css`
-- `/Users/harshabalakrishnan/Subsume/src/shared/shadowTokens.ts`
-- `/Users/harshabalakrishnan/Subsume/src/shared/theme.ts`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/global.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/layout.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/app-nav.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/discovery-layout.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/discovery-search.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/library.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/poetic-sanctuary.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/onboarding.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/emotional-components.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/settings-nav.css`
-- `/Users/harshabalakrishnan/Subsume/src/ui/styles/sidebar.css`
-- `/Users/harshabalakrishnan/Subsume/src/styles/sanctuary.css`
-- `/Users/harshabalakrishnan/Subsume/src/content/bookOverlay.ts`
-- `/Users/harshabalakrishnan/Subsume/src/ui/pages/Home.tsx`
-- `/Users/harshabalakrishnan/Subsume/src/ui/index.html`
-- `/Users/harshabalakrishnan/Subsume/docs/superpowers/plans/2026-08-04-ferrari-design-system.md`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
+- `<local-path>`
 
 ---
 

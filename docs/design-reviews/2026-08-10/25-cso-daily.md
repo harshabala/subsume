@@ -3,7 +3,7 @@
 | Field | Value |
 |-------|--------|
 | **Date** | 2026-08-10 |
-| **Repo** | `/Users/harshabalakrishnan/Subsume` @ `a5471b5` |
+| **Repo** | `<local-path>` @ `a5471b5` |
 | **Mode** | Daily (zero-noise, confidence gate ≥ 8/10) |
 | **Focus** | Secrets, deps, CI, LLM, skill supply chain, OWASP/STRIDE high signals |
 | **Auditor** | CSO skill (infrastructure + extension threat model) |

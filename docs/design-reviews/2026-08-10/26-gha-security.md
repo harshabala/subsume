@@ -1,7 +1,7 @@
 # GitHub Actions Security Review — Subsume
 
 **Date:** 2026-08-10  
-**Repo:** `/Users/harshabalakrishnan/Subsume`  
+**Repo:** `<local-path>`  
 **Method:** [gha-security-review](https://github.com/) skill — exploitation-focused audit (pwn requests, expression injection, credential theft, supply chain)  
 **Threat model:** External attacker without write access (fork PRs, issues, comments). Requires-write triggers (`workflow_dispatch`, `push` to protected `main`) are out of scope for exploitability unless they amplify a separate chain.  
 **Score:** **8.5 / 10**

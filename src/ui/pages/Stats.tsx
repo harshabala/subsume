@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'preact/hooks';
 import { sendMessage } from '@/shared/messages';
-import { MessageType, LibraryItem, MediaItem } from '@/shared/types';
+import { MessageType } from '@/shared/types';
+import type { JoinedItem } from '../components/archive/types';
 import {
   computeBookReadingStats,
   hasBookReadingActivity,
@@ -15,11 +16,6 @@ import {
   STATS_BOOK_PAGES_PARTIAL_NOTE,
 } from '@/shared/productCopy';
 import { EmotionalWeatherChart } from '../components/EmotionalWeatherChart';
-
-interface JoinedItem {
-  library: LibraryItem;
-  media: MediaItem;
-}
 
 interface StatsProps {
   onNavigate?: (page: 'search' | 'library' | 'home') => void;

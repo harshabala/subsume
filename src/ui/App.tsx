@@ -19,7 +19,7 @@ import { MessageType, UserPreferences } from '../shared/types';
 import { usePrefetch, prefetchPage, prefetchProps, type Page } from './hooks/usePrefetch';
 import { applyThemePreference, applyCinemaAtmosphere, watchSystemTheme } from '../shared/theme';
 import { FilmGrain } from './components/FilmGrain';
-import { ensureDemoLibraryIfEmpty, seedPracticeLibraryIfEmpty } from './lib/ensureDemoLibrary';
+import { seedPracticeLibraryIfEmpty } from './lib/ensureDemoLibrary';
 import { useNotice } from './components/NoticeProvider';
 import { formatUserError } from './utils/formatUserError';
 import { Icon, type IconName } from './components/icons';
@@ -74,18 +74,19 @@ function getInitialPage(): Page {
   return 'home';
 }
 
-function NavIcon({ item }: { item: NavItem }) {
-  if (item.icon === 'I' || item.icon === 'II' || item.icon === 'III') {
-    return <span className="sidebar-nav-roman">{item.icon}</span>;
-  }
-  return <Icon name={item.icon} size={18} className="app-nav-house-icon" />;
-}
-
-function ExploreIcon({ name }: { name: IconName | string }) {
+function NavGlyph({
+  name,
+  size,
+  className,
+}: {
+  name: IconName | 'I' | 'II' | 'III';
+  size: number;
+  className: string;
+}) {
   if (name === 'I' || name === 'II' || name === 'III') {
     return <span className="sidebar-nav-roman">{name}</span>;
   }
-  return <Icon name={name as IconName} size={16} className="app-subnav-icon" />;
+  return <Icon name={name} size={size} className={className} />;
 }
 
 export function App() {
@@ -165,8 +166,6 @@ export function App() {
         }
       }
     }).catch(() => {});
-
-    ensureDemoLibraryIfEmpty().catch(() => {});
   }, []);
 
   // After first archive add, refresh prefs so the first-inscription gate can dismiss
@@ -202,7 +201,6 @@ export function App() {
       prefetchPageOnMount(currentPage);
     }
   }, [currentPage, prefetchPageOnMount]);
-
 
   // Drawer open: move focus in, trap Tab, Esc closes (interruptible spring)
   useEffect(() => {
@@ -446,7 +444,7 @@ export function App() {
               aria-current={currentPage === item.key ? 'page' : undefined}
               {...prefetchProps(item.key)}
             >
-              <ExploreIcon name={item.icon} />
+              <NavGlyph name={item.icon} size={16} className="app-subnav-icon" />
               <span className="app-subnav-label-full">{item.label}</span>
             </button>
           ))}
@@ -498,7 +496,7 @@ export function App() {
                 onClick={() => goToPage(item.key)}
                 {...prefetchProps(item.key)}
               >
-                <NavIcon item={item} />
+                <NavGlyph name={item.icon} size={18} className="app-nav-house-icon" />
                 <span className="side-menu-label">{item.label}</span>
               </button>
             ))}
@@ -514,7 +512,7 @@ export function App() {
                 onClick={() => goToPage(item.key)}
                 {...prefetchProps(item.key)}
               >
-                <ExploreIcon name={item.icon} />
+                <NavGlyph name={item.icon} size={16} className="app-subnav-icon" />
                 <span className="side-menu-label">{item.label}</span>
               </button>
             ))}
@@ -530,7 +528,7 @@ export function App() {
                 onClick={() => goToPage(item.key)}
                 {...prefetchProps(item.key)}
               >
-                <ExploreIcon name={item.icon} />
+                <NavGlyph name={item.icon} size={16} className="app-subnav-icon" />
                 <span className="side-menu-label">{item.label}</span>
               </button>
             ))}

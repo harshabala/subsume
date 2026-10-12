@@ -343,4 +343,4 @@ Ad-hoc clamps (nav logo, layout hero) and one 36px sanctuary size — not a toke
 | **Fidelity** | **6.4 / 10** |
 | **Δ Aug 4** | **+6 pp / +0.6** (from ~58% / 5.8) |
 | **Top 3** | (1) DESIGN button-primary on all CTA classes (2) primary scarcity on nav/tabs/chips/ratings (3) collapse multi-tier shadows + sharp cards |
-| **Path** | `/Users/harshabalakrishnan/Subsume/docs/design-reviews/2026-08-10/16-ferrari-design-md-compliance.md` |
+| **Path** | `<local-path>` |
