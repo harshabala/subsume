@@ -216,8 +216,11 @@ describe('Task 2: Accessibility, UX & Motion Audits', () => {
         container,
       );
 
+      // Poll for the textarea instead of a fixed sleep (flaky under load).
       await act(async () => {
-        await new Promise((r) => setTimeout(r, 60));
+        for (let i = 0; i < 50 && !container.querySelector('textarea'); i++) {
+          await new Promise((r) => setTimeout(r, 40));
+        }
       });
 
       const textarea = container.querySelector('textarea') as HTMLTextAreaElement;
