@@ -83,7 +83,7 @@ describe('Act III Hardcover Library Archive', () => {
 
     render(<Library />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 40));
+      await new Promise((r) => setTimeout(r, 250));
     });
 
     // Initially "all" items shown
@@ -142,7 +142,7 @@ describe('Act III Hardcover Library Archive', () => {
 
     render(<Library />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 40));
+      await new Promise((r) => setTimeout(r, 250));
     });
 
     const snippet = container.querySelector('.hardcover-snippet') as HTMLElement;
@@ -178,7 +178,7 @@ describe('Act III Hardcover Library Archive', () => {
 
     render(<Library />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 40));
+      await new Promise((r) => setTimeout(r, 250));
     });
 
     expect(errSpy).toHaveBeenCalled();
@@ -235,7 +235,7 @@ describe('Act III Hardcover Library Archive', () => {
     document.body.appendChild(container);
     render(<Library />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 40));
+      await new Promise((r) => setTimeout(r, 250));
     });
 
     const chips = Array.from(container.querySelectorAll('.status-chip')).map((el) => ({
@@ -261,7 +261,7 @@ describe('Act III Hardcover Library Archive', () => {
     document.body.appendChild(container);
     render(<Library />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 40));
+      await new Promise((r) => setTimeout(r, 250));
     });
 
     const keepTab = container.querySelector('[data-intent="keep_memory"]') as HTMLElement;

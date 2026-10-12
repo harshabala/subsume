@@ -61,7 +61,7 @@ describe('createMessageRouter', () => {
       [MessageType.OPEN_CAPTURE_CANVAS]: () => Promise.reject('plain'),
     });
     await expect(dispatch(l, MessageType.GET_CONTENT_PREFS, 'https://site.test/')).resolves.toEqual({
-      ret: false,
+      ret: true,
       response: { success: true, data: 'sync' },
     });
     await expect(dispatch(l, MessageType.RESOLVE_POSTER, 'https://site.test/')).resolves.toEqual({

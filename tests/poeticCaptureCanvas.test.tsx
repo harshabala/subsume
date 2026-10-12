@@ -89,7 +89,9 @@ describe('PoeticCaptureCanvas', () => {
 
     render(<PoeticCaptureCanvas mediaId="media_123" onClose={vi.fn()} />, container);
     await act(async () => {
-      await new Promise((r) => setTimeout(r, 120));
+      for (let n = 0; n < 50 && !container.querySelector('textarea'); n++) {
+        await new Promise((r) => setTimeout(r, 40));
+      }
     });
 
     const textarea = container.querySelector('textarea') as HTMLTextAreaElement;
