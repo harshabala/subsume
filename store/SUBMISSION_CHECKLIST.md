@@ -114,7 +114,6 @@ Use `store/LISTING.md` for paste-ready copy.
 Confirm each is explained in the dashboard (all drafted in `store/PERMISSIONS.md` and `store/LISTING.md`):
 
 - [ ] `storage`  
-- [ ] `activeTab`  
 - [ ] `notifications`  
 - [ ] `alarms`  
 - [ ] `identity`  

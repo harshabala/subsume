@@ -41,7 +41,6 @@ Users supply their own API keys where required; hosts are not scraped via conten
 ## Other permissions
 
 - **storage** — local journal, settings, prefs
-- **activeTab** — user-gesture access to the current tab when needed
 - **notifications** — optional alerts (releases, digests)
 - **alarms** — scheduled digest / background refresh
 

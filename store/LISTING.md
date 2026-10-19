@@ -85,10 +85,6 @@ Copy into justification fields as needed. Full matrix: `store/PERMISSIONS.md`.
 
 Stores the user’s personal media library, preferences, optional API keys (encrypted with a per-install key), diagnostic logs, and related state in IndexedDB and `chrome.storage.local` on the device. Required for a local-first library with no Subsume server.
 
-### activeTab
-
-Allows the extension UI and user-initiated flows to work with the currently active tab when the user opens Subsume or triggers capture-related UI, without requesting broad tabs permission.
-
 ### notifications
 
 Shows optional Chrome notifications for digests, alerts, or user-configured reminders about titles and library activity the user has enabled.
