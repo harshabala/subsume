@@ -26,7 +26,19 @@ let tmdbApiKey: string | null = null;
 
 export function setTmdbApiKey(key: string): void {
   tmdbApiKey = key;
-  loadGenreMap().catch(() => {});
+  if (key && key.trim()) loadGenreMap().catch(() => {});
+}
+
+/** No TMDb key is a normal state on the free path, not a failure worth logging as an error. */
+export class MissingTmdbKeyError extends Error {
+  constructor() {
+    super('TMDB API key not configured. Please set it in Settings.');
+    this.name = 'MissingTmdbKeyError';
+  }
+}
+
+export function isMissingTmdbKeyError(err: unknown): err is MissingTmdbKeyError {
+  return err instanceof MissingTmdbKeyError;
 }
 
 export async function fetchWithRetry(url: string, retries = 3, baseDelay = 500, options?: RequestInit): Promise<Response> {
@@ -81,7 +93,7 @@ export async function ensureTmdbApiKey(): Promise<string> {
   } catch {
     // Non-fatal, fallback to error below
   }
-  throw new Error('TMDB API key not configured. Please set it in Settings.');
+  throw new MissingTmdbKeyError();
 }
 
 export const getTmdbApiKey = ensureTmdbApiKey;
@@ -133,7 +145,9 @@ async function loadGenreMap(): Promise<void> {
         GENRE_MAP = map;
         GENRE_MAP_LOADED = true;
       } catch (err) {
-        console.error('[Subsume] Failed to load genre map:', err);
+        if (!isMissingTmdbKeyError(err)) {
+          console.error('[Subsume] Failed to load genre map:', err);
+        }
         genreMapPromise = null;
         throw err;
       }
