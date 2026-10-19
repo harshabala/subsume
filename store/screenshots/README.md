@@ -49,10 +49,7 @@ python3 scripts/render-store-assets.py         # both
 
 ## Verification
 
-`python3 scripts/test_cold_install_activation.py` was re-run against the final build. This is an **automated run, not a human-timed one**: the script clicks through onboarding on a fast machine with no reading time.
-
-- Result: passed. Onboarding to first reflection saved in **5.35 s** (script threshold 90 s). First Inscription Gate appeared, practice title opened the capture canvas, save closed it, the Weekly selection card appeared.
-- Its "content-script failure visibility" step injects its own `role="alert"` element and then finds it, so it does not test the content script itself (the shipped content script is checked by frame 04 instead).
+Earlier frames were checked with `scripts/test_cold_install_activation.py`, which has since been replaced. Use `npm run smoke` (`scripts/smoke_extension.py`). It loads `dist/` in a fresh Chromium profile with the network stubbed, then checks the onboarding → first reflection path, every page, Reflect tab reuse, popup poster fallbacks, and that no page or service-worker errors occur. It is automated and does not time a human: on 2026-10-19 the first reflection was saved in 4.4 s against a 90 s budget.
 
 ## Before upload
 

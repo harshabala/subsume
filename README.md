@@ -212,7 +212,10 @@ npm test               # Vitest
 npm run lint           # ESLint on src, zero warnings allowed
 npm run ci             # typecheck + lint + tests + build
 npm run package        # build + zip for Chrome Web Store upload
+npm run smoke          # build + real-browser smoke test (needs Python playwright; see below)
 ```
+
+`npm run smoke` loads `dist/` into a temporary Chromium profile with the network stubbed and checks the zero-key core loop: first saved reflection, every page rendering, Reflect reusing the open journal tab, poster fallbacks, and no page or service-worker errors. Branded Google Chrome ignores `--load-extension`, so it uses Playwright's bundled Chromium; set `CHROME_PATH` to use another Chromium or Chrome for Testing build.
 
 ### Loading into Chrome / Brave
 
