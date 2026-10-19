@@ -198,7 +198,7 @@ export const peopleHandlers: MessageHandlerMap = {
       role: req.role,
       profileImageUrl: req.profilePath ?? undefined,
       biography: details.biography,
-      knownFor: req.knownFor.map(k => k.title).slice(0, 3),
+      knownFor: (req.knownFor || []).map((k) => k.title).slice(0, 3),
       filmographyIds: [],
       followedAt: Date.now(),
       lastSyncedAt: 0
