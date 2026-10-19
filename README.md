@@ -209,8 +209,8 @@ OAuth is **not** configured via a `YOUR_CLIENT_ID_HERE` placeholder in `manifest
 npm run dev            # vite build --watch (reload the unpacked extension after rebuilds)
 npm run typecheck      # tsc --noEmit
 npm test               # Vitest
-npm run lint:eslint    # ESLint on src
-npm run ci             # typecheck + tests + build
+npm run lint           # ESLint on src, zero warnings allowed
+npm run ci             # typecheck + lint + tests + build
 npm run package        # build + zip for Chrome Web Store upload
 ```
 

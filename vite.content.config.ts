@@ -7,7 +7,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Chrome loads manifest content scripts as classic scripts, so this entry must be a
 // self-contained IIFE. The main build shares chunks between entries (ES imports),
-// which content scripts cannot use.
+// which content scripts cannot use. The iife lib format already disables code
+// splitting, so dynamic imports are inlined without extra options.
 export default defineConfig({
   base: './',
   plugins: [preact()],
@@ -25,11 +26,6 @@ export default defineConfig({
       name: 'SubsumeContent',
       fileName: () => 'content.js',
       cssFileName: 'content',
-    },
-    rollupOptions: {
-      output: {
-        inlineDynamicImports: true,
-      },
     },
     minify: true,
   },

@@ -6,42 +6,24 @@ Subsume uses a lightweight ESLint baseline aimed at Chrome Web Store production 
 
 | Script | Purpose |
 |--------|---------|
-| `npm run lint:eslint` | Run ESLint on `src/` (flat config) |
-| `npm run lint` / `typecheck` | TypeScript (`tsc --noEmit`) — separate from ESLint |
+| `npm run lint` | ESLint on `src/` with `--max-warnings 0` (fails on any warning) |
+| `npm run lint:eslint` | Alias for `npm run lint` |
+| `npm run typecheck` | TypeScript (`tsc --noEmit`), separate from ESLint |
 
-```bash
-npm run lint:eslint
-```
+`npm run ci` runs typecheck, lint, tests and build, in that order, and the GitHub workflow runs the same steps.
 
 ## Configuration
 
 - **Config:** `eslint.config.js` (ESLint flat config)
 - **Scope:** `src/**/*.{ts,tsx}`
 - **Ignored:** `dist/`, `node_modules/`, `coverage/`, `tests/`, `scripts/`, Vite/Vitest configs
-- **Stack:** `eslint`, `typescript-eslint`, `@eslint/js` — recommended JS + TS rules, **not** type-aware (`projectService`) rules
+- **Stack:** `eslint`, `typescript-eslint`, `@eslint/js`: recommended JS + TS rules, **not** type-aware (`projectService`) rules
 
-### Softened rules
+Several rules are configured as `warn` in `eslint.config.js` (`no-explicit-any`, `no-empty-object-type`, `no-unused-vars` with a `^_` ignore pattern, `preserve-caught-error`, `no-useless-assignment`, `prefer-const`). Because the script runs with `--max-warnings 0`, a warning fails the check the same as an error.
 
-| Rule | Level | Notes |
-|------|-------|--------|
-| `@typescript-eslint/no-explicit-any` | warn | Existing `any` usage is advisory |
-| `@typescript-eslint/no-empty-object-type` | warn | `{}` props patterns in UI |
-| `no-unused-vars` | off | Prefer the TS variant |
-| `@typescript-eslint/no-unused-vars` | warn | `argsIgnorePattern` / `varsIgnorePattern`: `^_` |
-| `no-undef` | off | TypeScript + browser/extension types cover this |
-| `preserve-caught-error` / `no-useless-assignment` | warn | Useful, but not hard errors for baseline |
+## Policy
 
-`--max-warnings 200` keeps the script useful without failing on a large historical warning backlog (currently well under that budget).
-
-## CI policy (advisory)
-
-ESLint is **non-blocking / advisory** for now:
-
-- Do **not** gate merges or Chrome Web Store packaging on a clean ESLint run until the warning count is intentionally driven down.
-- Prefer keeping `lint:eslint` as a local check and optional CI step that reports without failing the job.
-- `npm run build` and existing tests remain the production gate.
-
-When warnings are consistently under the max budget and noise is acceptable, CI can start enforcing `npm run lint:eslint`.
+The backlog was cleared on 2026-10-19 (99 warnings to 0), and lint has been a blocking gate since then. Fix new warnings rather than raising the budget. If a rule is wrong for a specific line, use a targeted `// eslint-disable-next-line <rule> -- reason` comment.
 
 ## Safe autofix
 

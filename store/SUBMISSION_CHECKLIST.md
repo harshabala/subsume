@@ -48,7 +48,7 @@ Do not use a private gist or login-walled page.
 ```bash
 cd /path/to/Subsume
 npm ci
-npm run ci        # typecheck + test + build
+npm run ci        # typecheck + lint + test + build
 npm run package   # rebuilds dist/ and writes subsume.zip (no nested dist/, no source maps)
 ```
 
