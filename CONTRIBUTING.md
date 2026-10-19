@@ -8,7 +8,7 @@ First off, thank you for considering contributing to Subsume! It's people like y
    ```bash
    git clone https://github.com/harshabala/Subsume.git
    ```
-2. Ensure you have Node.js 18+ installed.
+2. Ensure you have Node.js 20.19+ installed (22 recommended; Vite 8 requires it).
 3. Run `npm install` to install dependencies.
 4. Run `npm run dev` to start the build in watch mode.
 
@@ -19,9 +19,14 @@ To load the extension into Chrome:
 
 ## Testing
 
-Please ensure all tests pass before submitting a pull request:
+Before submitting a pull request, run the same gate CI runs (typecheck, ESLint with zero warnings, tests, build):
 ```bash
-npm run test
+npm run ci
+```
+
+For changes to the content script, background messaging or capture flow, also run the real-browser smoke test (needs the Python `playwright` package):
+```bash
+npm run smoke
 ```
 
 ## Pre-Ship Checklist

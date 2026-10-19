@@ -4,6 +4,9 @@
   "private": true,
   "description": "Private movie & book journal for Chrome. Save what stayed with you while you browse.",
   "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build && vite build --config vite.content.config.ts",

@@ -115,9 +115,9 @@ The **Hardcover Library Archive** organizes everything you've captured — each 
 ```
 
 ### Clean Code & SOLID Standards
-- **Single Responsibility (SRP):** Domain handler registries (`libraryHandlers`, `llmHandlers`, `syncHandlers`, `settingsHandlers`) replace monolithic switch statements. Background `index.ts` stays at 41 lines by design.
+- **Single Responsibility (SRP):** Domain handler registries (`libraryHandlers`, `llmHandlers`, `syncHandlers`, `settingsHandlers`) replace monolithic switch statements; background `index.ts` only wires handlers, alarms and startup hydration.
 - **Open/Closed (OCP):** AI providers implement a common adapter interface — adding Ollama or DeepSeek requires zero changes to the core pipeline.
-- **Strict TypeScript:** No `any` types in production code. All `unknown` inputs are narrowed at boundaries.
+- **Strict TypeScript:** `strict` mode, and ESLint (`npm run lint`, zero warnings allowed) rejects new `any` in `src/`. Message payloads from content scripts are validated in the background before use.
 - **Memory Safety:** Every Shadow DOM manager (`MuseumPlaqueManager`, `AuteurScreenplayDock`) implements an explicit `destroy()` lifecycle. Every async hook uses an `isMountedRef` cancellation flag.
 - **Structured Telemetry:** All diagnostic messaging routes through a typed `logger` utility.
 - **Test Coverage:** Large Vitest suite (books expansion + screen detection harness + existing flows). Run `npm test` for the live count.
@@ -174,8 +174,8 @@ You can blacklist domains in **Settings → Disabled Domains** to disable all co
 ## Setup & Local Run Guide
 
 ### Prerequisites
-- Node.js 18+ & npm
-- Google Chrome or Brave Browser (v120+)
+- Node.js 20.19+ (22 recommended) & npm
+- Google Chrome or another Chromium browser such as Brave, version 116 or newer
 - **TMDb API Key** (Free at [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)) — required for film/TV catalogue features
 - **Open Library** — books work out of the box with no key
 - **OMDb API Key** *(Optional)* (Free at [omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx))
