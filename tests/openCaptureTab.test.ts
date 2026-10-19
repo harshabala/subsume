@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import {
   buildCaptureCanvasPath,
   buildCaptureCanvasUrl,
@@ -118,5 +118,63 @@ describe('openCaptureCanvasTab reuse', () => {
         url: expect.stringContaining('act=capture'),
       })
     );
+  });
+
+  describe('without the tabs permission (real Chrome hides tab.url)', () => {
+    const runtime = chrome.runtime as unknown as { getContexts?: ReturnType<typeof vi.fn> };
+
+    beforeEach(() => {
+      // Real Chrome: tabs.query returns tabs, but url is undefined without "tabs".
+      vi.mocked(chrome.tabs.query).mockResolvedValue([
+        { id: 42, windowId: 3 } as chrome.tabs.Tab,
+        { id: 7, windowId: 3 } as chrome.tabs.Tab,
+      ]);
+    });
+
+    afterEach(() => {
+      delete runtime.getContexts;
+    });
+
+    it('finds the open journal tab through runtime.getContexts and reuses it', async () => {
+      runtime.getContexts = vi.fn().mockResolvedValue([
+        {
+          contextType: 'TAB',
+          tabId: 42,
+          windowId: 3,
+          documentUrl: 'chrome-extension://test-extension-id/ui/index.html?page=library',
+        },
+      ]);
+
+      await openCaptureCanvasTab('tmdb_movie_5');
+
+      expect(runtime.getContexts).toHaveBeenCalledWith(
+        expect.objectContaining({ contextTypes: ['TAB'] }),
+      );
+      expect(chrome.tabs.update).toHaveBeenCalledWith(
+        42,
+        expect.objectContaining({ active: true, url: expect.stringContaining('mediaId=tmdb_movie_5') }),
+      );
+      expect(chrome.windows.update).toHaveBeenCalledWith(3, { focused: true });
+      expect(chrome.tabs.create).not.toHaveBeenCalled();
+    });
+
+    it('ignores the popup and other extension pages returned by getContexts', async () => {
+      runtime.getContexts = vi.fn().mockResolvedValue([
+        { contextType: 'TAB', tabId: 9, windowId: 1, documentUrl: 'chrome-extension://test-extension-id/ui/popup.html' },
+      ]);
+
+      await openCaptureCanvasTab('tmdb_movie_6');
+
+      expect(chrome.tabs.update).not.toHaveBeenCalled();
+      expect(chrome.tabs.create).toHaveBeenCalled();
+    });
+
+    it('creates a tab when getContexts throws', async () => {
+      runtime.getContexts = vi.fn().mockRejectedValue(new Error('unsupported'));
+
+      await openCaptureCanvasTab('tmdb_movie_7');
+
+      expect(chrome.tabs.create).toHaveBeenCalled();
+    });
   });
 });

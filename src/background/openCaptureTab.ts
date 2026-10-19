@@ -4,6 +4,10 @@
  * Prefer reusing an existing options/UI tab (url contains `ui/index.html`) so
  * Reflect does not pile new tabs. Falls back to chrome.tabs.create when none
  * are open. Deep link shape is always `?act=capture&mediaId=…`.
+ *
+ * The manifest has no `tabs` permission, so `chrome.tabs.query` returns tabs
+ * with `url` undefined — even for this extension's own pages. Own UI tabs are
+ * found with `chrome.runtime.getContexts` (Chrome 116+, no permission needed).
  */
 
 /** Pure: build the capture canvas path relative to the extension root. */
@@ -40,6 +44,27 @@ export function isExtensionUiTabUrl(
   return false;
 }
 
+interface UiTabRef {
+  id?: number;
+  windowId?: number;
+}
+
+/** Locate an open extension UI tab via runtime.getContexts; undefined when unavailable. */
+async function findUiTabViaContexts(extensionOrigin?: string): Promise<UiTabRef | undefined> {
+  if (typeof chrome.runtime.getContexts !== 'function') return undefined;
+  try {
+    const contexts = await chrome.runtime.getContexts({
+      contextTypes: ['TAB' as chrome.runtime.ContextType],
+    });
+    const match = contexts.find(
+      (c) => c.tabId >= 0 && isExtensionUiTabUrl(c.documentUrl, extensionOrigin),
+    );
+    return match ? { id: match.tabId, windowId: match.windowId } : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 /**
  * Open capture for mediaId: update an existing extension UI tab if found,
  * otherwise create a new tab. Activates the chosen tab.
@@ -56,10 +81,11 @@ export async function openCaptureCanvasTab(mediaId: string): Promise<{ success: 
     extensionOrigin = undefined;
   }
 
-  const tabs = await chrome.tabs.query({});
-  const existing = tabs.find(
-    (t) => isExtensionUiTabUrl(t.url, extensionOrigin) && typeof t.id === 'number',
-  );
+  const existing =
+    (await findUiTabViaContexts(extensionOrigin)) ??
+    (await chrome.tabs.query({})).find(
+      (t) => isExtensionUiTabUrl(t.url, extensionOrigin) && typeof t.id === 'number',
+    );
 
   if (existing?.id != null) {
     // Reuse: navigate existing options/UI tab to capture deep link and focus it.
