@@ -33,6 +33,13 @@ export const FIRST_SESSION_PILLARS = [
 export const FIRST_SESSION_MINUTE_NOTE =
   'You can save your first reflection in under a minute. Optional catalogue keys (TMDb) can wait until you want richer posters and search.';
 
+/** Background error text when no TMDb key is set; the UI matches on it to show setup help. */
+export const TMDB_KEY_MISSING_MESSAGE = 'TMDB API key not configured. Please set it in Settings.';
+
+export function isTmdbKeyMissingError(err: unknown): boolean {
+  return err instanceof Error && err.message.includes(TMDB_KEY_MISSING_MESSAGE);
+}
+
 export const ONBOARDING_BEGIN_LABEL = 'Begin';
 export const ONBOARDING_STEP2_HEADLINE = 'Optional catalogue key';
 export const ONBOARDING_STEP2_SKIP_LABEL = 'Enter without keys';

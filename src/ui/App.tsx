@@ -384,7 +384,7 @@ export function App() {
           />
         );
       case 'new-releases':
-        return <NewReleases />;
+        return <NewReleases onOpenSettings={() => setCurrentPage('settings')} />;
       case 'alerts':
         return <Alerts />;
       case 'settings':

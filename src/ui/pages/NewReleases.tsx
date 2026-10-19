@@ -11,15 +11,21 @@ import {
   FILMS_TAB_LABEL,
   SERIES_TAB_LABEL,
   failedToAddToArchiveMessage,
+  isTmdbKeyMissingError,
 } from '@/shared/productCopy';
 
-export function NewReleases() {
+interface NewReleasesProps {
+  onOpenSettings?: () => void;
+}
+
+export function NewReleases({ onOpenSettings }: NewReleasesProps = {}) {
   const [activeTab, setActiveTab] = useState<'movie' | 'tv'>('movie');
   const [items, setItems] = useState<MediaItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [addedIds, setAddedIds] = useState<Set<string>>(new Set());
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [needsTmdbKey, setNeedsTmdbKey] = useState(false);
   const [actionError, setActionError] = useState<string | null>(null);
   const [retryToken, setRetryToken] = useState(0);
 
@@ -32,6 +38,7 @@ export function NewReleases() {
     async function fetchReleases() {
       setLoading(true);
       setLoadError(null);
+      setNeedsTmdbKey(false);
       try {
         const res = await sendMessage<any, MediaItem[]>(MessageType.GET_LATEST_RELEASES, {
           type: activeTab
@@ -40,9 +47,11 @@ export function NewReleases() {
           setItems(res.data ?? []);
         }
       } catch (err) {
-        console.error('Failed to load new releases', err);
+        const missingKey = isTmdbKeyMissingError(err);
+        if (!missingKey) console.error('Failed to load new releases', err);
         if (!cancelled) {
           setItems([]);
+          setNeedsTmdbKey(missingKey);
           setLoadError(err instanceof Error ? err.message : 'Failed to load new releases.');
         }
       } finally {
@@ -115,9 +124,26 @@ export function NewReleases() {
             <div className="subsume-spinner sanctuary-spinner-centered" />
             <p className="sanctuary-plaque-text">Assembling today&apos;s marquee...</p>
           </div>
+        ) : needsTmdbKey ? (
+          <div className="sanctuary-empty-plaque">
+            <span className="sanctuary-plaque-index">Optional catalogue key</span>
+            <h3 className="sanctuary-plaque-title">Now Showing needs a TMDb key</h3>
+            <p className="sanctuary-plaque-text">
+              New film and series releases come from TMDb. Add a free TMDb key in Settings to see them. Your journal works without it.
+            </p>
+            {onOpenSettings && (
+              <button
+                type="button"
+                className="optical-button recommendations-retry-btn"
+                onClick={onOpenSettings}
+              >
+                Open Settings
+              </button>
+            )}
+          </div>
         ) : loadError ? (
           <div className="sanctuary-empty-plaque">
-            <span className="sanctuary-plaque-index">Programme note 503</span>
+            <span className="sanctuary-plaque-index">Programme note</span>
             <h3 className="sanctuary-plaque-title">Programme Currently Unavailable</h3>
             <p className="sanctuary-plaque-text">
               We could not reach today&apos;s release registry. Check your provider settings or connection.

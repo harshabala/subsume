@@ -2,6 +2,7 @@ import { MediaItem, MediaType, MediaProvider, UserPreferences, CrewRole, Streami
 import { getMediaItem, putMediaItem, getAllMediaMap, putMediaItems, getPreferences } from './storage';
 import { fetchOmdbRatings, runWithConcurrency } from './omdb';
 import { BoundedTtlCache } from './ttlCache';
+import { TMDB_KEY_MISSING_MESSAGE } from '../shared/productCopy';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 export const POSTER_BASE_URL = 'https://image.tmdb.org/t/p/w500';
@@ -32,7 +33,7 @@ export function setTmdbApiKey(key: string): void {
 /** No TMDb key is a normal state on the free path, not a failure worth logging as an error. */
 export class MissingTmdbKeyError extends Error {
   constructor() {
-    super('TMDB API key not configured. Please set it in Settings.');
+    super(TMDB_KEY_MISSING_MESSAGE);
     this.name = 'MissingTmdbKeyError';
   }
 }
