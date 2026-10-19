@@ -555,17 +555,16 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                       className="recently-reflected-card"
                       onClick={() => setSelectedMedia(media)}
                     >
-                      {media.posterUrl ? (
-                        <img
-                          src={media.posterUrl}
-                          alt={media.canonicalTitle}
-                          className="recently-reflected-poster"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      ) : (
-                        <div className="recently-reflected-poster" />
-                      )}
+                      <PosterImage
+                        src={media.posterUrl}
+                        alt={media.canonicalTitle}
+                        className="recently-reflected-poster"
+                        loading="lazy"
+                        decoding="async"
+                        fallback={
+                          <div className="recently-reflected-poster" />
+                        }
+                      />
                       <div className="recently-reflected-meta">
                         <div className="recently-reflected-title">{media.canonicalTitle}</div>
                         <div className="recently-reflected-aura" aria-hidden="true">

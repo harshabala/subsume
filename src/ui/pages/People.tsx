@@ -4,6 +4,7 @@ import { sendMessage } from '@/shared/messages';
 import { MessageType, PersonItem, CrewRole, UserPreferences } from '@/shared/types';
 import { FilmographyView } from '../components/FilmographyView';
 import '../styles/people.css';
+import { PosterImage } from '../components/PosterImage';
 
 interface PersonSearchItem {
   id: string;
@@ -318,19 +319,18 @@ export function People() {
                           setSelectedPerson(person);
                         }}
                       >
-                        {profileImageSrc(person.profileImageUrl) ? (
-                          <img
-                            src={profileImageSrc(person.profileImageUrl)!}
-                            alt=""
-                            className="people-sanctuary-avatar"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        ) : (
-                          <span className="people-sanctuary-avatar-fallback" aria-hidden="true">
-                            {initials}
-                          </span>
-                        )}
+                        <PosterImage
+                          src={profileImageSrc(person.profileImageUrl)}
+                          alt=""
+                          className="people-sanctuary-avatar"
+                          loading="lazy"
+                          decoding="async"
+                          fallback={
+                            <span className="people-sanctuary-avatar-fallback" aria-hidden="true">
+                              {initials}
+                            </span>
+                          }
+                        />
 
                         <span className="people-sanctuary-name">
                           {person.name}
@@ -400,24 +400,23 @@ export function People() {
                   return (
                     <div key={person.id} className="people-search-result">
                       <div className="people-search-result-info">
-                        {imgSrc ? (
-                          <img
-                            src={imgSrc}
-                            alt={person.name}
-                            className="people-search-avatar"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        ) : (
-                          <div className="people-search-avatar-fallback">
-                            {person.name
-                              .split(' ')
-                              .map((n: string) => n[0])
-                              .slice(0, 2)
-                              .join('')
-                              .toUpperCase()}
-                          </div>
-                        )}
+                        <PosterImage
+                          src={imgSrc}
+                          alt={person.name}
+                          className="people-search-avatar"
+                          loading="lazy"
+                          decoding="async"
+                          fallback={
+                            <div className="people-search-avatar-fallback">
+                              {person.name
+                                .split(' ')
+                                .map((n: string) => n[0])
+                                .slice(0, 2)
+                                .join('')
+                                .toUpperCase()}
+                            </div>
+                          }
+                        />
                         <div>
                           <h4 className="people-search-name">
                             {person.name}

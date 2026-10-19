@@ -4,6 +4,7 @@ import { sendMessage } from '@/shared/messages';
 import { MessageType, PersonItem, MediaItem, LibraryItem, LibraryStatus } from '@/shared/types';
 import { DetailModal } from './DetailModal';
 import { IN_ARCHIVE_LABEL, CREATORS_LABEL } from '@/shared/productCopy';
+import { PosterImage } from './PosterImage';
 
 export interface FilmographyProps {
   person: PersonItem;
@@ -264,22 +265,21 @@ export function FilmographyView({ person: initialPerson, onBack, onUnfollow }: F
       {/* Person Bio Card */}
       <div className="filmography-bio-card">
         <div className="filmography-avatar-wrap">
-          {person.profileImageUrl ? (
-            <img
-              src={`https://image.tmdb.org/t/p/w185${person.profileImageUrl}`}
-              alt={person.name}
-              className="filmography-avatar-img"
-            />
-          ) : (
-            <div className="filmography-avatar-fallback">
-              {person.name
-                .split(' ')
-                .map((n) => n[0])
-                .slice(0, 2)
-                .join('')
-                .toUpperCase()}
-            </div>
-          )}
+          <PosterImage
+            src={person.profileImageUrl ? `https://image.tmdb.org/t/p/w185${person.profileImageUrl}` : undefined}
+            alt={person.name}
+            className="filmography-avatar-img"
+            fallback={
+              <div className="filmography-avatar-fallback">
+                {person.name
+                  .split(' ')
+                  .map((n) => n[0])
+                  .slice(0, 2)
+                  .join('')
+                  .toUpperCase()}
+              </div>
+            }
+          />
         </div>
 
         <div className="filmography-bio-main">
@@ -411,19 +411,18 @@ export function FilmographyView({ person: initialPerson, onBack, onUnfollow }: F
                     </div>
                   )}
 
-                  {item.posterUrl ? (
-                    <img
-                      src={item.posterUrl}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      className="filmography-poster-img"
-                    />
-                  ) : (
-                    <div className="filmography-poster-fallback">
-                      {item.canonicalTitle}
-                    </div>
-                  )}
+                  <PosterImage
+                    src={item.posterUrl}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="filmography-poster-img"
+                    fallback={
+                      <div className="filmography-poster-fallback">
+                        {item.canonicalTitle}
+                      </div>
+                    }
+                  />
 
                   {libItem && (
                     <div className={`filmography-status-dot ${libItem.status}`} />

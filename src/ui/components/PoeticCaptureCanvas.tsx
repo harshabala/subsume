@@ -18,6 +18,7 @@ import { INTENT_CHIP_LABELS } from './archive/constants';
 import { EmotionalSliders } from './EmotionalSliders';
 import { AuraVisualizer } from './AuraVisualizer';
 import '../styles/poetic-sanctuary.css';
+import { PosterImage } from './PosterImage';
 
 export interface PoeticCaptureCanvasProps {
   mediaId: string;
@@ -343,13 +344,12 @@ export function PoeticCaptureCanvas({ mediaId, onClose, onSave }: PoeticCaptureC
       aria-labelledby={headingId}
     >
       <div class="poetic-backdrop">
-        {media?.posterUrl && (
-          <img
-            src={media.posterUrl}
-            alt={media.canonicalTitle}
-            class={`poetic-poster ${isWriting ? 'writing' : ''}`}
-          />
-        )}
+        <PosterImage
+          src={media?.posterUrl}
+          alt={media?.canonicalTitle ?? ''}
+          class={`poetic-poster ${isWriting ? 'writing' : ''}`}
+          fallback={null}
+        />
       </div>
 
       <div class="poetic-content">

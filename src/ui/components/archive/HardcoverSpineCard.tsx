@@ -10,6 +10,7 @@ import {
 } from './constants';
 import { truncateForExcerpt } from '@/shared/textTruncate';
 import { hasEmotionalData, getEmotionalSpectrum, EMOTION_KEYS } from '@/shared/emotions';
+import { PosterImage } from '../PosterImage';
 
 export interface HardcoverSpineCardProps {
   library: LibraryItem;
@@ -82,22 +83,21 @@ export function HardcoverSpineCard({
         aria-label={`Open inscription for ${title}, ${statusLabel}`}
       >
         <div className="media-card-poster sanctuary-card-poster">
-          {media?.posterUrl ? (
-            <img
-              src={media.posterUrl}
-              alt=""
-              loading="lazy"
-              decoding="async"
-              className="sanctuary-poster-img"
-              aria-hidden="true"
-            />
-          ) : (
-            <div className="sanctuary-poster-placeholder">
-              <span className="sanctuary-placeholder-title">
-                {isBook ? 'No cover' : 'No frame'}
-              </span>
-            </div>
-          )}
+          <PosterImage
+            src={media.posterUrl}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="sanctuary-poster-img"
+            aria-hidden="true"
+            fallback={
+              <div className="sanctuary-poster-placeholder">
+                <span className="sanctuary-placeholder-title">
+                  {isBook ? 'No cover' : 'No frame'}
+                </span>
+              </div>
+            }
+          />
         </div>
         <div className="sanctuary-card-content">
           <h4 className="media-card-title">{media?.canonicalTitle || 'Untitled'}</h4>
