@@ -66,7 +66,7 @@ export function Recommendations({ onOpenCuratorSettings, onNavigate }: Recommend
     setLoading(true);
     setLedgerError(null);
     try {
-      const recResponse = await sendMessage<any, Recommendation[] | GroupedRecommendation[]>(
+      const recResponse = await sendMessage<unknown, Recommendation[] | GroupedRecommendation[]>(
         MessageType.GET_RECOMMENDATIONS,
         {}
       );
@@ -93,7 +93,7 @@ export function Recommendations({ onOpenCuratorSettings, onNavigate }: Recommend
           return;
         }
 
-        const mediaResponse = await sendMessage<any, MediaItem[]>(
+        const mediaResponse = await sendMessage<unknown, MediaItem[]>(
           MessageType.GET_MEDIA_ITEMS,
           { mediaIds }
         );
@@ -154,7 +154,7 @@ export function Recommendations({ onOpenCuratorSettings, onNavigate }: Recommend
           return;
         }
 
-        const mediaResponse = await sendMessage<any, MediaItem[]>(
+        const mediaResponse = await sendMessage<unknown, MediaItem[]>(
           MessageType.GET_MEDIA_ITEMS,
           { mediaIds }
         );
@@ -204,7 +204,7 @@ export function Recommendations({ onOpenCuratorSettings, onNavigate }: Recommend
 
   // ── Phase 4: Silently load watch profile on mount ──────────────────
   useEffect(() => {
-    sendMessage<any, { profile: WatchProfile }>(
+    sendMessage<unknown, { profile: WatchProfile }>(
       MessageType.BUILD_WATCH_PROFILE,
       {}
     ).then(res => {
@@ -269,7 +269,7 @@ export function Recommendations({ onOpenCuratorSettings, onNavigate }: Recommend
     setRecsLoading(true);
     setRecsError(null);
     try {
-      const res = await sendMessage<any, {
+      const res = await sendMessage<unknown, {
         flat: PersonalizedRecommendation[];
         grouped: RecommendationGroup[] | null;
         error?: string;

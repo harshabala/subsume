@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { DiscoveryFeedItem } from '@/shared/types';
 import { PosterImage } from './PosterImage';
 

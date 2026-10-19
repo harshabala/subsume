@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { useEffect, useState, useRef, useCallback } from 'preact/hooks';
 import { Home } from './pages/Home';
 import { Library } from './pages/Library';

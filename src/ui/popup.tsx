@@ -1,4 +1,4 @@
-import { render, h } from 'preact';
+import { render } from 'preact';
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { sendMessage } from '../shared/messages';
 import { MessageType, UserPreferences, MediaItem, SanctuaryIntent, LibraryStatus } from '../shared/types';
@@ -191,7 +191,7 @@ function Popup() {
     const timer = setTimeout(async () => {
       setSearchLoading(true);
       try {
-        const res = await sendMessage<any, MediaItem[]>(MessageType.DISCOVERY_SEARCH, {
+        const res = await sendMessage<unknown, MediaItem[]>(MessageType.DISCOVERY_SEARCH, {
           query: searchQuery,
         });
         if (res.success && res.data) {

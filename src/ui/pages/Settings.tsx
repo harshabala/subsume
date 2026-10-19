@@ -1,10 +1,8 @@
-import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import { sendMessage, CONNECT_GOOGLE_DRIVE_TIMEOUT_MS } from '@/shared/messages';
 import {
   MessageType,
   UserPreferences,
-  ImportLibraryData,
   ImportGoodreadsCsvResponse,
   ThemePreference,
   CinemaAtmosphere,

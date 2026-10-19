@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { useState, useEffect, useCallback } from 'preact/hooks';
 import { sendMessage } from '@/shared/messages';
 import { MessageType, MediaItem } from '@/shared/types';
@@ -40,7 +39,7 @@ export function NewReleases({ onOpenSettings }: NewReleasesProps = {}) {
       setLoadError(null);
       setNeedsTmdbKey(false);
       try {
-        const res = await sendMessage<any, MediaItem[]>(MessageType.GET_LATEST_RELEASES, {
+        const res = await sendMessage<unknown, MediaItem[]>(MessageType.GET_LATEST_RELEASES, {
           type: activeTab
         });
         if (!cancelled) {

@@ -153,7 +153,7 @@ async function fetchMediaDetails(tmdbId: string, mediaType: 'movie' | 'tv', apiK
   const year = isNaN(parsedYear) ? 0 : parsedYear;
   
   const genres = Array.isArray(data.genres)
-    ? data.genres.map((g: any) => g.name).filter(Boolean)
+    ? (data.genres as Array<{ name?: string }>).map((g) => g.name).filter((n): n is string => Boolean(n))
     : [];
 
   const item: MediaItem = {

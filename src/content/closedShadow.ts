@@ -13,8 +13,10 @@ const TEST_TRUSTED = Symbol('subsume.testTrusted');
 function vitestActive(): boolean {
   try {
     // Vite/Vitest injects import.meta.env.VITEST (false/undefined in production builds)
-    const meta = import.meta as ImportMeta & { env?: { VITEST?: boolean | string } };
-    if (meta.env?.VITEST) return true;
+    // Reference import.meta.env directly so the build replaces it statically
+    // (a bare import.meta is not valid in the IIFE content bundle).
+    const env = import.meta.env as { VITEST?: boolean | string } | undefined;
+    if (env?.VITEST) return true;
     // Fallback for runners that set process.env.VITEST without Vite env
     const g = globalThis as typeof globalThis & {
       process?: { env?: Record<string, string | undefined> };
