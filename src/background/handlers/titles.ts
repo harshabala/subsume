@@ -104,6 +104,12 @@ async function enrichWithFreeApis(item: MediaItem): Promise<MediaItem> {
   return enriched;
 }
 
+const TMDB_NUMERIC_ID = /^\d{1,10}$/;
+
+function isTmdbNumericId(id: unknown): id is string {
+  return typeof id === 'string' && TMDB_NUMERIC_ID.test(id);
+}
+
 function parseTitleYear(query: string): { title: string; year?: number } {
   const trimmed = query.trim();
   const match = trimmed.match(/^(.+?)\s*\((\d{4})\)\s*$/);
@@ -298,7 +304,12 @@ export const titleHandlers: MessageHandlerMap = {
 
     let media: MediaItem | null = null;
 
-    if (req.strategy === 'tmdb-cdn' && req.tmdbId && req.mediaType) {
+    if (req.strategy === 'tmdb-cdn') {
+      // tmdbId/mediaType come from page DOM: only a numeric id and movie|tv may
+      // reach a TMDb URL signed with the user's key (no path segments).
+      if (!isTmdbNumericId(req.tmdbId) || (req.mediaType !== 'movie' && req.mediaType !== 'tv')) {
+        return { match: null };
+      }
       const mediaId = `tmdb_${req.mediaType}_${req.tmdbId}`;
       const cached = await getMediaItem(mediaId);
       if (cached) {
