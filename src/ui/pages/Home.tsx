@@ -38,6 +38,7 @@ import {
 import { incrementWeeklySelectionOpens } from '@/shared/activationMetrics';
 import { shouldShowDiscoveryFirstInscriptionBanner } from '../components/FirstInscriptionGate';
 import type { JoinedItem } from '../components/archive/types';
+import { PosterImage } from '../components/PosterImage';
 
 interface DigestPick extends WeeklyDigestItem {
   media?: MediaItem;
@@ -320,13 +321,16 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
       <div className="lobby-container">
         <div className="hero-poster-column">
           <div className="hero-poster-frame">
-            {heroPoster ? (
-              <img src={heroPoster} alt={heroTitle} className="hero-poster-img" />
-            ) : (
-              <div className="hero-poster-placeholder" role="img" aria-label={heroTitle}>
-                <span className="hero-poster-placeholder-label">{heroTitle}</span>
-              </div>
-            )}
+            <PosterImage
+              src={heroPoster}
+              alt={heroTitle}
+              className="hero-poster-img"
+              fallback={
+                <div className="hero-poster-placeholder" role="img" aria-label={heroTitle}>
+                  <span className="hero-poster-placeholder-label">{heroTitle}</span>
+                </div>
+              }
+            />
             <div className="catalogue-plaque-card">
               <div className="plaque-header">
                 {heroRating && <span className="plaque-rating">{heroRating}</span>}

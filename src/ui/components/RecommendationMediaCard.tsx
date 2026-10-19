@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { MediaItem } from '@/shared/types';
 import { mediumLabel } from '@/shared/productCopy';
 import '../styles/recommendations.css';
+import { PosterImage } from './PosterImage';
 
 interface RecommendationMediaCardProps {
   media: MediaItem;
@@ -29,11 +30,13 @@ export function RecommendationMediaCard({
       >
          <div className="recommendation-media-card-content">
            <div className="media-card-poster recommendation-media-card-poster-wrapper">
-             {media.posterUrl ? (
-               <img src={media.posterUrl} alt={media.canonicalTitle} loading="lazy" decoding="async" />
-             ) : (
-               <div className="empty-poster recommendation-media-card-poster-empty">No Image</div>
-             )}
+             <PosterImage
+               src={media.posterUrl}
+               alt={media.canonicalTitle}
+               loading="lazy"
+               decoding="async"
+               fallback={<div className="empty-poster recommendation-media-card-poster-empty">No Image</div>}
+             />
            </div>
            <div>
              <h4 className="media-card-title">{media.canonicalTitle}</h4>

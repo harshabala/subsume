@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { DiscoveryFeedItem } from '@/shared/types';
+import { PosterImage } from './PosterImage';
 
 function sourceLabel(source: DiscoveryFeedItem['source']): string {
   switch (source) {
@@ -33,16 +34,13 @@ export function DiscoveryFeedCard({ item, index = 0, onSelect }: DiscoveryFeedCa
       aria-label={`${item.title} (${item.year || 'year unknown'}). ${item.reason}${ratingSuffix}`}
     >
       <div className="discovery-feed-card-poster" aria-hidden="true">
-        {item.posterUrl ? (
-          <img
-            src={item.posterUrl}
-            alt=""
-            loading="lazy"
-            decoding="async"
-          />
-        ) : (
-          <div className="discovery-feed-card-placeholder">{item.type === 'tv' ? 'TV' : 'Film'}</div>
-        )}
+        <PosterImage
+          src={item.posterUrl}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fallback={<div className="discovery-feed-card-placeholder">{item.type === 'tv' ? 'TV' : 'Film'}</div>}
+        />
       </div>
       <div className="discovery-feed-card-body">
         <div className="discovery-feed-card-top">

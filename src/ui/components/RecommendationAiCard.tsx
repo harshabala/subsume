@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { PersonalizedRecommendation, MediaItem } from '@/shared/types';
 import { mediumLabel, ADD_TO_ARCHIVE_LABEL, IN_ARCHIVE_LABEL } from '@/shared/productCopy';
 import '../styles/recommendations.css';
+import { PosterImage } from './PosterImage';
 
 interface RecommendationAiCardProps {
   rec: PersonalizedRecommendation;
@@ -40,11 +41,15 @@ export function RecommendationAiCard({
 
   const posterBlock = (
     <div className="recommendation-ai-card-poster-wrapper">
-      {rec.posterUrl ? (
-        <img src={rec.posterUrl} alt="" className="recommendation-ai-card-poster-img" loading="lazy" decoding="async" aria-hidden="true" />
-      ) : (
-        <div className="recommendation-ai-card-poster-empty">{rec.title}</div>
-      )}
+      <PosterImage
+        src={rec.posterUrl}
+        alt=""
+        className="recommendation-ai-card-poster-img"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+        fallback={<div className="recommendation-ai-card-poster-empty">{rec.title}</div>}
+      />
       {tmdbRating && <div className="recommendation-ai-card-rating">SCORE {tmdbRating.score.toFixed(1)}</div>}
     </div>
   );

@@ -32,6 +32,7 @@ import './styles/popup.css';
 import './styles/emotional-components.css';
 import './components/inline-notice.css';
 import type { JoinedItem } from './components/archive/types';
+import { PosterImage } from './components/PosterImage';
 
 function openSanctuary(page?: string) {
   const url = chrome.runtime.getURL(`ui/index.html${page ? `?page=${page}` : ''}`);
@@ -456,11 +457,14 @@ function Popup() {
                   className="popup-recent-item"
                   onClick={() => openSanctuary('library')}
                 >
-                  {item.media.posterUrl ? (
-                    <img className="popup-recent-poster" src={item.media.posterUrl} alt="" loading="lazy" decoding="async" />
-                  ) : (
-                    <div className="popup-recent-poster" />
-                  )}
+                  <PosterImage
+                    className="popup-recent-poster"
+                    src={item.media.posterUrl}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    fallback={<div className="popup-recent-poster" />}
+                  />
                   <div className="popup-recent-meta">
                     <div className="popup-recent-title">{item.media.canonicalTitle}</div>
                     <div className="popup-recent-sub">
@@ -604,13 +608,15 @@ function Popup() {
           {selectedMovie && (
             <div className="selected-movie-preview">
               <div className="selected-movie-preview-poster">
-                {selectedMovie.posterUrl ? (
-                  <img src={selectedMovie.posterUrl} alt={selectedMovie.canonicalTitle} />
-                ) : (
-                  <svg width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                  </svg>
-                )}
+                <PosterImage
+                  src={selectedMovie.posterUrl}
+                  alt={selectedMovie.canonicalTitle}
+                  fallback={
+                    <svg width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    </svg>
+                  }
+                />
               </div>
               <div className="selected-movie-preview-details">
                 <h4>{selectedMovie.canonicalTitle}</h4>

@@ -23,6 +23,7 @@ import {
   formatEditionListLabel,
   sortEditionsPreferredFirst,
 } from '@/shared/bookEditions';
+import { PosterImage } from './PosterImage';
 
 type RelatedWorkRow = {
   relation: { id: string; relation: WorkRelationType; fromWorkId: string; toWorkId: string };
@@ -675,16 +676,21 @@ export function DetailModal({
 
         <div className="sanctuary-detail-header">
           <div className="sanctuary-detail-poster-wrap">
-            {media.posterUrl ? (
-              <img src={media.posterUrl} alt={media.canonicalTitle} className="sanctuary-detail-poster-img" loading="lazy" decoding="async" />
-            ) : (
-              <div className="sanctuary-detail-poster-placeholder">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
-                  <rect x="2" y="3" width="20" height="18" rx="2" />
-                  <path d="M7 3v18M17 3v18M2 9h5M17 9h5M2 15h5M17 15h5" />
-                </svg>
-              </div>
-            )}
+            <PosterImage
+              src={media.posterUrl}
+              alt={media.canonicalTitle}
+              className="sanctuary-detail-poster-img"
+              loading="lazy"
+              decoding="async"
+              fallback={
+                <div className="sanctuary-detail-poster-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="18" rx="2" />
+                    <path d="M7 3v18M17 3v18M2 9h5M17 9h5M2 15h5M17 15h5" />
+                  </svg>
+                </div>
+              }
+            />
           </div>
 
           <div className="sanctuary-detail-main">

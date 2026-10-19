@@ -1,6 +1,7 @@
 import { h, ComponentChildren } from 'preact';
 import { MediaItem } from '@/shared/types';
 import { mediumLabel, ADD_TO_ARCHIVE_LABEL, IN_ARCHIVE_LABEL } from '@/shared/productCopy';
+import { PosterImage } from './PosterImage';
 
 export interface SanctuaryMediaCardProps {
   media: MediaItem;
@@ -38,13 +39,19 @@ export function SanctuaryMediaCard({
 
   const poster = (
     <div className="sanctuary-card-poster">
-      {media.posterUrl ? (
-        <img src={media.posterUrl} alt="" className="sanctuary-poster-img" loading="lazy" decoding="async" aria-hidden="true" />
-      ) : (
-        <div className="sanctuary-poster-placeholder">
-          <span className="sanctuary-placeholder-title">{displayTitle}</span>
-        </div>
-      )}
+      <PosterImage
+        src={media.posterUrl}
+        alt=""
+        className="sanctuary-poster-img"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+        fallback={
+          <div className="sanctuary-poster-placeholder">
+            <span className="sanctuary-placeholder-title">{displayTitle}</span>
+          </div>
+        }
+      />
     </div>
   );
 
