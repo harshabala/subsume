@@ -745,7 +745,7 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                           }
                           meta={
                             <div className="sanctuary-card-meta">
-                              <span>{pick.year}</span>
+                              {pick.year ? <span>{pick.year}</span> : null}
                               {rating && <span>{rating}</span>}
                             </div>
                           }
@@ -764,7 +764,7 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                               <PlatformChips availability={availability} max={3} compact />
                             </div>
                             <div className="sanctuary-card-meta">
-                              <span>{pick.year}</span>
+                              {pick.year ? <span>{pick.year}</span> : null}
                               {rating && <span>{rating}</span>}
                             </div>
                           </div>

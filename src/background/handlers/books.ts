@@ -181,6 +181,7 @@ export const bookHandlers: MessageHandlerMap = {
           media.authors = resolved.work.bookDetails?.authors;
           media.posterUrl = resolved.edition.coverUrl || media.posterUrl;
           media.preferredEditionId = resolved.edition.id;
+          if (resolved.edition.pageCount) media.pageCount = resolved.edition.pageCount;
           await putMediaItem(media);
           const existing = await getLibraryItem(media.id);
           return {

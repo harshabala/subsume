@@ -40,7 +40,7 @@ export function RecommendationMediaCard({
            <div>
              <h4 className="media-card-title">{media.canonicalTitle}</h4>
              <div className="media-card-meta">
-               <span>{media.year}</span>
+               {media.year ? <span>{media.year}</span> : null}
                <span className="recommendation-type-badge-inline">{typeLabel}</span>
                {tmdbRating && (
                   <span className="media-card-rating">
