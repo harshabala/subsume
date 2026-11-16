@@ -85,3 +85,15 @@ Other measured facts:
 - Approve or change `docs/audit/expected-fields.md` (in particular: series creator/size, whether the library card should show a creator).
 - Whether the title set is right, and whether keyed providers (TMDb, Google Books) should be added to the audit.
 - Whether a book with an unknown year should be saved (shown as a designed gap) rather than rejected.
+
+## After the first fixes (task 2, same audit re-run)
+
+Commit `5bb22e8`: the ISBN-resolved edition's page count now reaches the record, and unknown years are no longer printed as "0" on Home weekly cards and Recommendation cards. Tests: `tests/auditFixes.test.tsx`.
+
+| Measure | Before | After |
+| :-- | :-- | :-- |
+| Stats reading panel, 23 watched titles | 6 finished, no pages total | 6 finished, "435 pages among them" |
+| Library detail, book `size:not-stored` | 10 of 10 | 9 of 10 (one ISBN-resolved book now carries pages) |
+| Book completeness on every page | 0% | still 0%: every page still lacks author, description or genres |
+
+Only one saved book arrives by ISBN, so the gain is small; search-saved books still have no page count (defect 2, Open Library `fields` parameter), and all other defects above are design or data-model decisions left for the owner. Not fixed: defect 1 (year rules), 3, 4, 5 (hero), 6, 7.
