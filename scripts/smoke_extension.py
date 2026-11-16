@@ -28,6 +28,9 @@ import time
 
 from playwright.sync_api import sync_playwright
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from browser_harness import launch_extension_context, wait_service_worker  # noqa: E402
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DIST = os.path.join(ROOT, "dist")
 FIXTURES = os.path.join(ROOT, "tests", "fixtures", "detection")
@@ -76,19 +79,11 @@ def main() -> int:
     t0 = time.time()
     try:
         with sync_playwright() as p:
-            launch = dict(
-                headless=True,
-                viewport={"width": 1280, "height": 900},
-                args=[f"--disable-extensions-except={DIST}", f"--load-extension={DIST}", "--headless=new"],
-            )
-            if os.environ.get("CHROME_PATH"):
-                launch["executable_path"] = os.environ["CHROME_PATH"]
-            ctx = p.chromium.launch_persistent_context(profile, **launch)
+            ctx = launch_extension_context(p, profile)
             ctx.route("**/*", route)
 
-            sw = ctx.service_workers[0] if ctx.service_workers else ctx.wait_for_event("serviceworker", timeout=10000)
+            sw, ext = wait_service_worker(ctx)
             sw.on("console", lambda m: sw_errors.append(m.text) if m.type == "error" else None)
-            ext = sw.url.split("/")[2]
             base = f"chrome-extension://{ext}/ui"
 
             # 1. Onboarding -> first saved reflection

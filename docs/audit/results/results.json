@@ -1,0 +1,2778 @@
+{
+ "generatedAt": "2026-11-16 09:55:38",
+ "pages": {
+  "onboarding": {
+   "all": {
+    "ready_ms": 192,
+    "bad_text": [],
+    "chars": 687,
+    "unstubbed_requests": 6
+   }
+  },
+  "library": {
+   "all": {
+    "cards": 35,
+    "ready_ms": 287,
+    "bad_text": [],
+    "chars": 3270
+   }
+  },
+  "home": {
+   "all": {
+    "cards": 14,
+    "shown_by_medium": {
+     "movie": 5,
+     "tv": 1,
+     "book": 6
+    },
+    "hero": "NO. 001\nAmerica's Funniest People\n\nAdd a film or book to your journal\n\n\"Series premiere: America's Funniest People debuts Mon, Nov 16\"\nREFLECT\nARCHIVE",
+    "ready_ms": 164,
+    "bad_text": [],
+    "chars": 1958
+   }
+  },
+  "recommendations": {
+   "all": {
+    "cards": 10,
+    "shown_by_medium": {
+     "movie": 6,
+     "tv": 2,
+     "book": 2
+    },
+    "hero": null,
+    "ready_ms": 132,
+    "bad_text": [],
+    "chars": 1346
+   }
+  },
+  "stats": {
+   "all": {
+    "ready_ms": 109,
+    "bad_text": [],
+    "chars": 661
+   }
+  },
+  "people": {
+   "all": {
+    "cards": [
+     {
+      "title": "Arundhati Roy",
+      "text": "AR\nArundhati Roy\nAUTHOR\n50 works",
+      "imgs": [],
+      "placeholder": false
+     },
+     {
+      "title": "Kalki",
+      "text": "K\nKalki\nAUTHOR\n50 works",
+      "imgs": [],
+      "placeholder": false
+     },
+     {
+      "title": "Mohanlal",
+      "text": "Mohanlal\nACTOR\n5 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/qQLZgSwskFW7VxSVfyZMV933jUU.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Cheran",
+      "text": "Cheran\nDIRECTOR\n1 archive record",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/nCZmkDoFuBqKs3IbkXJ7qmRcHTW.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Mammootty",
+      "text": "Mammootty\nACTOR\n2 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/c5ewp9XtDIOwK5QWhwA7TD0GzqO.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Gautham Vasudev Menon",
+      "text": "Gautham Vasudev Menon\nDIRECTOR\n2 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/qOFycWPpr3Hi4kVXKWnTTKCAnGk.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Kamal Haasan",
+      "text": "Kamal Haasan\nACTOR\n4 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/17zscZgz4wOlGDd3Gziw4YbI3G.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Mani Ratnam",
+      "text": "Mani Ratnam\nDIRECTOR\n3 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/iXRdku91Hp8nHSL3uWxnInxN6TH.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Tom Cruise",
+      "text": "Tom Cruise\nACTOR\n2 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     },
+     {
+      "title": "Satyajit Ray",
+      "text": "Satyajit Ray\nDIRECTOR\n2 archive records",
+      "imgs": [
+       {
+        "src": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/qP5mjuc3dL8n9c1zeY4W6L2w38L.jpg",
+        "ok": true
+       }
+      ],
+      "placeholder": false
+     }
+    ],
+    "ready_ms": 110,
+    "bad_text": [],
+    "chars": 601
+   }
+  },
+  "alerts": {
+   "all": {
+    "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nALERTS\nPremiere Alerts\n\nSet a programme of genres, platforms, keywords, or book authors. We will notify you when new screen releases or matching books appear.\n\nCREATE ALERT\nAudit book alert\n\nBooks · \"Intermezzo\" · author: \"Rooney\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit series alert\n\nSeries · \"dark\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit film alert\n\nFilm · \"night\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE",
+    "ready_ms": 64,
+    "bad_text": [],
+    "chars": 486
+   }
+  },
+  "new-releases": {
+   "all": {
+    "ready_ms": 116,
+    "bad_text": [],
+    "chars": 436,
+    "unstubbed_requests": 0,
+    "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nCATALOGUE NO. 03 · HISTORIC THEATRE PROGRAMME\nNow Showing\n\nArchival calendar of trending acquisitions and contemporary releases across global auditoriums.\n\nFilms\nSeries\nOPTIONAL CATALOGUE KEY\nNow Showing needs a TMDb key\n\nNew film and series releases come from TMDb. Add a free TMDb key in Settings to see them. Your journal works without it.\n\nOPEN SETTINGS"
+   }
+  },
+  "settings": {
+   "all": {
+    "ready_ms": 112,
+    "bad_text": [],
+    "chars": 785,
+    "unstubbed_requests": 3,
+    "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nSETTINGS\nSettings\n\nChoose a category below. Each section explains what it controls, with no jargon without a plain description.\n\nLook & atmosphere\nTaste & platforms\nDiscovery sources\nAPI keys\nAI curator\nBrowsing & overlays\nBackup & sync\nDiagnostics\n\nTheme (dark, light, or system) and colour atmosphere presets. Changes preview immediately; use Save settings at the bottom to keep them.\n\nLook & atmosphere\nTHEME\nCinema Black\nWhite Canvas\nSystem\n\nPreview updates immediately. Save settings to keep your choice.\n\nCOLOR ACCE"
+   }
+  }
+ },
+ "perTitle": {
+  "seed_nayakan": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 627
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7608
+   }
+  },
+  "seed_pather_panchali": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 229
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7687
+   }
+  },
+  "seed_charulata": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 199
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7654
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "seed_manichitrathazhu": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 228
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7579
+   }
+  },
+  "seed_kireedam": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 187
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7607
+   }
+  },
+  "seed_spadikam": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 222
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7583
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "seed_drishyam_ml": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 213
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7535
+   }
+  },
+  "seed_iruvar": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 212
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7585
+   }
+  },
+  "seed_vikram": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 209
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7567
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "seed_96": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 208
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7605
+   }
+  },
+  "seed_meiyazhagan": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 220
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7607
+   }
+  },
+  "seed_parasite": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 206
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7670
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "seed_portrait_lady_fire": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 215
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7576
+   }
+  },
+  "seed_everything_everywhere": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 212
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7598
+   }
+  },
+  "seed_free_solo": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 218
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7570
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "seed_my_octopus_teacher": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "size:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 207
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7590
+   }
+  },
+  "synth_film_no_poster": {
+   "library": {
+    "saved": false,
+    "note": "save failed: Invalid media item payload"
+   },
+   "search": {
+    "saved": false
+   }
+  },
+  "synth_film_dead_poster": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:stored-not-shown",
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "cover:stored-not-shown",
+     "creator:not-stored",
+     "size:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 219
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:stored-not-shown",
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7573
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [
+     "cover:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "tv_sacred_games": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 210
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7574
+   }
+  },
+  "tv_dark": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 209
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7566
+   }
+  },
+  "tv_money_heist": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 211
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7595
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "tv_chernobyl": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 216
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7592
+   }
+  },
+  "tv_twin_peaks": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 207
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7582
+   }
+  },
+  "tv_severance": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 221
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7569
+   },
+   "home": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "tv_panchayat": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 214
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7598
+   }
+  },
+  "tv_fleabag": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 201
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7567
+   }
+  },
+  "book_the_great_gatsby": {
+   "library": {
+    "saved": false,
+    "note": "save failed: Invalid media item payload"
+   },
+   "search": {
+    "saved": false
+   }
+  },
+  "book_pride_and_prejudice": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "creator:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 243
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown",
+     "creator:not-stored",
+     "description:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 104
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_norwegian_wood": {
+   "library": {
+    "saved": false,
+    "note": "save failed: Invalid media item payload"
+   },
+   "search": {
+    "saved": false
+   }
+  },
+  "book_cien_años_de_soledad": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 186
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 104
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_ponniyin_selvan": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 215
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 104
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_the_god_of_small_things": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 215
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 105
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_godan_premchand": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 221
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 12,
+    "ready_ms": 105
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_don_quixote": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 200
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 105
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_the_odyssey_homer": {
+   "library": {
+    "saved": false,
+    "note": "save failed: Invalid media item payload"
+   },
+   "search": {
+    "saved": false
+   }
+  },
+  "book_intermezzo_sally_rooney": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 214
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 2,
+    "ready_ms": 104
+   }
+  },
+  "book_kokila_ramanlal_desai": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 167
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 2,
+    "ready_ms": 105
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_midnights_children": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 197
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 105
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   }
+  },
+  "book_chemmeen": {
+   "library": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 211
+   },
+   "search": {
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 19,
+    "ready_ms": 105
+   }
+  },
+  "book_zzqxv_unmatched_page_candidate": {
+   "library": {
+    "saved": false,
+    "note": "resolver returned no match"
+   },
+   "search": {
+    "saved": false
+   }
+  }
+ },
+ "ingest": {
+  "seed_nayakan": {
+   "ok": true,
+   "mediaId": "seed_nayakan",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_pather_panchali": {
+   "ok": true,
+   "mediaId": "seed_pather_panchali",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_charulata": {
+   "ok": true,
+   "mediaId": "seed_charulata",
+   "status": "to-watch",
+   "note": ""
+  },
+  "seed_manichitrathazhu": {
+   "ok": true,
+   "mediaId": "seed_manichitrathazhu",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_kireedam": {
+   "ok": true,
+   "mediaId": "seed_kireedam",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_spadikam": {
+   "ok": true,
+   "mediaId": "seed_spadikam",
+   "status": "to-watch",
+   "note": ""
+  },
+  "seed_drishyam_ml": {
+   "ok": true,
+   "mediaId": "seed_drishyam_ml",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_iruvar": {
+   "ok": true,
+   "mediaId": "seed_iruvar",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_vikram": {
+   "ok": true,
+   "mediaId": "seed_vikram",
+   "status": "to-watch",
+   "note": ""
+  },
+  "seed_96": {
+   "ok": true,
+   "mediaId": "seed_96",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_meiyazhagan": {
+   "ok": true,
+   "mediaId": "seed_meiyazhagan",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_parasite": {
+   "ok": true,
+   "mediaId": "seed_parasite",
+   "status": "to-watch",
+   "note": ""
+  },
+  "seed_portrait_lady_fire": {
+   "ok": true,
+   "mediaId": "seed_portrait_lady_fire",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_everything_everywhere": {
+   "ok": true,
+   "mediaId": "seed_everything_everywhere",
+   "status": "watched",
+   "note": ""
+  },
+  "seed_free_solo": {
+   "ok": true,
+   "mediaId": "seed_free_solo",
+   "status": "to-watch",
+   "note": ""
+  },
+  "seed_my_octopus_teacher": {
+   "ok": true,
+   "mediaId": "seed_my_octopus_teacher",
+   "status": "watched",
+   "note": ""
+  },
+  "synth_film_no_poster": {
+   "ok": false,
+   "note": "save failed: Invalid media item payload"
+  },
+  "synth_film_dead_poster": {
+   "ok": true,
+   "mediaId": "seed_audit_film_dead_poster",
+   "status": "to-watch",
+   "note": ""
+  },
+  "tv_sacred_games": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_18197",
+   "status": "watched",
+   "note": ""
+  },
+  "tv_dark": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_17861",
+   "status": "watched",
+   "note": ""
+  },
+  "tv_money_heist": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_27436",
+   "status": "to-watch",
+   "note": ""
+  },
+  "tv_chernobyl": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_30770",
+   "status": "watched",
+   "note": ""
+  },
+  "tv_twin_peaks": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_156",
+   "status": "watched",
+   "note": ""
+  },
+  "tv_severance": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_44933",
+   "status": "to-watch",
+   "note": ""
+  },
+  "tv_panchayat": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_47014",
+   "status": "watched",
+   "note": ""
+  },
+  "tv_fleabag": {
+   "ok": true,
+   "mediaId": "tvmaze_tv_16149",
+   "status": "watched",
+   "note": ""
+  },
+  "book_the_great_gatsby": {
+   "ok": false,
+   "note": "save failed: Invalid media item payload"
+  },
+  "book_pride_and_prejudice": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL66554W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_norwegian_wood": {
+   "ok": false,
+   "note": "save failed: Invalid media item payload"
+  },
+  "book_cien_años_de_soledad": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL274505W",
+   "status": "to-watch",
+   "note": ""
+  },
+  "book_ponniyin_selvan": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL15677384W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_the_god_of_small_things": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL1052133W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_godan_premchand": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL26112603W",
+   "status": "to-watch",
+   "note": ""
+  },
+  "book_don_quixote": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL2714378W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_the_odyssey_homer": {
+   "ok": false,
+   "note": "save failed: Invalid media item payload"
+  },
+  "book_intermezzo_sally_rooney": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL37949460W",
+   "status": "to-watch",
+   "note": ""
+  },
+  "book_kokila_ramanlal_desai": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL10619074W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_midnights_children": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL457179W",
+   "status": "watched",
+   "note": ""
+  },
+  "book_chemmeen": {
+   "ok": true,
+   "mediaId": "openlibrary_work_OL8114771W",
+   "status": "to-watch",
+   "note": ""
+  },
+  "book_zzqxv_unmatched_page_candidate": {
+   "ok": false,
+   "note": "resolver returned no match"
+  }
+ },
+ "people_log": [
+  "True",
+  "kalki:True",
+  "arundhati roy:True"
+ ],
+ "stats": {
+  "meta": [
+   "23 experienced",
+   "0 hrs on screen",
+   "6 books",
+   "7.0 avg rating"
+  ],
+  "book_panel": [
+   "6 finished",
+   "0 currently reading",
+   "0 did not finish"
+  ],
+  "genres": [
+   "Drama 12 titles",
+   "Crime 4 titles",
+   "Comedy 3 titles",
+   "History 3 titles",
+   "Action 3 titles"
+  ],
+  "watched": 23
+ },
+ "page_errors": [],
+ "console_errors": [
+  "ui: Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "ui: Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "ui: Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "ui: Failed to load resource: the server responded with a status of 404 (Not Found)"
+ ],
+ "unstubbed_requests": [
+  "https://api.trakt.tv/movies/trending?limit=1",
+  "https://api.trakt.tv/movies/trending?limit=10",
+  "https://api.trakt.tv/search/movie?query=96&limit=10",
+  "https://api.trakt.tv/search/movie?query=Audit%20Fixture%20Film%20With%20Dead%20Poster&limit=10",
+  "https://api.trakt.tv/search/movie?query=Charulata&limit=10",
+  "https://api.trakt.tv/search/movie?query=Drishyam&limit=10",
+  "https://api.trakt.tv/search/movie?query=Everything%20Everywhere%20All%20at%20Once&limit=10",
+  "https://api.trakt.tv/search/movie?query=Free%20Solo&limit=10",
+  "https://api.trakt.tv/search/movie?query=Iruvar&limit=10",
+  "https://api.trakt.tv/search/movie?query=Kireedam&limit=10",
+  "https://api.trakt.tv/search/movie?query=Manichitrathazhu&limit=10",
+  "https://api.trakt.tv/search/movie?query=Meiyazhagan&limit=10",
+  "https://api.trakt.tv/search/movie?query=My%20Octopus%20Teacher&limit=10",
+  "https://api.trakt.tv/search/movie?query=Nayakan&limit=10",
+  "https://api.trakt.tv/search/movie?query=Parasite&limit=10",
+  "https://api.trakt.tv/search/movie?query=Pather%20Panchali&limit=10",
+  "https://api.trakt.tv/search/movie?query=Portrait%20of%20a%20Lady%20on%20Fire&limit=10",
+  "https://api.trakt.tv/search/movie?query=Spadikam&limit=10",
+  "https://api.trakt.tv/search/movie?query=Vikram&limit=10",
+  "https://api.trakt.tv/search/show?query=Chernobyl&limit=10",
+  "https://api.trakt.tv/search/show?query=Dark&limit=10",
+  "https://api.trakt.tv/search/show?query=Fleabag&limit=10",
+  "https://api.trakt.tv/search/show?query=La%20Casa%20de%20Papel&limit=10",
+  "https://api.trakt.tv/search/show?query=Panchayat&limit=10",
+  "https://api.trakt.tv/search/show?query=Sacred%20Games&limit=10",
+  "https://api.trakt.tv/search/show?query=Severance&limit=10",
+  "https://api.trakt.tv/search/show?query=Twin%20Peaks&limit=10",
+  "https://api.trakt.tv/search/show?query=chernobyl&limit=10",
+  "https://api.trakt.tv/search/show?query=dark&limit=10",
+  "https://api.trakt.tv/search/show?query=fleabag&limit=10",
+  "https://api.trakt.tv/search/show?query=money%20heist&limit=10",
+  "https://api.trakt.tv/search/show?query=panchayat&limit=10",
+  "https://api.trakt.tv/search/show?query=sacred%20games&limit=10",
+  "https://api.trakt.tv/search/show?query=severance&limit=10",
+  "https://api.trakt.tv/search/show?query=twin%20peaks&limit=10",
+  "https://api.trakt.tv/shows/trending?limit=10",
+  "https://api.tvmaze.com/schedule/web?country=US",
+  "https://api.tvmaze.com/search/shows?q=96",
+  "https://api.tvmaze.com/search/shows?q=Audit%20Fixture%20Film%20With%20Dead%20Poster",
+  "https://api.tvmaze.com/search/shows?q=Charulata",
+  "https://api.tvmaze.com/search/shows?q=Chernobyl",
+  "https://api.tvmaze.com/search/shows?q=Dark",
+  "https://api.tvmaze.com/search/shows?q=Drishyam",
+  "https://api.tvmaze.com/search/shows?q=Everything%20Everywhere%20All%20at%20Once",
+  "https://api.tvmaze.com/search/shows?q=Fleabag",
+  "https://api.tvmaze.com/search/shows?q=Free%20Solo",
+  "https://api.tvmaze.com/search/shows?q=Iruvar",
+  "https://api.tvmaze.com/search/shows?q=Kireedam",
+  "https://api.tvmaze.com/search/shows?q=La%20Casa%20de%20Papel",
+  "https://api.tvmaze.com/search/shows?q=Manichitrathazhu",
+  "https://api.tvmaze.com/search/shows?q=Meiyazhagan",
+  "https://api.tvmaze.com/search/shows?q=My%20Octopus%20Teacher",
+  "https://api.tvmaze.com/search/shows?q=Nayakan",
+  "https://api.tvmaze.com/search/shows?q=Panchayat",
+  "https://api.tvmaze.com/search/shows?q=Parasite",
+  "https://api.tvmaze.com/search/shows?q=Pather%20Panchali",
+  "https://api.tvmaze.com/search/shows?q=Portrait%20of%20a%20Lady%20on%20Fire",
+  "https://api.tvmaze.com/search/shows?q=Sacred%20Games",
+  "https://api.tvmaze.com/search/shows?q=Severance",
+  "https://api.tvmaze.com/search/shows?q=Spadikam",
+  "https://api.tvmaze.com/search/shows?q=Twin%20Peaks",
+  "https://api.tvmaze.com/search/shows?q=Vikram",
+  "https://api.tvmaze.com/shows/1",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People_(2026_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People_(TV_series)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit_(2026_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit_(TV_series)",
+  "https://openlibrary.org/search.json?q=Arundhati%20Roy&limit=8",
+  "https://openlibrary.org/search.json?q=Kalki%20Kirushnamoorthy&limit=8",
+  "https://openlibrary.org/search.json?q=Kathy%20Acker&limit=8",
+  "https://openlibrary.org/search.json?q=Ramanlal%20Vasantlal%20Desai&limit=8",
+  "https://openlibrary.org/search.json?q=Salman%20Rushdie&limit=8",
+  "https://openlibrary.org/works/OL2714378W/editions.json?limit=25",
+  "https://query.wikidata.org/sparql?query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP31%20wd%3AQ11424%20%7D%20LIMIT%201&format=json"
+ ],
+ "images_failed_requests": [
+  "https://image.tmdb.org/t/p/w500/DEADIMG.jpg"
+ ],
+ "stored_records": {
+  "openlibrary_work_OL8114771W": {
+   "id": "openlibrary_work_OL8114771W",
+   "canonicalTitle": "Chemmeen",
+   "type": "book",
+   "year": 1962,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL8114771W",
+     "url": "https://openlibrary.org/works/OL8114771W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/15246165-L.jpg",
+   "authors": [
+    "Thakazhi Sivasankara Pillai"
+   ],
+   "languages": [
+    "mal",
+    "eng"
+   ],
+   "editionCount": 3
+  },
+  "openlibrary_work_OL457179W": {
+   "id": "openlibrary_work_OL457179W",
+   "canonicalTitle": "Midnight's Children",
+   "type": "book",
+   "year": 1981,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL457179W",
+     "url": "https://openlibrary.org/works/OL457179W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/8346713-L.jpg",
+   "authors": [
+    "Salman Rushdie"
+   ],
+   "languages": [
+    "ger",
+    "hin",
+    "per",
+    "fin",
+    "pol",
+    "chi",
+    "spa",
+    "rus",
+    "gre",
+    "heb",
+    "fre",
+    "kor",
+    "ita",
+    "dut",
+    "cat",
+    "vie",
+    "eng"
+   ],
+   "editionCount": 86
+  },
+  "openlibrary_work_OL10619074W": {
+   "id": "openlibrary_work_OL10619074W",
+   "canonicalTitle": "Kokila",
+   "type": "book",
+   "year": 1992,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL10619074W",
+     "url": "https://openlibrary.org/works/OL10619074W"
+    }
+   ],
+   "posterUrl": "",
+   "authors": [
+    "Ramanlal Vasantlal Desai"
+   ],
+   "languages": [
+    "guj"
+   ],
+   "editionCount": 1
+  },
+  "openlibrary_work_OL37949460W": {
+   "id": "openlibrary_work_OL37949460W",
+   "canonicalTitle": "Intermezzo",
+   "type": "book",
+   "year": 2024,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL37949460W",
+     "url": "https://openlibrary.org/works/OL37949460W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/15248784-L.jpg",
+   "authors": [
+    "Sally Rooney"
+   ],
+   "languages": [
+    "spa",
+    "eng"
+   ],
+   "editionCount": 8
+  },
+  "openlibrary_work_OL2714378W": {
+   "id": "openlibrary_work_OL2714378W",
+   "canonicalTitle": "Don Quixote",
+   "type": "book",
+   "year": 1986,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL2714378W",
+     "url": "https://openlibrary.org/works/OL2714378W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/568626-L.jpg",
+   "subtitle": "A Novel (Acker, Kathy)",
+   "authors": [
+    "Kathy Acker"
+   ],
+   "languages": [
+    "fre",
+    "eng"
+   ],
+   "editionCount": 8
+  },
+  "openlibrary_work_OL26112603W": {
+   "id": "openlibrary_work_OL26112603W",
+   "canonicalTitle": "Godan",
+   "type": "book",
+   "year": 1899,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL26112603W",
+     "url": "https://openlibrary.org/works/OL26112603W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/12069261-L.jpg",
+   "authors": [
+    "Premchand"
+   ],
+   "editionCount": 3
+  },
+  "openlibrary_work_OL1052133W": {
+   "id": "openlibrary_work_OL1052133W",
+   "canonicalTitle": "The God of Small Things",
+   "type": "book",
+   "year": 1997,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL1052133W",
+     "url": "https://openlibrary.org/works/OL1052133W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/10513792-L.jpg",
+   "authors": [
+    "Arundhati Roy"
+   ],
+   "languages": [
+    "ger",
+    "pol",
+    "hin",
+    "spa",
+    "heb",
+    "urd",
+    "tur",
+    "jpn",
+    "fre",
+    "ita",
+    "dut",
+    "cat",
+    "eng"
+   ],
+   "editionCount": 65
+  },
+  "openlibrary_work_OL15677384W": {
+   "id": "openlibrary_work_OL15677384W",
+   "canonicalTitle": "Ponniyin Selvan",
+   "type": "book",
+   "year": 2002,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL15677384W",
+     "url": "https://openlibrary.org/works/OL15677384W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/6690539-L.jpg",
+   "authors": [
+    "Kalki Kirushnamoorthy"
+   ],
+   "languages": [
+    "tam"
+   ],
+   "editionCount": 2
+  },
+  "openlibrary_work_OL274505W": {
+   "id": "openlibrary_work_OL274505W",
+   "canonicalTitle": "Cien años de soledad",
+   "type": "book",
+   "year": 1967,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL274505W",
+     "url": "https://openlibrary.org/works/OL274505W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/12627383-L.jpg",
+   "authors": [
+    "Gabriel García Márquez"
+   ],
+   "languages": [
+    "fre",
+    "tur",
+    "gre",
+    "spa",
+    "ita",
+    "pol",
+    "und",
+    "jpn",
+    "guj",
+    "por",
+    "ger",
+    "eng",
+    "rus",
+    "ara",
+    "chi",
+    "kor"
+   ],
+   "editionCount": 209
+  },
+  "openlibrary_work_OL66554W": {
+   "id": "openlibrary_work_OL66554W",
+   "canonicalTitle": "Pride and Prejudice",
+   "type": "book",
+   "year": 1853,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL66554W",
+     "url": "https://openlibrary.org/works/OL66554W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/12645114-L.jpg",
+   "overview": "Pride and Prejudice is an 1813 novel of manners written by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.\r\n\r\nMr. Bennet, owner of the Longbourn estate in Hertfordshire, has five daughters, but his property is entailed and can only be passed to a male heir. His wife also lacks an inheritance, so his family faces becoming very poor upon his death. Thus, it is imperative that at least one of the girls marry well to support the others, which is a motivation that drives the plot.",
+   "authors": [],
+   "preferredEditionId": "openlibrary_edition_OL37076991M"
+  },
+  "tvmaze_tv_16149": {
+   "id": "tvmaze_tv_16149",
+   "canonicalTitle": "Fleabag",
+   "type": "tv",
+   "year": 2016,
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 8,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "16149",
+     "url": "https://www.tvmaze.com/shows/16149"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/192/482341.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/192/482341.jpg",
+   "overview": "Meet Fleabag. She's not talking to all of us - she's talking to you. So why don't you pop your top off and come right in?"
+  },
+  "tvmaze_tv_47014": {
+   "id": "tvmaze_tv_47014",
+   "canonicalTitle": "Panchayat",
+   "type": "tv",
+   "year": 2020,
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "47014",
+     "url": "https://www.tvmaze.com/shows/47014"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/517/1293627.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/517/1293627.jpg",
+   "overview": "Panchayat captures the journey of engineering graduate Abhishek, who for lack of a better job option joins as secretary of a panchayat office in a remote village of Uttar Pradesh."
+  },
+  "tvmaze_tv_44933": {
+   "id": "tvmaze_tv_44933",
+   "canonicalTitle": "Severance",
+   "type": "tv",
+   "year": 2022,
+   "genres": [
+    "Drama",
+    "Science-Fiction",
+    "Mystery"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 7.7,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "44933",
+     "url": "https://www.tvmaze.com/shows/44933"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/548/1371406.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/548/1371406.jpg",
+   "overview": "Mark Scout leads a team at Lumon Industries, whose employees have undergone a severance procedure, which surgically divides their memories between their work and personal lives. This daring experiment in \"work-life balance\" is called into question as Mark finds himself at the center of an unraveling mystery that will force him to confront the true nature of his work… and of himself."
+  },
+  "tvmaze_tv_156": {
+   "id": "tvmaze_tv_156",
+   "canonicalTitle": "Twin Peaks",
+   "type": "tv",
+   "year": 1990,
+   "genres": [
+    "Crime",
+    "Mystery",
+    "Supernatural"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 8,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "156",
+     "url": "https://www.tvmaze.com/shows/156"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/397/992910.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/397/992910.jpg",
+   "overview": "Set in the fictional town of Twin Peaks in northeast Washington state, this is the story of FBI Special Agent Dale Cooper and his investigation of the murder of a popular local teenage schoolgirl, Laura Palmer."
+  },
+  "tvmaze_tv_30770": {
+   "id": "tvmaze_tv_30770",
+   "canonicalTitle": "Chernobyl",
+   "type": "tv",
+   "year": 2019,
+   "genres": [
+    "Drama",
+    "History"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 8.9,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "30770",
+     "url": "https://www.tvmaze.com/shows/30770"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/193/482599.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/193/482599.jpg",
+   "overview": "Chernobyl dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries focuses on the heartbreaking scope of the nuclear plant disaster that occurred in Ukraine in April 1986, revealing how and why it happened and telling the shocking, remarkable stories of the heroes who fought and fell."
+  },
+  "tvmaze_tv_27436": {
+   "id": "tvmaze_tv_27436",
+   "canonicalTitle": "La Casa de Papel",
+   "type": "tv",
+   "year": 2017,
+   "genres": [
+    "Action",
+    "Crime",
+    "Thriller"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 8,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "27436",
+     "url": "https://www.tvmaze.com/shows/27436"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/376/940830.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/376/940830.jpg",
+   "overview": "A group of very peculiar robbers have assaulted the Factory of Moneda and Timbre to carry out the most perfect robbery in the history of Spain and taking home 2,400 million euros."
+  },
+  "tvmaze_tv_17861": {
+   "id": "tvmaze_tv_17861",
+   "canonicalTitle": "Dark",
+   "type": "tv",
+   "year": 2017,
+   "genres": [
+    "Drama",
+    "Science-Fiction",
+    "Supernatural"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 8.2,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "17861",
+     "url": "https://www.tvmaze.com/shows/17861"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1262352.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/504/1262352.jpg",
+   "overview": "A family saga with a supernatural twist, Dark is set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families."
+  },
+  "tvmaze_tv_18197": {
+   "id": "tvmaze_tv_18197",
+   "canonicalTitle": "Sacred Games",
+   "type": "tv",
+   "year": 2018,
+   "genres": [
+    "Drama",
+    "Action",
+    "Crime"
+   ],
+   "ratings": [
+    {
+     "provider": "tvmaze",
+     "score": 7.5,
+     "votes": 0
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tvmaze",
+     "externalId": "18197",
+     "url": "https://www.tvmaze.com/shows/18197"
+    }
+   ],
+   "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/204/511629.jpg",
+   "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/204/511629.jpg",
+   "overview": "Set in Mumbai, Sacred Games delves into the city's intricate web of organized crime, corruption, politics and espionage that lie beneath India's economic renaissance. It is an epic masterwork of exceptional richness and power that interweaves the lives of the privileged, the famous, the wretched and the bloodthirsty."
+  },
+  "seed_audit_film_dead_poster": {
+   "id": "seed_audit_film_dead_poster",
+   "canonicalTitle": "Audit Fixture Film With Dead Poster",
+   "type": "movie",
+   "year": 2024,
+   "genres": [
+    "Drama"
+   ],
+   "ratings": [],
+   "providers": [],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/DEADIMG.jpg",
+   "overview": "Audit fixture synopsis (synthetic). Poster URL deliberately returns 404.",
+   "runtimeMinutes": 95
+  },
+  "seed_my_octopus_teacher": {
+   "id": "seed_my_octopus_teacher",
+   "canonicalTitle": "My Octopus Teacher",
+   "type": "movie",
+   "year": 2020,
+   "genres": [
+    "Documentary"
+   ],
+   "ratings": [
+    {
+     "score": 7.9,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "682110",
+     "url": "https://www.themoviedb.org/movie/682110"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt12888462",
+     "url": "https://www.imdb.com/title/tt12888462/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/hvTVZb7hBC8tZAGoEhH5eiMJu2B.jpg",
+   "overview": "After years of swimming every day in the freezing ocean at the tip of Africa, Craig Foster meets an unlikely teacher: a young octopus who displays remarkable curiosity. Visiting her den and tracking her movements for months on end he eventually wins the animal’s trust and they develop a never-before-seen bond between human and wild animal.\n\n• Directed by: Pippa Ehrlich, James Reed\n• Starring: Craig Foster\n• Cinematography: Roger Horrocks\n• Music by: Kevin Smuts",
+   "wikidataDirectorBio": "Pippa Ehrlich, James Reed"
+  },
+  "seed_free_solo": {
+   "id": "seed_free_solo",
+   "canonicalTitle": "Free Solo",
+   "type": "movie",
+   "year": 2018,
+   "genres": [
+    "Documentary",
+    "Adventure"
+   ],
+   "ratings": [
+    {
+     "score": 7.9,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "515042",
+     "url": "https://www.themoviedb.org/movie/515042"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt7775622",
+     "url": "https://www.imdb.com/title/tt7775622/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/v4QfYZMACODlWul9doN9RxE99ag.jpg",
+   "overview": "Follow Alex Honnold as he attempts to become the first person to ever free solo climb Yosemite's 3,000 foot high El Capitan wall. With no ropes or safety gear, this would arguably be the greatest feat in rock climbing history.\n\n• Directed by: Elizabeth Chai Vasarhelyi, Jimmy Chin\n• Starring: Alex Honnold, Tommy Caldwell\n• Cinematography: Jimmy Chin, Clair Popkin, Mikey Schaefer\n• Music by: Marco Beltrami",
+   "wikidataDirectorBio": "Elizabeth Chai Vasarhelyi, Jimmy Chin"
+  },
+  "seed_everything_everywhere": {
+   "id": "seed_everything_everywhere",
+   "canonicalTitle": "Everything Everywhere All at Once",
+   "type": "movie",
+   "year": 2022,
+   "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+   ],
+   "ratings": [
+    {
+     "score": 7.7,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "545611",
+     "url": "https://www.themoviedb.org/movie/545611"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt6710474",
+     "url": "https://www.imdb.com/title/tt6710474/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+   "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.\n\n• Directed by: Daniel Kwan, Daniel Scheinert\n• Written by: Daniel Kwan, Daniel Scheinert\n• Starring: Michelle Yeoh, Ke Huy Quan, Stephanie Hsu, Jamie Lee Curtis\n• Cinematography: Larkin Seiple\n• Music by: Son Lux",
+   "wikidataDirectorBio": "Daniel Kwan, Daniel Scheinert"
+  },
+  "seed_portrait_lady_fire": {
+   "id": "seed_portrait_lady_fire",
+   "canonicalTitle": "Portrait of a Lady on Fire",
+   "type": "movie",
+   "year": 2019,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "ratings": [
+    {
+     "score": 8.1,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "531428",
+     "url": "https://www.themoviedb.org/movie/531428"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt8613070",
+     "url": "https://www.imdb.com/title/tt8613070/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/rUDuOKpkKBHxx41BScqKej72iT3.jpg",
+   "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.\n\n• Directed by: Céline Sciamma\n• Written by: Céline Sciamma\n• Starring: Noémie Merlant, Adèle Haenel, Luàna Bajrami\n• Cinematography: Claire Mathon\n• Music by: Jean-Baptiste de Laubier, Arthur Simonini",
+   "wikidataDirectorBio": "Céline Sciamma"
+  },
+  "seed_parasite": {
+   "id": "seed_parasite",
+   "canonicalTitle": "Parasite",
+   "type": "movie",
+   "year": 2019,
+   "genres": [
+    "Comedy",
+    "Thriller",
+    "Drama"
+   ],
+   "ratings": [
+    {
+     "score": 8.5,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "496243",
+     "url": "https://www.themoviedb.org/movie/496243"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt6751668",
+     "url": "https://www.imdb.com/title/tt6751668/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+   "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.\n\n• Directed by: Bong Joon Ho\n• Written by: Bong Joon Ho, Han Jin-won\n• Starring: Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam\n• Cinematography: Hong Kyung-pyo\n• Music by: Jung Jae-il",
+   "wikidataDirectorBio": "Bong Joon Ho"
+  },
+  "seed_meiyazhagan": {
+   "id": "seed_meiyazhagan",
+   "canonicalTitle": "Meiyazhagan",
+   "type": "movie",
+   "year": 2024,
+   "genres": [
+    "Family",
+    "Drama"
+   ],
+   "ratings": [
+    {
+     "score": 8.1,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "1136423",
+     "url": "https://www.themoviedb.org/movie/1136423"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt26758372",
+     "url": "https://www.imdb.com/title/tt26758372/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/ngDEH7YqVaMCAD4LpNxRl6ScJnw.jpg",
+   "overview": "Twenty-two years after losing his home, Arulmozhi Varman returns to his native Thanjavur to attend his cousin's wedding. Amidst the celebrations, Arul is reintroduced to an upbeat man whom he cannot recall. With the help of the unknown man, Arul reconnects with his past.\n\n• Directed by: C. Prem Kumar\n• Written by: C. Prem Kumar\n• Starring: Karthi, Arvind Swamy\n• Cinematography: Mahendiran Jayaraju\n• Music by: Govind Vasantha",
+   "wikidataDirectorBio": "C. Prem Kumar"
+  },
+  "seed_96": {
+   "id": "seed_96",
+   "canonicalTitle": "96",
+   "type": "movie",
+   "year": 2018,
+   "genres": [
+    "Romance"
+   ],
+   "ratings": [
+    {
+     "score": 7.6,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "441717",
+     "url": "https://www.themoviedb.org/movie/441717"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt7019842",
+     "url": "https://www.imdb.com/title/tt7019842/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/nrVloCa2hCFOztRF1DZU2jnWIiQ.jpg",
+   "overview": "Ram is a photographer and nature lover who travels all around India capturing moments. On a chance visit to his hometown Tanjavur, he goes into his school and begins to walk down memory lane to 1994 when he was a student harboring feelings for his classmate Janu.\n\n• Directed by: C. Prem Kumar\n• Written by: C. Prem Kumar\n• Starring: Vijay Sethupathi, Trisha Krishnan\n• Cinematography: Mahendiran Jayaraju\n• Music by: Govind Vasantha",
+   "wikidataDirectorBio": "C. Prem Kumar"
+  },
+  "seed_vikram": {
+   "id": "seed_vikram",
+   "canonicalTitle": "Vikram",
+   "type": "movie",
+   "year": 2022,
+   "genres": [
+    "Action",
+    "Crime",
+    "Thriller"
+   ],
+   "ratings": [
+    {
+     "score": 7.6,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "743563",
+     "url": "https://www.themoviedb.org/movie/743563"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt9179430",
+     "url": "https://www.imdb.com/title/tt9179430/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
+   "overview": "Amar is assigned to investigate a case of serial killings. When Amar investigates the case, he realizes it is not what it seems to be and following down this path will lead to nothing but war between everyone involved.\n\n• Directed by: Lokesh Kanagaraj\n• Written by: Lokesh Kanagaraj, Rathna Kumar\n• Starring: Kamal Haasan, Vijay Sethupathi, Fahadh Faasil\n• Cinematography: Girish Gangadharan\n• Music by: Anirudh Ravichander",
+   "wikidataDirectorBio": "Lokesh Kanagaraj"
+  },
+  "seed_iruvar": {
+   "id": "seed_iruvar",
+   "canonicalTitle": "Iruvar",
+   "type": "movie",
+   "year": 1997,
+   "genres": [
+    "History",
+    "Drama"
+   ],
+   "ratings": [
+    {
+     "score": 7.5,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "49032",
+     "url": "https://www.themoviedb.org/movie/49032"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0119385",
+     "url": "https://www.imdb.com/title/tt0119385/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/6uAHFUwhKWLF9OAvMz5zQdKiM4j.jpg",
+   "overview": "A fictionalized account of the lives of 1980s Tamil Nadu political icons M. G. Ramachandran and M. Karunanidhi, continuing the tryst between Tamil cinema and Dravidian politics.\n\n• Directed by: Mani Ratnam\n• Written by: Mani Ratnam, Suhasini\n• Starring: Mohanlal, Prakash Raj, Aishwarya Rai, Tabu\n• Cinematography: Santosh Sivan\n• Music by: A. R. Rahman",
+   "wikidataDirectorBio": "Mani Ratnam"
+  },
+  "seed_drishyam_ml": {
+   "id": "seed_drishyam_ml",
+   "canonicalTitle": "Drishyam",
+   "type": "movie",
+   "year": 2013,
+   "genres": [
+    "Thriller",
+    "Crime",
+    "Drama"
+   ],
+   "ratings": [
+    {
+     "score": 7.5,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "244049",
+     "url": "https://www.themoviedb.org/movie/244049"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt3417422",
+     "url": "https://www.imdb.com/title/tt3417422/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/7d8GLneJkF81q1POdK7VUrjWafX.jpg",
+   "overview": "Georgekutty lives a happy life with his wife and daughters. Things take a turn when his daughter gets indecently filmed using a hidden camera, by the son of a police inspector.\n\n• Directed by: Jeethu Joseph\n• Written by: Jeethu Joseph\n• Starring: Mohanlal, Meena, Ansiba Hassan, Asha Sarath\n• Cinematography: Sujith Vaassudev\n• Music by: Anil Johnson, Vinu Thomas",
+   "wikidataDirectorBio": "Jeethu Joseph"
+  },
+  "seed_spadikam": {
+   "id": "seed_spadikam",
+   "canonicalTitle": "Spadikam",
+   "type": "movie",
+   "year": 1995,
+   "genres": [
+    "Action",
+    "Drama"
+   ],
+   "ratings": [
+    {
+     "score": 7.3,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "240179",
+     "url": "https://www.themoviedb.org/movie/240179"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0292246",
+     "url": "https://www.imdb.com/title/tt0292246/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/1bDOwCzW2cIVtRgeVQKn5ZTzcFf.jpg",
+   "overview": "Chacko master, a school headmaster, is never happy with his son, Thomas, and always degrades him. However, having had enough of him, Thomas runs away from home only to return as a gangster after long.\n\n• Directed by: Bhadran\n• Written by: Bhadran\n• Starring: Mohanlal, Thilakan, Urvashi, Spadikam George\n• Cinematography: J. Williams\n• Music by: S. P. Venkatesh",
+   "wikidataDirectorBio": "Bhadran"
+  },
+  "seed_kireedam": {
+   "id": "seed_kireedam",
+   "canonicalTitle": "Kireedam",
+   "type": "movie",
+   "year": 1989,
+   "genres": [
+    "Drama",
+    "Action"
+   ],
+   "ratings": [
+    {
+     "score": 7.8,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "191017",
+     "url": "https://www.themoviedb.org/movie/191017"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0237376",
+     "url": "https://www.imdb.com/title/tt0237376/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/1uH1VAGavh4Zi5Qwdhzcg9YJyh2.jpg",
+   "overview": "Sethu aspires to become a police officer to fulfil his father's dream. However, his life turns upside down when he intervenes in a scuffle with a criminal to save his father's life.\n\n• Directed by: Sibi Malayil\n• Written by: A. K. Lohithadas\n• Starring: Mohanlal, Thilakan, Parvathy, Kaviyoor Ponnamma\n• Cinematography: S. Kumar\n• Music by: Johnson",
+   "wikidataDirectorBio": "Sibi Malayil"
+  },
+  "seed_manichitrathazhu": {
+   "id": "seed_manichitrathazhu",
+   "canonicalTitle": "Manichitrathazhu",
+   "type": "movie",
+   "year": 1993,
+   "genres": [
+    "Horror",
+    "Comedy",
+    "Mystery"
+   ],
+   "ratings": [
+    {
+     "score": 7.5,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "84368",
+     "url": "https://www.themoviedb.org/movie/84368"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0214915",
+     "url": "https://www.imdb.com/title/tt0214915/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/5YccrqvJFTfAVyEZp08I3fLx15y.jpg",
+   "overview": "A young couple, Ganga and Nakulan, arrives at the ancestral home called Madampalli of the latter. Hailing from a family that follows tradition and superstitions, Nakulan's uncle Thampi objects to the couple's idea of moving into the allegedly haunted mansion, which Nakulan ignores. The couple moves in anyway following which seemingly supernatural events begin to happen.\n\n• Directed by: Fazil\n• Written by: Madhu Muttam\n• Starring: Mohanlal, Shobana, Suresh Gopi, Vinaya Prasad\n• Cinematography: Venu\n• Music by: M. G. Radhakrishnan, Johnson",
+   "wikidataDirectorBio": "Fazil"
+  },
+  "seed_charulata": {
+   "id": "seed_charulata",
+   "canonicalTitle": "Charulata",
+   "type": "movie",
+   "year": 1964,
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "ratings": [
+    {
+     "score": 7.5,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "35790",
+     "url": "https://www.themoviedb.org/movie/35790"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0057935",
+     "url": "https://www.imdb.com/title/tt0057935/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
+   "overview": "In 1870s India, Charulata is an isolated, artistically inclined woman who sees little of her busy journalist husband, Bhupati. Realizing that his wife is alienated and unhappy, he convinces his cousin, Amal, to spend time with Charulata and nourish her creative impulses. Amal is a fledgling poet himself, and he and Charulata bond over their shared love of art.\n\n• Directed by: Satyajit Ray\n• Written by: Satyajit Ray\n• Starring: Madhabi Mukherjee, Soumitra Chatterjee, Sailen Mukherjee\n• Cinematography: Subrata Mitra\n• Music by: Satyajit Ray",
+   "wikidataDirectorBio": "Satyajit Ray"
+  },
+  "seed_pather_panchali": {
+   "id": "seed_pather_panchali",
+   "canonicalTitle": "Pather Panchali",
+   "type": "movie",
+   "year": 1955,
+   "genres": [
+    "Drama",
+    "History"
+   ],
+   "ratings": [
+    {
+     "score": 7.8,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "5801",
+     "url": "https://www.themoviedb.org/movie/5801"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0048473",
+     "url": "https://www.imdb.com/title/tt0048473/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg",
+   "overview": "Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work. Alone, his wife, Sarbojaya, looks after her rebellious daughter, Durga, and her young son, Apu, as well as Harihar's elderly aunt Indir. The children enjoy the small pleasures of their difficult life, while their parents suffer the daily indignities heaped upon them.\n\n• Directed by: Satyajit Ray\n• Written by: Satyajit Ray\n• Starring: Subir Banerjee, Kanu Banerjee, Karuna Banerjee, Uma Dasgupta\n• Cinematography: Subrata Mitra\n• Music by: Ravi Shankar",
+   "wikidataDirectorBio": "Satyajit Ray"
+  },
+  "seed_nayakan": {
+   "id": "seed_nayakan",
+   "canonicalTitle": "Nayakan",
+   "type": "movie",
+   "year": 1987,
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "ratings": [
+    {
+     "score": 7.9,
+     "provider": "tmdb"
+    }
+   ],
+   "providers": [
+    {
+     "provider": "tmdb",
+     "externalId": "29971",
+     "url": "https://www.themoviedb.org/movie/29971"
+    },
+    {
+     "provider": "imdb",
+     "externalId": "tt0093603",
+     "url": "https://www.imdb.com/title/tt0093603/"
+    }
+   ],
+   "posterUrl": "https://image.tmdb.org/t/p/w500/hnCKKPG5VkUiGQV0DTniyMTEZsT.jpg",
+   "overview": "Velu Naicker, who witnesses the brutal murder of his father, kills a corrupt policeman and escapes to Mumbai, only to become a gangster.\n\n• Directed by: Mani Ratnam\n• Written by: Mani Ratnam, Balakumaran\n• Starring: Kamal Haasan, Saranya, Karthika\n• Cinematography: P. C. Sreeram\n• Music by: Ilaiyaraaja",
+   "wikidataDirectorBio": "Mani Ratnam"
+  }
+ }
+}

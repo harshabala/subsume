@@ -68,6 +68,7 @@ practice path adds 30 demo titles to a private journal.
 - A script that loads each page in the real browser with recorded responses and reports, per
   page and per medium: fields missing, fields wrong, images failed, and time until fully shown.
 - **Done when:** the report exists and names the worst pages. Show it to the owner before fixing.
+- 2026-11-16: done. 40-title set in `tests/fixtures/audit/`, expected fields in `docs/audit/expected-fields.md` (draft, awaiting approval), `npm run audit:pages` run in a real Chromium offline, report in `docs/audit/2026-11-16-page-audit.md`. Verified by running the script; `npm run ci` and `npm run smoke` green. No page content fixed yet; owner to review first.
 
 ### 2. One record shape for every medium
 - Merge the sources for a title into one complete record at save time, with a stated order of

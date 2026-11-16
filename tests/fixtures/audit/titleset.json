@@ -1,0 +1,611 @@
+{
+ "version": 1,
+ "note": "Fixed audit title set. provenance: seed = src/background/seedData.ts values; recorded = real keyless provider responses in recorded/responses.json; synthetic-shape = hand-written, clearly labelled, not real data.",
+ "titles": [
+  {
+   "key": "seed_nayakan",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_nayakan"
+   },
+   "tags": [
+    "indian",
+    "tamil",
+    "old"
+   ]
+  },
+  {
+   "key": "seed_pather_panchali",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_pather_panchali"
+   },
+   "tags": [
+    "indian",
+    "bengali",
+    "very-old",
+    "non-english"
+   ]
+  },
+  {
+   "key": "seed_charulata",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_charulata"
+   },
+   "tags": [
+    "indian",
+    "bengali",
+    "very-old"
+   ]
+  },
+  {
+   "key": "seed_manichitrathazhu",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_manichitrathazhu"
+   },
+   "tags": [
+    "indian",
+    "malayalam"
+   ]
+  },
+  {
+   "key": "seed_kireedam",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_kireedam"
+   },
+   "tags": [
+    "indian",
+    "malayalam"
+   ]
+  },
+  {
+   "key": "seed_spadikam",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_spadikam"
+   },
+   "tags": [
+    "indian",
+    "malayalam"
+   ]
+  },
+  {
+   "key": "seed_drishyam_ml",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_drishyam_ml"
+   },
+   "tags": [
+    "indian",
+    "malayalam"
+   ]
+  },
+  {
+   "key": "seed_iruvar",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_iruvar"
+   },
+   "tags": [
+    "indian",
+    "tamil"
+   ]
+  },
+  {
+   "key": "seed_vikram",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_vikram"
+   },
+   "tags": [
+    "indian",
+    "tamil"
+   ]
+  },
+  {
+   "key": "seed_96",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_96"
+   },
+   "tags": [
+    "indian",
+    "tamil",
+    "numeric-title"
+   ]
+  },
+  {
+   "key": "seed_meiyazhagan",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_meiyazhagan"
+   },
+   "tags": [
+    "indian",
+    "tamil",
+    "very-new"
+   ]
+  },
+  {
+   "key": "seed_parasite",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_parasite"
+   },
+   "tags": [
+    "translated-title",
+    "non-english"
+   ]
+  },
+  {
+   "key": "seed_portrait_lady_fire",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_portrait_lady_fire"
+   },
+   "tags": [
+    "translated-title",
+    "non-english"
+   ]
+  },
+  {
+   "key": "seed_everything_everywhere",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_everything_everywhere"
+   },
+   "tags": [
+    "long-title"
+   ]
+  },
+  {
+   "key": "seed_free_solo",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_free_solo"
+   },
+   "tags": [
+    "documentary"
+   ]
+  },
+  {
+   "key": "seed_my_octopus_teacher",
+   "medium": "movie",
+   "provenance": "seed",
+   "ingest": {
+    "kind": "seed-film",
+    "id": "seed_my_octopus_teacher"
+   },
+   "tags": [
+    "documentary"
+   ]
+  },
+  {
+   "key": "synth_film_no_poster",
+   "medium": "movie",
+   "provenance": "synthetic-shape",
+   "tags": [
+    "no-cover",
+    "unknown-year"
+   ],
+   "ingest": {
+    "kind": "synthetic-film",
+    "media": {
+     "id": "seed_audit_film_no_poster",
+     "canonicalTitle": "Audit Fixture Film Without Poster",
+     "type": "movie",
+     "year": 0,
+     "genres": [],
+     "ratings": [],
+     "providers": [],
+     "posterUrl": ""
+    }
+   }
+  },
+  {
+   "key": "synth_film_dead_poster",
+   "medium": "movie",
+   "provenance": "synthetic-shape",
+   "tags": [
+    "broken-image"
+   ],
+   "ingest": {
+    "kind": "synthetic-film",
+    "media": {
+     "id": "seed_audit_film_dead_poster",
+     "canonicalTitle": "Audit Fixture Film With Dead Poster",
+     "type": "movie",
+     "year": 2024,
+     "genres": [
+      "Drama"
+     ],
+     "ratings": [],
+     "providers": [],
+     "posterUrl": "https://image.tmdb.org/t/p/w500/DEADIMG.jpg",
+     "overview": "Audit fixture synopsis (synthetic). Poster URL deliberately returns 404.",
+     "runtimeMinutes": 95
+    }
+   }
+  },
+  {
+   "key": "tv_sacred_games",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "sacred games",
+    "pickTitle": "Sacred Games"
+   },
+   "tags": [
+    "indian",
+    "hindi"
+   ]
+  },
+  {
+   "key": "tv_dark",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "dark",
+    "pickTitle": "Dark"
+   },
+   "tags": [
+    "non-english",
+    "german",
+    "common-word-title"
+   ]
+  },
+  {
+   "key": "tv_money_heist",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "money heist",
+    "pickTitle": "La Casa de Papel"
+   },
+   "tags": [
+    "translated-title",
+    "spanish"
+   ]
+  },
+  {
+   "key": "tv_chernobyl",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "chernobyl",
+    "pickTitle": "Chernobyl"
+   },
+   "tags": [
+    "miniseries"
+   ]
+  },
+  {
+   "key": "tv_twin_peaks",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "twin peaks",
+    "pickTitle": "Twin Peaks"
+   },
+   "tags": [
+    "very-old",
+    "several-shows-same-name"
+   ]
+  },
+  {
+   "key": "tv_severance",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "severance",
+    "pickTitle": "Severance"
+   },
+   "tags": [
+    "very-new"
+   ]
+  },
+  {
+   "key": "tv_panchayat",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "panchayat",
+    "pickTitle": "Panchayat"
+   },
+   "tags": [
+    "indian",
+    "hindi"
+   ]
+  },
+  {
+   "key": "tv_fleabag",
+   "medium": "tv",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "tvmaze",
+    "query": "fleabag",
+    "pickTitle": "Fleabag"
+   },
+   "tags": []
+  },
+  {
+   "key": "book_the_great_gatsby",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "isbn",
+    "query": "the great gatsby",
+    "pickTitle": "The Great Gatsby",
+    "pickAuthor": null,
+    "isbn13": "9780743273565"
+   },
+   "tags": [
+    "several-editions",
+    "isbn-route"
+   ]
+  },
+  {
+   "key": "book_pride_and_prejudice",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "isbn",
+    "query": "pride and prejudice",
+    "pickTitle": "Pride and Prejudice",
+    "pickAuthor": null,
+    "isbn13": "9780141439518"
+   },
+   "tags": [
+    "very-old",
+    "several-editions",
+    "isbn-route"
+   ]
+  },
+  {
+   "key": "book_norwegian_wood",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "isbn",
+    "query": "norwegian wood",
+    "pickTitle": "Norwegian Wood",
+    "pickAuthor": null,
+    "isbn13": "9780375704024"
+   },
+   "tags": [
+    "translated",
+    "isbn-route"
+   ]
+  },
+  {
+   "key": "book_cien_años_de_soledad",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "cien años de soledad",
+    "pickTitle": null,
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "non-english",
+    "translated-title"
+   ]
+  },
+  {
+   "key": "book_ponniyin_selvan",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "ponniyin selvan",
+    "pickTitle": "Ponniyin Selvan",
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "indian",
+    "tamil",
+    "several-editions"
+   ]
+  },
+  {
+   "key": "book_the_god_of_small_things",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "the god of small things",
+    "pickTitle": "The God of Small Things",
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "indian"
+   ]
+  },
+  {
+   "key": "book_godan_premchand",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "godan premchand",
+    "pickTitle": null,
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "indian",
+    "hindi",
+    "non-english"
+   ]
+  },
+  {
+   "key": "book_don_quixote",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "don quixote",
+    "pickTitle": "Don Quixote",
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "very-old",
+    "several-editions"
+   ]
+  },
+  {
+   "key": "book_the_odyssey_homer",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "the odyssey homer",
+    "pickTitle": null,
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "very-old",
+    "pre-1500-year"
+   ]
+  },
+  {
+   "key": "book_intermezzo_sally_rooney",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "intermezzo sally rooney",
+    "pickTitle": null,
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "very-new"
+   ]
+  },
+  {
+   "key": "book_kokila_ramanlal_desai",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "kokila ramanlal desai",
+    "pickTitle": "Kokila",
+    "pickAuthor": "Desai",
+    "isbn13": null
+   },
+   "tags": [
+    "indian",
+    "gujarati",
+    "no-cover"
+   ]
+  },
+  {
+   "key": "book_midnights_children",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "midnight's children",
+    "pickTitle": "Midnight's Children",
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "indian"
+   ]
+  },
+  {
+   "key": "book_chemmeen",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "search",
+    "query": "chemmeen",
+    "pickTitle": "Chemmeen",
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "indian",
+    "malayalam",
+    "several-editions"
+   ]
+  },
+  {
+   "key": "book_zzqxv_unmatched_page_candidate",
+   "medium": "book",
+   "provenance": "recorded",
+   "ingest": {
+    "kind": "openlibrary",
+    "route": "unmatched",
+    "query": "zzqxv unmatched page candidate",
+    "pickTitle": null,
+    "pickAuthor": null,
+    "isbn13": null
+   },
+   "tags": [
+    "no-provider-match"
+   ]
+  }
+ ]
+}

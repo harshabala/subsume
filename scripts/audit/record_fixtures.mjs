@@ -48,6 +48,9 @@ const TV_QUERIES = [
 
 const urls = [];
 for (const q of BOOK_QUERIES) urls.push(olSearch(q));
+// The Search page asks for limit=20 when the Books filter is on; record that form too.
+for (const q of BOOK_QUERIES) urls.push(`${OL}/search.json?q=${enc(q)}&limit=20`);
+urls.push(`${OL}/search.json?q=${enc('zzqxv unmatched page candidate')}&limit=3`); // RESOLVE_PAGE_CANDIDATE title fallback uses limit=3
 for (const q of AUTHOR_QUERIES) urls.push(olAuthors(q));
 for (const i of ISBNS) urls.push(`${OL}/isbn/${i}.json`);
 for (const q of TV_QUERIES) urls.push(`https://api.tvmaze.com/search/shows?q=${enc(q)}`);
