@@ -2,6 +2,7 @@
  * Book catalog handlers — Open Library + optional Google Books + ISBN resolution.
  * Legacy movie/TV handlers remain elsewhere; these add multi-medium paths.
  */
+import { completeBookRecord } from '../bookRecord';
 import { MessageType } from '@/shared/types';
 import type { MessageHandlerMap } from '@/shared/messages';
 import type {
@@ -270,7 +271,7 @@ export const bookHandlers: MessageHandlerMap = {
       const mediaToStore = existingMedia
         ? mergeMediaItems(mediaItem, existingMedia)
         : mediaItem;
-      await putMediaItem(mediaToStore);
+      await putMediaItem(await completeBookRecord(mediaToStore));
       mediaId = mediaItem.id;
     } else {
       const workId =

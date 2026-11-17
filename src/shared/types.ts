@@ -66,6 +66,13 @@ export interface MediaItem {
    */
   languages?: string[];
   editionCount?: number;
+  /** Series: network or streaming channel (creator line when no creator is stored). */
+  network?: string;
+  /**
+   * Where each field of this record came from, e.g. { description: 'openlibrary:work', pageCount: 'openlibrary:edition OL7353617M' }.
+   * Written at save time by the record-merge step; a field with no entry here has no recorded source.
+   */
+  fieldSources?: Record<string, string>;
 }
 
 export type LibraryStatus = 'to-watch' | 'watching' | 'watched' | 'abandoned';

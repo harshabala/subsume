@@ -1,3 +1,4 @@
+import { completeBookRecord } from '../bookRecord';
 import { MessageHandlerMap } from '@/shared/messages';
 import { logger } from '@/shared/logger';
 import {
@@ -127,7 +128,7 @@ export const libraryHandlers: MessageHandlerMap = {
     const mediaToStore = existingMedia
       ? mergeMediaItems(req.mediaItem, existingMedia)
       : req.mediaItem;
-    await putMediaItem(mediaToStore);
+    await putMediaItem(await completeBookRecord(mediaToStore));
 
     const existing = await getLibraryItem(req.mediaItem.id);
     const isNewLibraryItem = !existing;

@@ -1,18 +1,548 @@
 {
-  "key": "/books/OL24347578M",
-  "title": "The Great Gatsby",
-  "authors": [{ "key": "/authors/OL27349A", "name": "F. Scott Fitzgerald" }],
-  "works": [{ "key": "/works/OL468431W" }],
-  "isbn_10": ["0743273567"],
-  "isbn_13": ["9780743273565"],
-  "publishers": ["Scribner"],
-  "publish_date": "2004",
-  "number_of_pages": 180,
-  "covers": [8432047],
-  "languages": [{ "key": "/languages/eng" }],
-  "physical_format": "Paperback",
-  "description": {
-    "type": "/type/text",
-    "value": "A classic novel of the Jazz Age."
+ "other_titles": [
+  "Oliver Twist"
+ ],
+ "publishers": [
+  "Charles Scribner's Sons"
+ ],
+ "table_of_contents": [
+  {
+   "level": 1,
+   "label": "CHAPTER I",
+   "title": "Treats of the Place where Oliver Twist was Bom ; and of the Circumstances attending his Birth",
+   "pagenum": "1",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER II",
+   "title": "Treats of Oliver Twist's Growth, Education, and Board",
+   "pagenum": "5",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER III",
+   "title": "Relates how Oliver Twist was very near getting a Place, which would not have been a Sinecure",
+   "pagenum": "17",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER IV",
+   "title": "Oliver, being offered another Place, makes his first Entry into Public Life",
+   "pagenum": "27",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER V",
+   "title": "Oliver mingles with new Associates. Going to a Funeral for the first Time, he forms an unfavourable Notion of his Master's Business",
+   "pagenum": "35",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER VI",
+   "title": "Oliver, being goaded by the Taunts of Noah, rouses into Action, and rather astonishes him",
+   "pagenum": "48",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER VII",
+   "title": "Oliver continues refractory",
+   "pagenum": "54",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER VIII",
+   "title": "Oliver walks to London. He encounters on the Road a Strange sort of young Gentleman",
+   "pagenum": "62",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER IX",
+   "title": "Containing further Particulars concerning the pleasant old Gentleman, and his hopeful Pupils",
+   "pagenum": "72",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER X",
+   "title": "Oliver becomes better acquainted with the Characters of his new Associates ; and purchases Experience at a high Price. Being a short, but very important Chapter, in this History",
+   "pagenum": "80",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XI",
+   "title": "Treats of Mr. Fang the Police Magistrate ; and furnishes a slight Specimen of his Mode of administering Justice",
+   "pagenum": "86",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XII",
+   "title": "In which Oliver is taken better Care of, than he ever was before. And in which the Narrative reverts to the merry old Gentleman and his youthful Friends",
+   "pagenum": "95",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XIII",
+   "title": "Some new Acquaintances are introduced to the intelligent Reader ; connected with whom various pleasant Matters are related, appertaining to this History",
+   "pagenum": "106",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XIV",
+   "title": "Comprising further Particulars of Oliver's Stay at Mr. Brownlow's. With the remarkable Prediction which one Mr. Grimwig uttered concerning him, when he went out on an Errand",
+   "pagenum": "115",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XV",
+   "title": "Showing how very fond of Oliver Twist, the merry old Jew and Miss Nancy were",
+   "pagenum": "127",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XVI",
+   "title": "Relates what became of Oliver Twist after he had been claimed by Nancy",
+   "pagenum": "135",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XVII",
+   "title": "Oliver's Destiny continuing unpropitious, brings a Great Man to London to injure his Reputation",
+   "pagenum": "146",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XVIII",
+   "title": "How Oliver passed his Time, in the improving Society of his reputable Friends",
+   "pagenum": "157",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XIX",
+   "title": "In which a notable Plan is discussed and determined on",
+   "pagenum": "167",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XX",
+   "title": "Wherein Oliver is delivered over to Mr. William Sikes",
+   "pagenum": "178",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXI",
+   "title": "The Expedition",
+   "pagenum": "187",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXII",
+   "title": "The Burglary",
+   "pagenum": "194",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXIII",
+   "title": "Which contains the Substance of a pleasant Conversation between Mr. Bumble and a Lady ; and shows that even a Beadle may be susceptible on some Points",
+   "pagenum": "202",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXIV",
+   "title": "Treats of a very poor Subject, But is a short one ; and may be found of Importance in this History",
+   "pagenum": "211",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXV",
+   "title": "Wherein this History reverts to Mr. Fagin and Company",
+   "pagenum": "218",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXVI",
+   "title": "In which a mysterious Character appears upon the Scene ; and many Things, inseparable from this History, are done and performed",
+   "pagenum": "225",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXVII",
+   "title": "Atones for the Unpoliteness of a former Chapter ; which deserted a Lady, most unceremoniously",
+   "pagenum": "239",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXVIII",
+   "title": "Looks after Oliver, and proceeds with his Adventures",
+   "pagenum": "248",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXIX",
+   "title": "Has an introductory Account of the Inmates of the House to which Oliver resorted",
+   "pagenum": "259",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXX",
+   "title": "Relates what Oliver's new Visitors thought of him",
+   "pagenum": "264",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXI",
+   "title": "Involves a critical Position",
+   "pagenum": "272",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXII",
+   "title": "Of the happy Life Oliver began to lead with his kind Friends",
+   "pagenum": "285",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXIII",
+   "title": "Wherein the Happiness of Oliver and his Friends experiences a sudden Check",
+   "pagenum": "295",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXIV",
+   "title": "Contains some introductory Particulars relative to a young Gentleman who now arrives upon the Scene ; and a new Adventure which happened to Oliver",
+   "pagenum": "305",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXV",
+   "title": "Containing the unsatisfactory Result of Oliver's Adventure ; and a Conversation of some Importance between Harry Maylie and Rose",
+   "pagenum": "317",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXVI",
+   "title": "Is a very short one, and may appear of no great Importance in its Place. But it should be read notwithstanding, as a Sequel to the last, and a Key to one that will follow when its Time arrives",
+   "pagenum": "326",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXVII",
+   "title": "In which the Reader may perceive a Contrast, not uncommon in matrimonial Cases",
+   "pagenum": "330",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXVIII",
+   "title": "Containing an Account of what passed between Mr. and Mrs. Bumble, and Mr. Monks, at their nocturnal Interview",
+   "pagenum": "342",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XXXIX",
+   "title": "Introduces some respectable Characters with whom the Reader is already acquainted, and shows how Monks and the Jew laid their worthy Heads together",
+   "pagenum": "354",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XL",
+   "title": "A strange Interview, which is a Sequel to the last Chapter",
+   "pagenum": "371",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLI",
+   "title": "Containing fresh Discoveries, and showing that Surprises, like Misfortunes, seldom come alone",
+   "pagenum": "379",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLII",
+   "title": "An old Acquaintance of Oliver's, exhibiting decided Marks of Genius, becomes a public Character in the Metropolis",
+   "pagenum": "390",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLIII",
+   "title": "Wherein is shown how the Artful Dodger got into Trouble",
+   "pagenum": "402",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLIV",
+   "title": "The Time arrives for Nancy to redeem her Pledge to Rose Maylie. She fails",
+   "pagenum": "414",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLV",
+   "title": "Noah Claypole is employed by Fagin on a secret Mission",
+   "pagenum": "422",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLVI",
+   "title": "The Appointment kept",
+   "pagenum": "426",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLVII",
+   "title": "Fatal Consequences",
+   "pagenum": "437",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLVIII",
+   "title": "The Flight of Sikes",
+   "pagenum": "445",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER XLIX",
+   "title": "Monks and Mr. Brownlow at length meet. Their Conversation, and the Intelligence that interrupts it",
+   "pagenum": "456",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER L",
+   "title": "The Pursuit and Escape",
+   "pagenum": "467",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER LI",
+   "title": "Affording an Explanation of more Mysteries than one, and comprehending a Proposal of Marriage with no Word of Settlement or Pin-money",
+   "pagenum": "480",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER LII",
+   "title": "The Jew's Last Night alive",
+   "pagenum": "495",
+   "type": {
+    "key": "/type/toc_item"
+   }
+  },
+  {
+   "level": 1,
+   "label": "CHAPTER LIII",
+   "title": "And Last",
+   "pagenum": "505",
+   "type": {
+    "key": "/type/toc_item"
+   }
   }
+ ],
+ "series": [
+  "His Works, v. 3"
+ ],
+ "covers": [
+  13010069,
+  6464988
+ ],
+ "key": "/books/OL24347578M",
+ "authors": [
+  {
+   "key": "/authors/OL24638A"
+  }
+ ],
+ "publish_places": [
+  "New York"
+ ],
+ "pagination": "509p.",
+ "source_records": [
+  "ia:adventuresofoli00dick"
+ ],
+ "title": "The Adventures of Oliver Twist",
+ "number_of_pages": 509,
+ "languages": [
+  {
+   "key": "/languages/eng"
+  }
+ ],
+ "publish_date": "1898",
+ "by_statement": "With introd. and notes by Andrew Lang.  In one vol. with the original illus",
+ "works": [
+  {
+   "key": "/works/OL8193478W"
+  }
+ ],
+ "type": {
+  "key": "/type/edition"
+ },
+ "identifiers": {
+  "goodreads": [
+   "63847685"
+  ]
+ },
+ "ocaid": "adventuresofoli00dick",
+ "oclc_numbers": [
+  "13018939"
+ ],
+ "classifications": {},
+ "lc_classifications": [
+  "PR4567 A1 1898"
+ ],
+ "physical_format": "Library Binding",
+ "latest_revision": 14,
+ "revision": 14,
+ "created": {
+  "type": "/type/datetime",
+  "value": "2010-08-31T00:32:28.198549"
+ },
+ "last_modified": {
+  "type": "/type/datetime",
+  "value": "2022-11-26T18:33:05.471586"
+ }
 }

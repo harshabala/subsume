@@ -60,6 +60,10 @@ export interface BookWorkDetails {
   defaultEditionId?: string;
   /** Open Library search edition_count when available (alert signal). */
   editionCount?: number;
+  /** Open Library search number_of_pages_median (a median across editions, not one edition's count). */
+  pageCountMedian?: number;
+  /** Open Library search first_sentence (a quotation, used only as a last-resort description). */
+  firstSentence?: string;
 }
 
 export interface CatalogWork {

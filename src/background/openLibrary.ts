@@ -19,6 +19,14 @@ import { fetchJsonWithTimeout } from './fetchJson';
 
 const OL_BASE = 'https://openlibrary.org';
 const COVERS_BASE = 'https://covers.openlibrary.org';
+/**
+ * Fields requested from /search.json. Without `fields`, the real API returns a reduced default set
+ * (no subject, isbn, number_of_pages_median, first_sentence), which is why books were thin.
+ * Keep in sync with scripts/audit/record_fixtures.mjs (a test checks the recorded URLs).
+ */
+export const OL_SEARCH_FIELDS =
+  'key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence';
+
 const REQUEST_TIMEOUT_MS = 12_000;
 const CACHE_TTL_MS = 1000 * 60 * 60 * 6; // 6 hours
 
@@ -53,6 +61,7 @@ interface OlSearchDoc {
   language?: string[];
   number_of_pages_median?: number;
   publisher?: string[];
+  first_sentence?: string[] | string;
 }
 
 interface OlSearchResponse {
@@ -264,10 +273,26 @@ async function fetchJson<T>(url: string): Promise<T | null> {
 
 // ─── Mapping helpers ────────────────────────────────────────────────────────
 
+/** Open Library descriptions are user-edited and can contain HTML tags or markdown links; show plain text. */
+export function cleanDescription(raw: string): string | undefined {
+  const text = raw
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\[([^\]]+)\]\((?:https?:\/\/)[^)]*\)/g, '$1')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/[ \t]+\n/g, '\n')
+    .trim();
+  return text || undefined;
+}
+
 function extractDescription(desc: string | OlDescription | undefined): string | undefined {
   if (!desc) return undefined;
-  if (typeof desc === 'string') return desc.trim() || undefined;
-  if (typeof desc.value === 'string') return desc.value.trim() || undefined;
+  if (typeof desc === 'string') return cleanDescription(desc);
+  if (typeof desc.value === 'string') return cleanDescription(desc.value);
   return undefined;
 }
 
@@ -347,6 +372,11 @@ function safeEditionId(raw?: string): string | undefined {
   }
 }
 
+function firstSentenceOf(v: string[] | string | undefined): string | undefined {
+  const s = Array.isArray(v) ? v[0] : v;
+  return typeof s === 'string' && s.trim() ? s.trim() : undefined;
+}
+
 function mapSearchDocToWork(doc: OlSearchDoc, fetchedAt: number): CatalogWork | null {
   if (!doc.key || !doc.title) return null;
   const olId = extractOlId(doc.key);
@@ -394,6 +424,11 @@ function mapSearchDocToWork(doc: OlSearchDoc, fetchedAt: number): CatalogWork | 
       defaultEditionId: safeEditionId(doc.cover_edition_key),
       editionCount:
         typeof doc.edition_count === 'number' ? doc.edition_count : undefined,
+      pageCountMedian:
+        typeof doc.number_of_pages_median === 'number' && doc.number_of_pages_median > 0
+          ? doc.number_of_pages_median
+          : undefined,
+      firstSentence: firstSentenceOf(doc.first_sentence),
     },
     sourceProvenance: [provenance(olId, workSourceUrl(olId), fields, fetchedAt)],
     sourceConfidence: 'high',
@@ -544,7 +579,7 @@ export async function searchOpenLibrary(
   const cached = cacheGet<BookSearchResult[]>(cacheKey);
   if (cached) return cached;
 
-  const url = `${OL_BASE}/search.json?q=${encodeURIComponent(q)}&limit=${limit}`;
+  const url = `${OL_BASE}/search.json?q=${encodeURIComponent(q)}&limit=${limit}&fields=${OL_SEARCH_FIELDS}`;
   const data = await fetchJson<OlSearchResponse>(url);
   if (!data?.docs?.length) {
     cacheSet(cacheKey, []);
@@ -655,6 +690,24 @@ export async function resolveOpenLibraryIsbn(
   const result = { work, edition };
   cacheSet(cacheKey, result);
   return result;
+}
+
+/**
+ * Look a single work up through search by key, to get search-only fields
+ * (first_publish_year, subjects, page median, first sentence) for a work we resolved another way.
+ */
+export async function getOpenLibraryWorkSearchDoc(workId: string): Promise<CatalogWork | null> {
+  const olId = extractOlId(workId);
+  if (!olId || !olId.endsWith('W')) return null;
+  const cacheKey = `ol_work_search_${olId}`;
+  const cached = cacheGet<CatalogWork | null>(cacheKey);
+  if (cached !== undefined) return cached;
+  const url = `${OL_BASE}/search.json?q=${encodeURIComponent(`key:/works/${olId}`)}&limit=1&fields=${OL_SEARCH_FIELDS}`;
+  const data = await fetchJson<OlSearchResponse>(url);
+  const doc = data?.docs?.[0];
+  const work = doc ? mapSearchDocToWork(doc, Date.now()) : null;
+  cacheSet(cacheKey, work);
+  return work;
 }
 
 export async function getOpenLibraryWork(workId: string): Promise<CatalogWork | null> {

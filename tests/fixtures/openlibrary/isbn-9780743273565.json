@@ -1,18 +1,127 @@
 {
-  "key": "/books/OL24347578M",
-  "title": "The Great Gatsby",
-  "authors": [{ "key": "/authors/OL27349A", "name": "F. Scott Fitzgerald" }],
-  "works": [{ "key": "/works/OL468431W" }],
-  "isbn_10": ["0743273567"],
-  "isbn_13": ["9780743273565"],
-  "publishers": ["Scribner"],
-  "publish_date": "2004",
-  "number_of_pages": 180,
-  "covers": [8432047],
-  "languages": [{ "key": "/languages/eng" }],
-  "physical_format": "Paperback",
-  "description": {
-    "type": "/type/text",
-    "value": "A classic novel of the Jazz Age."
+ "description": {
+  "type": "/type/text",
+  "value": "<b>THE GREAT GATSBY</b>, F. Scott Fitzgerald\u2019s third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \u201cgin was the national drink and sex the national obsession,\u201d is an exquisitely crafted tale of America in the 1920s.\r\n\r\n<i>The Great Gatsby</i> is one of the great classics of twentieth-century literature.\r\n--back cover"
+ },
+ "notes": {
+  "type": "/type/text",
+  "value": "* [Publisher's Website for this edition][1]\r\n\r\n\r\n  [1]: http://books.simonandschuster.com/Great-Gatsby/F-Scott-Fitzgerald/9780743273565\r\n\r\nUS / CAN Edition"
+ },
+ "identifiers": {
+  "alibris_id": [
+   "9780743273565"
+  ],
+  "google": [
+   "iXn5U2IzVH0C"
+  ],
+  "goodreads": [
+   "4671"
+  ],
+  "canadian_national_library_archive": [
+   "11273141"
+  ],
+  "librarything": [
+   "2964"
+  ]
+ },
+ "title": "The Great Gatsby",
+ "authors": [
+  {
+   "key": "/authors/OL27349A"
   }
+ ],
+ "publish_date": "2004",
+ "contributors": [
+  {
+   "role": "Cover Art",
+   "name": "Francis Cugat"
+  },
+  {
+   "role": "Cover Design",
+   "name": "Cherylynne Li"
+  }
+ ],
+ "covers": [
+  13028546,
+  6776207,
+  6725316,
+  6390463
+ ],
+ "lc_classifications": [
+  "PS3511.I9 G7 2004",
+  "PZ3.F5754 Gr PS3511.I9"
+ ],
+ "ocaid": "greatgat00fitz",
+ "genres": [
+  "Fiction."
+ ],
+ "source_records": [
+  "marc:SanFranPL14/SanFranPL14.out:71962031:12930",
+  "ia:greatgat00fitz"
+ ],
+ "languages": [
+  {
+   "key": "/languages/eng"
+  }
+ ],
+ "subjects": [
+  "Traffic accidents -- Fiction",
+  "First loves -- Fiction",
+  "Rich people -- Fiction",
+  "Mistresses -- Fiction",
+  "Revenge -- Fiction",
+  "Long Island (N.Y.) -- Fiction"
+ ],
+ "publish_country": "nyu",
+ "by_statement": "F. Scott Fitzgerald",
+ "oclc_numbers": [
+  "57215622"
+ ],
+ "type": {
+  "key": "/type/edition"
+ },
+ "publishers": [
+  "Scribner"
+ ],
+ "ia_box_id": [
+  "IA119605"
+ ],
+ "physical_format": "Trade Paperback",
+ "publish_places": [
+  "New York, New York, USA"
+ ],
+ "oclc_number": [
+  "57215622"
+ ],
+ "pagination": "180 p. ;",
+ "lccn": [
+  "25010468"
+ ],
+ "isbn_13": [
+  "9780743273565"
+ ],
+ "dewey_decimal_class": [
+  "813"
+ ],
+ "isbn_10": [
+  "0743273567"
+ ],
+ "copyright_date": "1925",
+ "key": "/books/OL23109860M",
+ "number_of_pages": 180,
+ "works": [
+  {
+   "key": "/works/OL468431W"
+  }
+ ],
+ "latest_revision": 18,
+ "revision": 18,
+ "created": {
+  "type": "/type/datetime",
+  "value": "2009-02-18T18:42:07.162489"
+ },
+ "last_modified": {
+  "type": "/type/datetime",
+  "value": "2026-07-13T21:31:32.425768"
+ }
 }

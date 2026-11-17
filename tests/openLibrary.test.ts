@@ -76,14 +76,14 @@ describe('searchOpenLibrary', () => {
 
     const results = await searchOpenLibrary({ query: 'The Great Gatsby', limit: 5 });
 
-    expect(results).toHaveLength(1);
+    expect(results).toHaveLength(searchGatsby.docs.length);
     const { work, matchScore } = results[0];
     expect(work.id).toBe('openlibrary_work_OL468431W');
     expect(work.medium).toBe('book');
     expect(work.canonicalTitle).toBe('The Great Gatsby');
     expect(work.bookDetails?.authors).toContain('F. Scott Fitzgerald');
-    expect(work.firstReleaseYear).toBe(1925);
-    expect(work.images.primary).toContain('8432047');
+    expect(work.firstReleaseYear).toBe(searchGatsby.docs[0].first_publish_year);
+    expect(work.images.primary).toContain(String(searchGatsby.docs[0].cover_i));
     expect(work.sourceProvenance.length).toBeGreaterThan(0);
     expect(work.sourceProvenance[0].provider).toBe('openlibrary');
     expect(work.sourceProvenance[0].fields).toContain('canonicalTitle');
@@ -130,7 +130,7 @@ describe('resolveOpenLibraryIsbn', () => {
     expect(result).not.toBeNull();
     expect(result!.work.id).toBe('openlibrary_work_OL468431W');
     expect(result!.work.medium).toBe('book');
-    expect(result!.edition.id).toBe('openlibrary_edition_OL24347578M');
+    expect(result!.edition.id).toBe('openlibrary_edition_OL23109860M');
     expect(result!.edition.workId).toBe('openlibrary_work_OL468431W');
     expect(result!.edition.isbn13).toContain('9780743273565');
     expect(result!.edition.isbn10).toContain('0743273567');
@@ -140,7 +140,7 @@ describe('resolveOpenLibraryIsbn', () => {
     expect(result!.edition.sourceProvenance[0].provider).toBe('openlibrary');
     expect(result!.work.sourceProvenance[0].provider).toBe('openlibrary');
     expect(result!.work.bookDetails?.defaultEditionId).toBe(
-      'openlibrary_edition_OL24347578M'
+      'openlibrary_edition_OL23109860M'
     );
   });
 
@@ -189,7 +189,7 @@ describe('getOpenLibraryWork', () => {
     expect(work!.id).toBe('openlibrary_work_OL468431W');
     expect(work!.canonicalTitle).toBe('The Great Gatsby');
     expect(work!.description).toContain('F. Scott Fitzgerald');
-    expect(work!.images.primary).toContain('8432047');
+    expect(work!.images.primary).toContain('10590366');
     expect(work!.sourceProvenance[0].fields).toContain('description');
   });
 
@@ -218,9 +218,9 @@ describe('getOpenLibraryEdition', () => {
     const edition = await getOpenLibraryEdition('openlibrary_edition_OL24347578M');
     expect(edition).not.toBeNull();
     expect(edition!.id).toBe('openlibrary_edition_OL24347578M');
-    expect(edition!.workId).toBe('openlibrary_work_OL468431W');
+    expect(edition!.workId).toBe('openlibrary_work_OL8193478W');
     expect(edition!.language).toBe('eng');
-    expect(edition!.coverUrl).toContain('8432047');
+    expect(edition!.coverUrl).toContain('13010069');
   });
 
   it('returns null on network error', async () => {

@@ -21,7 +21,10 @@ const enc = encodeURIComponent;
 const OL = 'https://openlibrary.org';
 
 // URLs must match exactly what src/background/openLibrary.ts and tvmaze.ts build.
-const olSearch = (q) => `${OL}/search.json?q=${enc(q)}&limit=8`;
+// Must equal OL_SEARCH_FIELDS in src/background/openLibrary.ts (tests/openLibraryFixtures.test.ts checks).
+const FIELDS = 'key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence';
+const olSearch = (q) => `${OL}/search.json?q=${enc(q)}&limit=8&fields=${FIELDS}`;
+const olKeySearch = (id) => `${OL}/search.json?q=${enc('key:/works/' + id)}&limit=1&fields=${FIELDS}`;
 const olAuthors = (q) => `${OL}/search/authors.json?q=${enc(q)}`;
 
 const BOOK_QUERIES = [
@@ -49,8 +52,8 @@ const TV_QUERIES = [
 const urls = [];
 for (const q of BOOK_QUERIES) urls.push(olSearch(q));
 // The Search page asks for limit=20 when the Books filter is on; record that form too.
-for (const q of BOOK_QUERIES) urls.push(`${OL}/search.json?q=${enc(q)}&limit=20`);
-urls.push(`${OL}/search.json?q=${enc('zzqxv unmatched page candidate')}&limit=3`); // RESOLVE_PAGE_CANDIDATE title fallback uses limit=3
+for (const q of BOOK_QUERIES) urls.push(`${OL}/search.json?q=${enc(q)}&limit=20&fields=${FIELDS}`);
+urls.push(`${OL}/search.json?q=${enc('zzqxv unmatched page candidate')}&limit=3&fields=${FIELDS}`); // RESOLVE_PAGE_CANDIDATE title fallback uses limit=3
 for (const q of AUTHOR_QUERIES) urls.push(olAuthors(q));
 for (const i of ISBNS) urls.push(`${OL}/isbn/${i}.json`);
 for (const q of TV_QUERIES) urls.push(`https://api.tvmaze.com/search/shows?q=${enc(q)}`);
@@ -101,6 +104,7 @@ for (const i of ISBNS) {
 }
 for (const id of savedWorks) {
   await get(`${OL}/works/${id}.json`);
+  await get(olKeySearch(id));
   await get(`${OL}/works/${id}/editions.json?limit=25`);
 }
 for (const q of AUTHOR_QUERIES) {

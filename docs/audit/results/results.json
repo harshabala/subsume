@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-17 10:45:25",
+ "generatedAt": "2026-11-17 10:58:33",
  "pages": {
   "onboarding": {
    "all": {
-    "ready_ms": 141,
+    "ready_ms": 160,
     "bad_text": [],
     "chars": 687,
     "unstubbed_requests": 6
@@ -12,23 +12,23 @@
   "library": {
    "all": {
     "cards": 39,
-    "ready_ms": 255,
+    "ready_ms": 317,
     "bad_text": [],
-    "chars": 3636
+    "chars": 3620
    }
   },
   "home": {
    "all": {
-    "cards": 12,
+    "cards": 19,
     "shown_by_medium": {
      "movie": 5,
      "tv": 1,
      "book": 6
     },
-    "hero": "TMDb 8.5\nNO. 001\nParasite\n\nDirected by Bong Joon Ho\n\n\"All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until…\"\nREFLECT\nARCHIVE",
-    "ready_ms": 132,
+    "hero": "NO. 001\nBeat Bobby Flay: Holiday Throwdown\n\nAdd a film or book to your journal\n\n\"Season 5 premiere airing Tue, Nov 17\"\nREFLECT\nARCHIVE",
+    "ready_ms": 581,
     "bad_text": [],
-    "chars": 1617
+    "chars": 2702
    }
   },
   "recommendations": {
@@ -40,16 +40,16 @@
      "book": 2
     },
     "hero": null,
-    "ready_ms": 126,
+    "ready_ms": 230,
     "bad_text": [],
-    "chars": 1346
+    "chars": 1367
    }
   },
   "stats": {
    "all": {
-    "ready_ms": 83,
+    "ready_ms": 115,
     "bad_text": [],
-    "chars": 779
+    "chars": 783
    }
   },
   "people": {
@@ -156,7 +156,7 @@
       "placeholder": false
      }
     ],
-    "ready_ms": 44,
+    "ready_ms": 193,
     "bad_text": [],
     "chars": 601
    }
@@ -164,14 +164,14 @@
   "alerts": {
    "all": {
     "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nALERTS\nPremiere Alerts\n\nSet a programme of genres, platforms, keywords, or book authors. We will notify you when new screen releases or matching books appear.\n\nCREATE ALERT\nAudit book alert\n\nBooks · \"Intermezzo\" · author: \"Rooney\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit series alert\n\nSeries · \"dark\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit film alert\n\nFilm · \"night\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE",
-    "ready_ms": 79,
+    "ready_ms": 133,
     "bad_text": [],
     "chars": 486
    }
   },
   "new-releases": {
    "all": {
-    "ready_ms": 67,
+    "ready_ms": 97,
     "bad_text": [],
     "chars": 436,
     "unstubbed_requests": 0,
@@ -180,7 +180,7 @@
   },
   "settings": {
    "all": {
-    "ready_ms": 74,
+    "ready_ms": 123,
     "bad_text": [],
     "chars": 785,
     "unstubbed_requests": 3,
@@ -206,7 +206,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 638
+    "ready_ms": 663
    },
    "search": {
     "saved": true,
@@ -215,7 +215,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7614
+    "ready_ms": 8769
    }
   },
   "seed_pather_panchali": {
@@ -235,7 +235,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 169
+    "ready_ms": 208
    },
    "search": {
     "saved": true,
@@ -244,7 +244,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7569
+    "ready_ms": 7750
    }
   },
   "seed_charulata": {
@@ -264,7 +264,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 212
    },
    "search": {
     "saved": true,
@@ -273,7 +273,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7612
+    "ready_ms": 7763
    },
    "home": {
     "shown": true,
@@ -305,7 +305,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 201
    },
    "search": {
     "saved": true,
@@ -314,7 +314,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7563
+    "ready_ms": 7566
    }
   },
   "seed_kireedam": {
@@ -334,7 +334,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 178
+    "ready_ms": 235
    },
    "search": {
     "saved": true,
@@ -343,7 +343,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7538
+    "ready_ms": 7566
    }
   },
   "seed_spadikam": {
@@ -363,7 +363,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 179
+    "ready_ms": 226
    },
    "search": {
     "saved": true,
@@ -372,7 +372,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7624
+    "ready_ms": 7650
    },
    "home": {
     "shown": true,
@@ -404,7 +404,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 196
+    "ready_ms": 214
    },
    "search": {
     "saved": true,
@@ -413,7 +413,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7570
+    "ready_ms": 7661
    }
   },
   "seed_iruvar": {
@@ -433,7 +433,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 172
+    "ready_ms": 202
    },
    "search": {
     "saved": true,
@@ -442,7 +442,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7555
+    "ready_ms": 7587
    }
   },
   "seed_vikram": {
@@ -462,7 +462,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 185
+    "ready_ms": 209
    },
    "search": {
     "saved": true,
@@ -471,7 +471,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7578
+    "ready_ms": 7606
    },
    "home": {
     "shown": true,
@@ -503,7 +503,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 155
+    "ready_ms": 248
    },
    "search": {
     "saved": true,
@@ -512,7 +512,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7586
+    "ready_ms": 7577
    }
   },
   "seed_meiyazhagan": {
@@ -532,7 +532,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 229
    },
    "search": {
     "saved": true,
@@ -541,7 +541,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7558
+    "ready_ms": 7659
    }
   },
   "seed_parasite": {
@@ -561,7 +561,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 165
+    "ready_ms": 198
    },
    "search": {
     "saved": true,
@@ -570,7 +570,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7554
+    "ready_ms": 7788
    },
    "home": {
     "shown": true,
@@ -602,7 +602,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 201
+    "ready_ms": 214
    },
    "search": {
     "saved": true,
@@ -611,7 +611,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7610
+    "ready_ms": 7711
    }
   },
   "seed_everything_everywhere": {
@@ -631,7 +631,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 194
+    "ready_ms": 213
    },
    "search": {
     "saved": true,
@@ -640,7 +640,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7622
+    "ready_ms": 8859
    }
   },
   "seed_free_solo": {
@@ -660,7 +660,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 175
+    "ready_ms": 203
    },
    "search": {
     "saved": true,
@@ -669,7 +669,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7577
+    "ready_ms": 7688
    },
    "home": {
     "shown": true,
@@ -701,7 +701,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 168
+    "ready_ms": 216
    },
    "search": {
     "saved": true,
@@ -710,7 +710,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7619
+    "ready_ms": 7757
    }
   },
   "synth_film_no_poster": {
@@ -737,7 +737,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 146
+    "ready_ms": 176
    },
    "search": {
     "saved": true,
@@ -751,7 +751,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7609
+    "ready_ms": 7629
    }
   },
   "synth_film_dead_poster": {
@@ -774,7 +774,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 228
    },
    "search": {
     "saved": true,
@@ -786,7 +786,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7708
+    "ready_ms": 7806
    },
    "recommendations": {
     "shown": true,
@@ -810,7 +810,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 179
+    "ready_ms": 259
    },
    "search": {
     "saved": true,
@@ -819,7 +819,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7583
+    "ready_ms": 7670
    }
   },
   "tv_dark": {
@@ -835,7 +835,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 171
+    "ready_ms": 315
    },
    "search": {
     "saved": true,
@@ -844,7 +844,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7582
+    "ready_ms": 7584
    }
   },
   "tv_money_heist": {
@@ -860,7 +860,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 247
    },
    "search": {
     "saved": true,
@@ -869,7 +869,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7599
+    "ready_ms": 7584
    },
    "recommendations": {
     "shown": true,
@@ -891,7 +891,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 188
+    "ready_ms": 212
    },
    "search": {
     "saved": true,
@@ -900,7 +900,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7539
+    "ready_ms": 7581
    }
   },
   "tv_twin_peaks": {
@@ -916,7 +916,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 181
+    "ready_ms": 215
    },
    "search": {
     "saved": true,
@@ -925,7 +925,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7744
+    "ready_ms": 7579
    }
   },
   "tv_severance": {
@@ -941,7 +941,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 185
+    "ready_ms": 219
    },
    "search": {
     "saved": true,
@@ -950,7 +950,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7821
+    "ready_ms": 7580
    },
    "home": {
     "shown": true,
@@ -978,7 +978,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 154
+    "ready_ms": 195
    },
    "search": {
     "saved": true,
@@ -987,7 +987,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7781
+    "ready_ms": 7634
    }
   },
   "tv_fleabag": {
@@ -1003,7 +1003,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 168
+    "ready_ms": 217
    },
    "search": {
     "saved": true,
@@ -1012,7 +1012,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7568
+    "ready_ms": 7841
    }
   },
   "book_the_great_gatsby": {
@@ -1020,8 +1020,7 @@
     "saved": true,
     "shown": true,
     "missing": [
-     "year:not-stored",
-     "creator:not-stored"
+     "creator:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0
@@ -1029,27 +1028,23 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "year:not-stored",
-     "creator:not-stored",
-     "size:stored-not-shown",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 220
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "year:not-stored",
-     "creator:not-stored",
+     "creator:stored-not-shown",
      "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 132
    }
   },
   "book_pride_and_prejudice": {
@@ -1066,12 +1061,11 @@
     "shown": true,
     "missing": [
      "creator:not-stored",
-     "size:stored-not-shown",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 152
+    "ready_ms": 237
    },
    "search": {
     "saved": true,
@@ -1092,7 +1086,6 @@
     "saved": true,
     "shown": true,
     "missing": [
-     "year:not-stored",
      "creator:not-stored"
     ],
     "wrong": [],
@@ -1101,7 +1094,6 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "year:not-stored",
      "creator:not-stored",
      "description:not-stored",
      "size:not-stored",
@@ -1109,20 +1101,19 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 203
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "year:not-stored",
      "creator:not-stored",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 19,
-    "ready_ms": 106
+    "ready_ms": 108
    }
   },
   "book_cien_años_de_soledad": {
@@ -1138,31 +1129,27 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 187
+    "ready_ms": 219
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "creator:stored-not-shown",
-     "description:not-stored"
+     "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 106
+    "ready_ms": 273
    },
    "recommendations": {
     "shown": true,
-    "missing": [
-     "genres:not-stored"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1186,7 +1173,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 184
+    "ready_ms": 272
    },
    "search": {
     "saved": true,
@@ -1198,7 +1185,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 109
+    "ready_ms": 122
    },
    "home": {
     "shown": true,
@@ -1222,25 +1209,23 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 170
+    "ready_ms": 259
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "creator:stored-not-shown",
-     "description:not-stored"
+     "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 106
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -1265,12 +1250,12 @@
     "shown": true,
     "missing": [
      "description:not-stored",
-     "size:not-stored",
+     "size:stored-not-shown",
      "genres:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 189
+    "ready_ms": 215
    },
    "search": {
     "saved": true,
@@ -1282,15 +1267,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 12,
-    "ready_ms": 104
-   },
-   "recommendations": {
-    "shown": true,
-    "missing": [
-     "genres:not-stored"
-    ],
-    "wrong": [],
-    "images_failed": 0
+    "ready_ms": 105
    }
   },
   "book_don_quixote": {
@@ -1307,12 +1284,11 @@
     "shown": true,
     "missing": [
      "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 196
+    "ready_ms": 221
    },
    "search": {
     "saved": true,
@@ -1324,7 +1300,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 108
    },
    "home": {
     "shown": true,
@@ -1348,25 +1324,23 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 200
+    "ready_ms": 234
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "creator:stored-not-shown",
-     "description:not-stored"
+     "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 107
    },
    "home": {
     "shown": true,
@@ -1390,25 +1364,29 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 179
+    "ready_ms": 226
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "creator:stored-not-shown",
-     "description:not-stored"
+     "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 2,
-    "ready_ms": 106
+    "ready_ms": 115
+   },
+   "recommendations": {
+    "shown": true,
+    "missing": [],
+    "wrong": [],
+    "images_failed": 0
    }
   },
   "book_kokila_ramanlal_desai": {
@@ -1432,7 +1410,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 138
+    "ready_ms": 156
    },
    "search": {
     "saved": true,
@@ -1445,7 +1423,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 2,
-    "ready_ms": 104
+    "ready_ms": 109
    },
    "home": {
     "shown": true,
@@ -1470,25 +1448,23 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 169
+    "ready_ms": 256
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "creator:stored-not-shown",
-     "description:not-stored"
+     "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 104
+    "ready_ms": 547
    },
    "home": {
     "shown": true,
@@ -1513,12 +1489,11 @@
     "shown": true,
     "missing": [
      "description:not-stored",
-     "size:not-stored",
-     "genres:not-stored"
+     "size:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 181
+    "ready_ms": 227
    },
    "search": {
     "saved": true,
@@ -1530,7 +1505,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 19,
-    "ready_ms": 105
+    "ready_ms": 162
    }
   },
   "book_zzqxv_unmatched_page_candidate": {
@@ -1791,7 +1766,7 @@
  "stats": {
   "meta": [
    "26 experienced",
-   "0 hrs on screen",
+   "5 hrs on screen",
    "8 books",
    "7.0 avg rating"
   ],
@@ -1799,14 +1774,14 @@
    "8 finished",
    "0 currently reading",
    "0 did not finish",
-   "435 pages among them"
+   "1,626 pages among them"
   ],
   "genres": [
-   "Drama 12 titles",
+   "Drama 13 titles",
+   "Fiction 5 titles",
+   "History 4 titles",
    "Crime 4 titles",
-   "Comedy 3 titles",
-   "History 3 titles",
-   "Action 3 titles"
+   "Romance 3 titles"
   ],
   "watched": 26
  },
@@ -1883,16 +1858,30 @@
   "https://api.tvmaze.com/search/shows?q=Twin%20Peaks",
   "https://api.tvmaze.com/search/shows?q=Vikram",
   "https://api.tvmaze.com/shows/1",
-  "https://openlibrary.org/search.json?q=Arundhati%20Roy&limit=8",
-  "https://openlibrary.org/search.json?q=Kalki%20Kirushnamoorthy&limit=8",
-  "https://openlibrary.org/search.json?q=Kathy%20Acker&limit=8",
-  "https://openlibrary.org/search.json?q=Ramanlal%20Vasantlal%20Desai&limit=8",
-  "https://openlibrary.org/search.json?q=Salman%20Rushdie&limit=8",
-  "https://openlibrary.org/search.json?q=author%3A%22Arundhati%20Roy%22&limit=4",
-  "https://openlibrary.org/search.json?q=author%3A%22Kalki%20Kirushnamoorthy%22&limit=4",
-  "https://openlibrary.org/search.json?q=author%3A%22Kathy%20Acker%22&limit=4",
-  "https://openlibrary.org/search.json?q=author%3A%22Ramanlal%20Vasantlal%20Desai%22&limit=4",
-  "https://openlibrary.org/search.json?q=author%3A%22Salman%20Rushdie%22&limit=4",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons_(2015_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons_(TV_series)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown_(2022_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown_(TV_series)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown_(2026_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown_(TV_series)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter_(2026_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter_(TV_series)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle_(2020_film)",
+  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle_(TV_series)",
+  "https://openlibrary.org/search.json?q=Arundhati%20Roy&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Fiction&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Kalki%20Kirushnamoorthy&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Kathy%20Acker&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Ramanlal%20Vasantlal%20Desai&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Romance&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=Salman%20Rushdie&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL2714378W&limit=1&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/works/OL2714378W.json",
   "https://openlibrary.org/works/OL2714378W/editions.json?limit=25",
   "https://query.wikidata.org/sparql?query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP31%20wd%3AQ11424%20%7D%20LIMIT%201&format=json"
  ],
@@ -1905,7 +1894,9 @@
    "canonicalTitle": "Chemmeen",
    "type": "book",
    "year": 1962,
-   "genres": [],
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -1918,18 +1909,29 @@
    "authors": [
     "Thakazhi Sivasankara Pillai"
    ],
+   "pageCount": 238,
    "languages": [
     "mal",
     "eng"
    ],
-   "editionCount": 3
+   "editionCount": 3,
+   "preferredEditionId": "openlibrary_edition_OL38296698M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL38296698M",
+    "edition": "openlibrary_edition_OL38296698M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL457179W": {
    "id": "openlibrary_work_OL457179W",
    "canonicalTitle": "Midnight's Children",
    "type": "book",
    "year": 1981,
-   "genres": [],
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -1942,26 +1944,37 @@
    "authors": [
     "Salman Rushdie"
    ],
+   "pageCount": 448,
    "languages": [
-    "ger",
-    "hin",
-    "per",
-    "fin",
-    "pol",
-    "chi",
+    "cat",
+    "fre",
+    "gre",
+    "vie",
     "spa",
     "rus",
-    "gre",
-    "heb",
-    "fre",
-    "kor",
     "ita",
+    "pol",
+    "per",
+    "fin",
+    "ger",
     "dut",
-    "cat",
-    "vie",
-    "eng"
+    "eng",
+    "heb",
+    "hin",
+    "chi",
+    "kor"
    ],
-   "editionCount": 86
+   "editionCount": 86,
+   "overview": "Midnight's Children is a 1981 novel by author Salman Rushdie. It portrays India's transition from British colonial rule to independence and the partition of India. It is considered an example of postcolonial, postmodern, and magical realist literature. The story is told by its chief protagonist, Saleem Sinai, and is set in the context of actual historical events. The style of preserving history with fictional accounts is self-reflexive.\r\n\r\nMidnight's Children won both the Booker Prize and the James Tait Black Memorial Prize in 1981. It was awarded the \"Booker of Bookers\" Prize and the best all-time prize winners in 1993 and 2008 to celebrate the Booker Prize 25th and 40th anniversary.In 2003, the novel was listed on the BBC's The Big Read poll of the UK's \"best-loved novels\". It was also added to the list of Great Books of the 20th Century, published by Penguin Books.\r\n\r\n\r\n----------\r\nContains:\r\nMidnight's Children (2/2)",
+   "preferredEditionId": "openlibrary_edition_OL39218068M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL39218068M",
+    "overview": "openlibrary:work",
+    "edition": "openlibrary_edition_OL39218068M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL10619074W": {
    "id": "openlibrary_work_OL10619074W",
@@ -1984,14 +1997,22 @@
    "languages": [
     "guj"
    ],
-   "editionCount": 1
+   "editionCount": 1,
+   "preferredEditionId": "openlibrary_edition_OL19639683M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "edition": "openlibrary_edition_OL19639683M: most complete edition (no edition in the reader language)"
+   }
   },
   "openlibrary_work_OL37949460W": {
    "id": "openlibrary_work_OL37949460W",
    "canonicalTitle": "Intermezzo",
    "type": "book",
    "year": 2024,
-   "genres": [],
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2004,18 +2025,33 @@
    "authors": [
     "Sally Rooney"
    ],
+   "pageCount": 464,
    "languages": [
     "spa",
     "eng"
    ],
-   "editionCount": 8
+   "editionCount": 8,
+   "overview": "Aside from the fact that they are brothers, Peter and Ivan Koubek seem to have little in common.\r\n\r\nPeter is a Dublin lawyer in his thirties—successful, competent, and apparently unassailable. But in the wake of their father’s death, he’s medicating himself to sleep and struggling to manage his relationships with two very different women—his enduring first love, Sylvia, and Naomi, a college student for whom life is one long joke.\r\n\r\nIvan is a twenty-two-year-old competitive chess player. He has always seen himself as socially awkward, a loner, the antithesis of his glib elder brother. Now, in the early weeks of his bereavement, Ivan meets Margaret, an older woman emerging from her own turbulent past, and their lives become rapidly and intensely intertwined.\r\n\r\nFor two grieving brothers and the people they love, this is a new interlude—a period of desire, despair, and possibility; a chance to find out how much one life might hold inside itself without breaking.",
+   "preferredEditionId": "openlibrary_edition_OL57774221M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL57774221M",
+    "overview": "openlibrary:work",
+    "edition": "openlibrary_edition_OL57774221M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL61982W": {
    "id": "openlibrary_work_OL61982W",
    "canonicalTitle": "Ὀδύσσεια",
    "type": "book",
    "year": 1488,
-   "genres": [],
+   "genres": [
+    "Poetry",
+    "Fiction",
+    "Classics"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2028,43 +2064,56 @@
    "authors": [
     "Ὅμηρος"
    ],
+   "pageCount": 267,
    "languages": [
-    "slo",
-    "fin",
-    "chi",
-    "rus",
-    "por",
-    "mul",
-    "lat",
-    "per",
-    "dan",
-    "gle",
-    "spa",
-    "gre",
     "cat",
-    "ukr",
-    "ara",
-    "swe",
-    "fre",
-    "dut",
-    "ger",
-    "ita",
-    "und",
-    "pol",
-    "heb",
     "rum",
     "arm",
+    "gle",
+    "swe",
+    "spa",
+    "lat",
+    "ukr",
+    "heb",
+    "chi",
+    "mul",
+    "fre",
+    "dan",
+    "ita",
+    "grc",
+    "fin",
+    "ger",
+    "dut",
+    "slo",
+    "gre",
+    "und",
+    "pol",
+    "por",
+    "per",
     "eng",
-    "grc"
+    "rus",
+    "ara"
    ],
-   "editionCount": 1067
+   "editionCount": 1067,
+   "overview": "The Odyssey (/ˈɒdəsi/; Greek: Ὀδύσσεια, Odýsseia) is one of two major ancient Greek epic poems attributed to Homer. It is, in part, a sequel to the Iliad, the other work ascribed to Homer. The poem is fundamental to the modern Western canon, and is the second oldest extant work of Western literature, the Iliad being the oldest. Scholars believe it was composed near the end of the 8th century BC, somewhere in Ionia, the Greek coastal region of Anatolia. - [Wikipedia][1]\r\n\r\n  [1]: https://en.wikipedia.org/wiki/Odyssey",
+   "preferredEditionId": "openlibrary_edition_OL32130157M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL32130157M",
+    "overview": "openlibrary:work",
+    "edition": "openlibrary_edition_OL32130157M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL2714378W": {
    "id": "openlibrary_work_OL2714378W",
    "canonicalTitle": "Don Quixote",
    "type": "book",
    "year": 1986,
-   "genres": [],
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2078,11 +2127,18 @@
    "authors": [
     "Kathy Acker"
    ],
+   "pageCount": 207,
    "languages": [
     "fre",
     "eng"
    ],
-   "editionCount": 8
+   "editionCount": 8,
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:search"
+   }
   },
   "openlibrary_work_OL26112603W": {
    "id": "openlibrary_work_OL26112603W",
@@ -2102,14 +2158,26 @@
    "authors": [
     "Premchand"
    ],
-   "editionCount": 3
+   "pageCount": 330,
+   "editionCount": 3,
+   "preferredEditionId": "openlibrary_edition_OL39763751M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL39763751M",
+    "edition": "openlibrary_edition_OL39763751M: most complete edition (no edition in the reader language)"
+   }
   },
   "openlibrary_work_OL1052133W": {
    "id": "openlibrary_work_OL1052133W",
    "canonicalTitle": "The God of Small Things",
    "type": "book",
    "year": 1997,
-   "genres": [],
+   "genres": [
+    "Fiction",
+    "Romance"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2122,22 +2190,33 @@
    "authors": [
     "Arundhati Roy"
    ],
+   "pageCount": 321,
    "languages": [
-    "ger",
-    "pol",
-    "hin",
-    "spa",
-    "heb",
-    "urd",
-    "tur",
-    "jpn",
-    "fre",
-    "ita",
-    "dut",
     "cat",
-    "eng"
+    "fre",
+    "spa",
+    "urd",
+    "ita",
+    "pol",
+    "jpn",
+    "eng",
+    "hin",
+    "ger",
+    "dut",
+    "tur",
+    "heb"
    ],
-   "editionCount": 65
+   "editionCount": 65,
+   "overview": "The God of Small Things is the debut novel of Indian writer Arundhati Roy. It is a story about the childhood experiences of fraternal twins whose lives are destroyed by the \"Love Laws\" that lay down \"who should be loved, and how. And how much.\" The book explores how the small things affect people's behavior and their lives. The book also reflects its irony against casteism, which is a major discrimination that prevails in India. It won the Booker Prize in 1997.",
+   "preferredEditionId": "openlibrary_edition_OL31390125M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL31390125M",
+    "overview": "openlibrary:work",
+    "edition": "openlibrary_edition_OL31390125M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL15677384W": {
    "id": "openlibrary_work_OL15677384W",
@@ -2160,14 +2239,23 @@
    "languages": [
     "tam"
    ],
-   "editionCount": 2
+   "editionCount": 2,
+   "preferredEditionId": "openlibrary_edition_OL24608918M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "edition": "openlibrary_edition_OL24608918M: most complete edition (no edition in the reader language)"
+   }
   },
   "openlibrary_work_OL274505W": {
    "id": "openlibrary_work_OL274505W",
    "canonicalTitle": "Cien años de soledad",
    "type": "book",
    "year": 1967,
-   "genres": [],
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2180,6 +2268,7 @@
    "authors": [
     "Gabriel García Márquez"
    ],
+   "pageCount": 422,
    "languages": [
     "fre",
     "tur",
@@ -2198,13 +2287,23 @@
     "chi",
     "kor"
    ],
-   "editionCount": 209
+   "editionCount": 209,
+   "overview": "*Cien años de soledad* es una novela del escritor colombiano Gabriel García Márquez, ganador del Premio Nobel de Literatura en 1982. Es considerada una obra maestra de la literatura hispanoamericana y universal, cumbre del denominado \"realismo mágico\". Es asimismo una de las obras más traducidas y leídas en español. Narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo.\r\n\r\n\r\n----------\r\n\r\n\r\n*Cien años de soledad* is considered the best work of García Márquez. A novel that narrates the vicisitudes of Aureliano Buendía in the mythic Macondo, a town in some unknown region of Colombia. This novel was written in the magic realism (\"realismo mágico\"), a style that mix together amazing elements taken by fiction and reality.",
+   "preferredEditionId": "openlibrary_edition_OL33021517M",
+   "fieldSources": {
+    "authors": "openlibrary:search",
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL33021517M",
+    "overview": "openlibrary:work",
+    "edition": "openlibrary_edition_OL33021517M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL46167829W": {
    "id": "openlibrary_work_OL46167829W",
    "canonicalTitle": "Norwegian Wood",
    "type": "book",
-   "year": null,
+   "year": 1987,
    "genres": [],
    "ratings": [],
    "providers": [
@@ -2216,14 +2315,23 @@
    ],
    "posterUrl": "https://covers.openlibrary.org/b/isbn/9780375704024-L.jpg",
    "authors": [],
-   "preferredEditionId": "openlibrary_edition_OL62712563M"
+   "preferredEditionId": "openlibrary_edition_OL62712563M",
+   "fieldSources": {
+    "posterUrl": "openlibrary:search",
+    "year": "openlibrary:search",
+    "edition": "openlibrary_edition_OL62712563M: matches the edition tied to the saved page"
+   }
   },
   "openlibrary_work_OL66554W": {
    "id": "openlibrary_work_OL66554W",
    "canonicalTitle": "Pride and Prejudice",
    "type": "book",
    "year": 1853,
-   "genres": [],
+   "genres": [
+    "Drama",
+    "Fiction",
+    "History"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2235,15 +2343,23 @@
    "posterUrl": "https://covers.openlibrary.org/b/id/12645114-L.jpg",
    "overview": "Pride and Prejudice is an 1813 novel of manners written by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.\r\n\r\nMr. Bennet, owner of the Longbourn estate in Hertfordshire, has five daughters, but his property is entailed and can only be passed to a male heir. His wife also lacks an inheritance, so his family faces becoming very poor upon his death. Thus, it is imperative that at least one of the girls marry well to support the others, which is a motivation that drives the plot.",
    "authors": [],
-   "pageCount": 435,
-   "preferredEditionId": "openlibrary_edition_OL37076991M"
+   "pageCount": 383,
+   "preferredEditionId": "openlibrary_edition_OL51673567M",
+   "fieldSources": {
+    "year": "openlibrary:search",
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:edition openlibrary_edition_OL51673567M",
+    "edition": "openlibrary_edition_OL51673567M: most complete edition in eng"
+   }
   },
   "openlibrary_work_OL468431W": {
    "id": "openlibrary_work_OL468431W",
    "canonicalTitle": "The Great Gatsby",
    "type": "book",
-   "year": null,
-   "genres": [],
+   "year": 1920,
+   "genres": [
+    "Fiction"
+   ],
    "ratings": [],
    "providers": [
     {
@@ -2253,10 +2369,19 @@
     }
    ],
    "posterUrl": "https://covers.openlibrary.org/b/id/13028546-L.jpg",
-   "overview": "Here is a novel, glamorous, ironical, compassionate – a marvelous fusion into unity of the curious incongruities of the life of the period – which reveals a hero like no other – one who could live at no other time and in no other place. But he will live as a character, we surmise, as long as the memory of any reader lasts.\r\n\r\n\"There was something gorgeous about him, some heightened sensitivity to the promises of life.... It was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again.\"\r\n\r\nIt is the story of this Jay Gatsby who came so mysteriously to West Egg, of his sumptuous entertainments, and of his love for Daisy Buchanan – a story that ranges from pure lyrical beauty to sheer brutal realism, and is infused with a sense of the strangeness of human circumstance in a heedless universe.\r\n\r\nIt is a magical, living book, blended of irony, romance, and mysticism.\r\n\r\n\\--first edition jacket\r\n\r\n---\r\n\r\nAlso contained in:\r\n\r\n- [The Fitzgerald Reader](https://openlibrary.org/works/OL468551W/The_Fitzgerald_Reader)\r\n- [Three Novels of F. Scott Fitzgerald](https://openlibrary.org/works/OL468557W)",
-   "authors": [],
+   "overview": "Here is a novel, glamorous, ironical, compassionate – a marvelous fusion into unity of the curious incongruities of the life of the period – which reveals a hero like no other – one who could live at no other time and in no other place. But he will live as a character, we surmise, as long as the memory of any reader lasts.\r\n\r\n\"There was something gorgeous about him, some heightened sensitivity to the promises of life.... It was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again.\"\r\n\r\nIt is the story of this Jay Gatsby who came so mysteriously to West Egg, of his sumptuous entertainments, and of his love for Daisy Buchanan – a story that ranges from pure lyrical beauty to sheer brutal realism, and is infused with a sense of the strangeness of human circumstance in a heedless universe.\r\n\r\nIt is a magical, living book, blended of irony, romance, and mysticism.\r\n\r\n\\--first edition jacket\r\n\r\n---\r\n\r\nAlso contained in:\r\n\r\n- The Fitzgerald Reader\r\n- Three Novels of F. Scott Fitzgerald",
+   "authors": [
+    "F. Scott Fitzgerald"
+   ],
    "pageCount": 180,
-   "preferredEditionId": "openlibrary_edition_OL23109860M"
+   "preferredEditionId": "openlibrary_edition_OL39479050M",
+   "fieldSources": {
+    "posterUrl": "openlibrary:search",
+    "pageCount": "openlibrary:search",
+    "year": "openlibrary:search",
+    "authors": "openlibrary:edition",
+    "edition": "openlibrary_edition_OL39479050M: most complete edition in eng"
+   }
   },
   "tvmaze_tv_16149": {
    "id": "tvmaze_tv_16149",
@@ -2283,7 +2408,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/192/482341.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/192/482341.jpg",
-   "overview": "Meet Fleabag. She's not talking to all of us - she's talking to you. So why don't you pop your top off and come right in?"
+   "overview": "Meet Fleabag. She's not talking to all of us - she's talking to you. So why don't you pop your top off and come right in?",
+   "runtimeMinutes": 30,
+   "network": "BBC Three",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_47014": {
    "id": "tvmaze_tv_47014",
@@ -2304,7 +2437,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/517/1293627.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/517/1293627.jpg",
-   "overview": "Panchayat captures the journey of engineering graduate Abhishek, who for lack of a better job option joins as secretary of a panchayat office in a remote village of Uttar Pradesh."
+   "overview": "Panchayat captures the journey of engineering graduate Abhishek, who for lack of a better job option joins as secretary of a panchayat office in a remote village of Uttar Pradesh.",
+   "runtimeMinutes": 36,
+   "network": "Prime Video",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_44933": {
    "id": "tvmaze_tv_44933",
@@ -2332,7 +2473,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/548/1371406.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/548/1371406.jpg",
-   "overview": "Mark Scout leads a team at Lumon Industries, whose employees have undergone a severance procedure, which surgically divides their memories between their work and personal lives. This daring experiment in \"work-life balance\" is called into question as Mark finds himself at the center of an unraveling mystery that will force him to confront the true nature of his work… and of himself."
+   "overview": "Mark Scout leads a team at Lumon Industries, whose employees have undergone a severance procedure, which surgically divides their memories between their work and personal lives. This daring experiment in \"work-life balance\" is called into question as Mark finds himself at the center of an unraveling mystery that will force him to confront the true nature of his work… and of himself.",
+   "runtimeMinutes": 49,
+   "network": "Apple TV",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_156": {
    "id": "tvmaze_tv_156",
@@ -2360,7 +2509,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/397/992910.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/397/992910.jpg",
-   "overview": "Set in the fictional town of Twin Peaks in northeast Washington state, this is the story of FBI Special Agent Dale Cooper and his investigation of the murder of a popular local teenage schoolgirl, Laura Palmer."
+   "overview": "Set in the fictional town of Twin Peaks in northeast Washington state, this is the story of FBI Special Agent Dale Cooper and his investigation of the murder of a popular local teenage schoolgirl, Laura Palmer.",
+   "runtimeMinutes": 62,
+   "network": "Paramount+ with Showtime",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_30770": {
    "id": "tvmaze_tv_30770",
@@ -2387,7 +2544,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/193/482599.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/193/482599.jpg",
-   "overview": "Chernobyl dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries focuses on the heartbreaking scope of the nuclear plant disaster that occurred in Ukraine in April 1986, revealing how and why it happened and telling the shocking, remarkable stories of the heroes who fought and fell."
+   "overview": "Chernobyl dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries focuses on the heartbreaking scope of the nuclear plant disaster that occurred in Ukraine in April 1986, revealing how and why it happened and telling the shocking, remarkable stories of the heroes who fought and fell.",
+   "runtimeMinutes": 70,
+   "network": "HBO",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_27436": {
    "id": "tvmaze_tv_27436",
@@ -2415,7 +2580,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/376/940830.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/376/940830.jpg",
-   "overview": "A group of very peculiar robbers have assaulted the Factory of Moneda and Timbre to carry out the most perfect robbery in the history of Spain and taking home 2,400 million euros."
+   "overview": "A group of very peculiar robbers have assaulted the Factory of Moneda and Timbre to carry out the most perfect robbery in the history of Spain and taking home 2,400 million euros.",
+   "runtimeMinutes": 60,
+   "network": "Netflix",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_17861": {
    "id": "tvmaze_tv_17861",
@@ -2443,7 +2616,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1262352.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/504/1262352.jpg",
-   "overview": "A family saga with a supernatural twist, Dark is set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families."
+   "overview": "A family saga with a supernatural twist, Dark is set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families.",
+   "runtimeMinutes": 56,
+   "network": "Netflix",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "tvmaze_tv_18197": {
    "id": "tvmaze_tv_18197",
@@ -2471,7 +2652,15 @@
    ],
    "posterUrl": "https://static.tvmaze.com/uploads/images/medium_portrait/204/511629.jpg",
    "backdropUrl": "https://static.tvmaze.com/uploads/images/original_untouched/204/511629.jpg",
-   "overview": "Set in Mumbai, Sacred Games delves into the city's intricate web of organized crime, corruption, politics and espionage that lie beneath India's economic renaissance. It is an epic masterwork of exceptional richness and power that interweaves the lives of the privileged, the famous, the wretched and the bloodthirsty."
+   "overview": "Set in Mumbai, Sacred Games delves into the city's intricate web of organized crime, corruption, politics and espionage that lie beneath India's economic renaissance. It is an epic masterwork of exceptional richness and power that interweaves the lives of the privileged, the famous, the wretched and the bloodthirsty.",
+   "runtimeMinutes": 50,
+   "network": "Netflix",
+   "fieldSources": {
+    "year": "tvmaze:premiered",
+    "overview": "tvmaze:summary",
+    "runtimeMinutes": "tvmaze:averageRuntime/runtime",
+    "network": "tvmaze:network/webChannel"
+   }
   },
   "seed_audit_film_dead_poster": {
    "id": "seed_audit_film_dead_poster",
@@ -2525,7 +2714,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/hvTVZb7hBC8tZAGoEhH5eiMJu2B.jpg",
    "overview": "After years of swimming every day in the freezing ocean at the tip of Africa, Craig Foster meets an unlikely teacher: a young octopus who displays remarkable curiosity. Visiting her den and tracking her movements for months on end he eventually wins the animal’s trust and they develop a never-before-seen bond between human and wild animal.\n\n• Directed by: Pippa Ehrlich, James Reed\n• Starring: Craig Foster\n• Cinematography: Roger Horrocks\n• Music by: Kevin Smuts",
-   "wikidataDirectorBio": "Pippa Ehrlich, James Reed"
+   "wikidataDirectorBio": "Pippa Ehrlich, James Reed",
+   "fieldSources": {}
   },
   "seed_free_solo": {
    "id": "seed_free_solo",
@@ -2556,7 +2746,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/v4QfYZMACODlWul9doN9RxE99ag.jpg",
    "overview": "Follow Alex Honnold as he attempts to become the first person to ever free solo climb Yosemite's 3,000 foot high El Capitan wall. With no ropes or safety gear, this would arguably be the greatest feat in rock climbing history.\n\n• Directed by: Elizabeth Chai Vasarhelyi, Jimmy Chin\n• Starring: Alex Honnold, Tommy Caldwell\n• Cinematography: Jimmy Chin, Clair Popkin, Mikey Schaefer\n• Music by: Marco Beltrami",
-   "wikidataDirectorBio": "Elizabeth Chai Vasarhelyi, Jimmy Chin"
+   "wikidataDirectorBio": "Elizabeth Chai Vasarhelyi, Jimmy Chin",
+   "fieldSources": {}
   },
   "seed_everything_everywhere": {
    "id": "seed_everything_everywhere",
@@ -2588,7 +2779,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
    "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.\n\n• Directed by: Daniel Kwan, Daniel Scheinert\n• Written by: Daniel Kwan, Daniel Scheinert\n• Starring: Michelle Yeoh, Ke Huy Quan, Stephanie Hsu, Jamie Lee Curtis\n• Cinematography: Larkin Seiple\n• Music by: Son Lux",
-   "wikidataDirectorBio": "Daniel Kwan, Daniel Scheinert"
+   "wikidataDirectorBio": "Daniel Kwan, Daniel Scheinert",
+   "fieldSources": {}
   },
   "seed_portrait_lady_fire": {
    "id": "seed_portrait_lady_fire",
@@ -2619,7 +2811,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/rUDuOKpkKBHxx41BScqKej72iT3.jpg",
    "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.\n\n• Directed by: Céline Sciamma\n• Written by: Céline Sciamma\n• Starring: Noémie Merlant, Adèle Haenel, Luàna Bajrami\n• Cinematography: Claire Mathon\n• Music by: Jean-Baptiste de Laubier, Arthur Simonini",
-   "wikidataDirectorBio": "Céline Sciamma"
+   "wikidataDirectorBio": "Céline Sciamma",
+   "fieldSources": {}
   },
   "seed_parasite": {
    "id": "seed_parasite",
@@ -2651,7 +2844,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
    "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.\n\n• Directed by: Bong Joon Ho\n• Written by: Bong Joon Ho, Han Jin-won\n• Starring: Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam\n• Cinematography: Hong Kyung-pyo\n• Music by: Jung Jae-il",
-   "wikidataDirectorBio": "Bong Joon Ho"
+   "wikidataDirectorBio": "Bong Joon Ho",
+   "fieldSources": {}
   },
   "seed_meiyazhagan": {
    "id": "seed_meiyazhagan",
@@ -2682,7 +2876,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/ngDEH7YqVaMCAD4LpNxRl6ScJnw.jpg",
    "overview": "Twenty-two years after losing his home, Arulmozhi Varman returns to his native Thanjavur to attend his cousin's wedding. Amidst the celebrations, Arul is reintroduced to an upbeat man whom he cannot recall. With the help of the unknown man, Arul reconnects with his past.\n\n• Directed by: C. Prem Kumar\n• Written by: C. Prem Kumar\n• Starring: Karthi, Arvind Swamy\n• Cinematography: Mahendiran Jayaraju\n• Music by: Govind Vasantha",
-   "wikidataDirectorBio": "C. Prem Kumar"
+   "wikidataDirectorBio": "C. Prem Kumar",
+   "fieldSources": {}
   },
   "seed_96": {
    "id": "seed_96",
@@ -2712,7 +2907,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/nrVloCa2hCFOztRF1DZU2jnWIiQ.jpg",
    "overview": "Ram is a photographer and nature lover who travels all around India capturing moments. On a chance visit to his hometown Tanjavur, he goes into his school and begins to walk down memory lane to 1994 when he was a student harboring feelings for his classmate Janu.\n\n• Directed by: C. Prem Kumar\n• Written by: C. Prem Kumar\n• Starring: Vijay Sethupathi, Trisha Krishnan\n• Cinematography: Mahendiran Jayaraju\n• Music by: Govind Vasantha",
-   "wikidataDirectorBio": "C. Prem Kumar"
+   "wikidataDirectorBio": "C. Prem Kumar",
+   "fieldSources": {}
   },
   "seed_vikram": {
    "id": "seed_vikram",
@@ -2744,7 +2940,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/774UV1aCURb4s4JfEFg3IEMu5Zj.jpg",
    "overview": "Amar is assigned to investigate a case of serial killings. When Amar investigates the case, he realizes it is not what it seems to be and following down this path will lead to nothing but war between everyone involved.\n\n• Directed by: Lokesh Kanagaraj\n• Written by: Lokesh Kanagaraj, Rathna Kumar\n• Starring: Kamal Haasan, Vijay Sethupathi, Fahadh Faasil\n• Cinematography: Girish Gangadharan\n• Music by: Anirudh Ravichander",
-   "wikidataDirectorBio": "Lokesh Kanagaraj"
+   "wikidataDirectorBio": "Lokesh Kanagaraj",
+   "fieldSources": {}
   },
   "seed_iruvar": {
    "id": "seed_iruvar",
@@ -2775,7 +2972,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/6uAHFUwhKWLF9OAvMz5zQdKiM4j.jpg",
    "overview": "A fictionalized account of the lives of 1980s Tamil Nadu political icons M. G. Ramachandran and M. Karunanidhi, continuing the tryst between Tamil cinema and Dravidian politics.\n\n• Directed by: Mani Ratnam\n• Written by: Mani Ratnam, Suhasini\n• Starring: Mohanlal, Prakash Raj, Aishwarya Rai, Tabu\n• Cinematography: Santosh Sivan\n• Music by: A. R. Rahman",
-   "wikidataDirectorBio": "Mani Ratnam"
+   "wikidataDirectorBio": "Mani Ratnam",
+   "fieldSources": {}
   },
   "seed_drishyam_ml": {
    "id": "seed_drishyam_ml",
@@ -2807,7 +3005,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/7d8GLneJkF81q1POdK7VUrjWafX.jpg",
    "overview": "Georgekutty lives a happy life with his wife and daughters. Things take a turn when his daughter gets indecently filmed using a hidden camera, by the son of a police inspector.\n\n• Directed by: Jeethu Joseph\n• Written by: Jeethu Joseph\n• Starring: Mohanlal, Meena, Ansiba Hassan, Asha Sarath\n• Cinematography: Sujith Vaassudev\n• Music by: Anil Johnson, Vinu Thomas",
-   "wikidataDirectorBio": "Jeethu Joseph"
+   "wikidataDirectorBio": "Jeethu Joseph",
+   "fieldSources": {}
   },
   "seed_spadikam": {
    "id": "seed_spadikam",
@@ -2838,7 +3037,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/1bDOwCzW2cIVtRgeVQKn5ZTzcFf.jpg",
    "overview": "Chacko master, a school headmaster, is never happy with his son, Thomas, and always degrades him. However, having had enough of him, Thomas runs away from home only to return as a gangster after long.\n\n• Directed by: Bhadran\n• Written by: Bhadran\n• Starring: Mohanlal, Thilakan, Urvashi, Spadikam George\n• Cinematography: J. Williams\n• Music by: S. P. Venkatesh",
-   "wikidataDirectorBio": "Bhadran"
+   "wikidataDirectorBio": "Bhadran",
+   "fieldSources": {}
   },
   "seed_kireedam": {
    "id": "seed_kireedam",
@@ -2869,7 +3069,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/1uH1VAGavh4Zi5Qwdhzcg9YJyh2.jpg",
    "overview": "Sethu aspires to become a police officer to fulfil his father's dream. However, his life turns upside down when he intervenes in a scuffle with a criminal to save his father's life.\n\n• Directed by: Sibi Malayil\n• Written by: A. K. Lohithadas\n• Starring: Mohanlal, Thilakan, Parvathy, Kaviyoor Ponnamma\n• Cinematography: S. Kumar\n• Music by: Johnson",
-   "wikidataDirectorBio": "Sibi Malayil"
+   "wikidataDirectorBio": "Sibi Malayil",
+   "fieldSources": {}
   },
   "seed_manichitrathazhu": {
    "id": "seed_manichitrathazhu",
@@ -2901,7 +3102,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/5YccrqvJFTfAVyEZp08I3fLx15y.jpg",
    "overview": "A young couple, Ganga and Nakulan, arrives at the ancestral home called Madampalli of the latter. Hailing from a family that follows tradition and superstitions, Nakulan's uncle Thampi objects to the couple's idea of moving into the allegedly haunted mansion, which Nakulan ignores. The couple moves in anyway following which seemingly supernatural events begin to happen.\n\n• Directed by: Fazil\n• Written by: Madhu Muttam\n• Starring: Mohanlal, Shobana, Suresh Gopi, Vinaya Prasad\n• Cinematography: Venu\n• Music by: M. G. Radhakrishnan, Johnson",
-   "wikidataDirectorBio": "Fazil"
+   "wikidataDirectorBio": "Fazil",
+   "fieldSources": {}
   },
   "seed_charulata": {
    "id": "seed_charulata",
@@ -2932,7 +3134,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/4kznHLoJGN3OBZunQvZwy26it8z.jpg",
    "overview": "In 1870s India, Charulata is an isolated, artistically inclined woman who sees little of her busy journalist husband, Bhupati. Realizing that his wife is alienated and unhappy, he convinces his cousin, Amal, to spend time with Charulata and nourish her creative impulses. Amal is a fledgling poet himself, and he and Charulata bond over their shared love of art.\n\n• Directed by: Satyajit Ray\n• Written by: Satyajit Ray\n• Starring: Madhabi Mukherjee, Soumitra Chatterjee, Sailen Mukherjee\n• Cinematography: Subrata Mitra\n• Music by: Satyajit Ray",
-   "wikidataDirectorBio": "Satyajit Ray"
+   "wikidataDirectorBio": "Satyajit Ray",
+   "fieldSources": {}
   },
   "seed_pather_panchali": {
    "id": "seed_pather_panchali",
@@ -2963,7 +3166,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/frZj5djlU9hFEjMcL21RJZVuG5O.jpg",
    "overview": "Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work. Alone, his wife, Sarbojaya, looks after her rebellious daughter, Durga, and her young son, Apu, as well as Harihar's elderly aunt Indir. The children enjoy the small pleasures of their difficult life, while their parents suffer the daily indignities heaped upon them.\n\n• Directed by: Satyajit Ray\n• Written by: Satyajit Ray\n• Starring: Subir Banerjee, Kanu Banerjee, Karuna Banerjee, Uma Dasgupta\n• Cinematography: Subrata Mitra\n• Music by: Ravi Shankar",
-   "wikidataDirectorBio": "Satyajit Ray"
+   "wikidataDirectorBio": "Satyajit Ray",
+   "fieldSources": {}
   },
   "seed_nayakan": {
    "id": "seed_nayakan",
@@ -2994,7 +3198,8 @@
    ],
    "posterUrl": "https://image.tmdb.org/t/p/w500/hnCKKPG5VkUiGQV0DTniyMTEZsT.jpg",
    "overview": "Velu Naicker, who witnesses the brutal murder of his father, kills a corrupt policeman and escapes to Mumbai, only to become a gangster.\n\n• Directed by: Mani Ratnam\n• Written by: Mani Ratnam, Balakumaran\n• Starring: Kamal Haasan, Saranya, Karthika\n• Cinematography: P. C. Sreeram\n• Music by: Ilaiyaraaja",
-   "wikidataDirectorBio": "Mani Ratnam"
+   "wikidataDirectorBio": "Mani Ratnam",
+   "fieldSources": {}
   }
  }
 }

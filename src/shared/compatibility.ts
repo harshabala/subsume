@@ -1,6 +1,7 @@
 /**
  * Bidirectional conversion between legacy cinema types and multi-medium catalog types.
  */
+import { subjectsToGenres } from './bookGenres';
 import type {
   MediaItem,
   LibraryItem,
@@ -97,7 +98,7 @@ export function catalogWorkToMediaItem(work: CatalogWork): MediaItem {
     originalTitle: work.originalTitle,
     type: type as MediaType,
     year: work.firstReleaseYear ?? null,
-    genres: work.genres ?? [],
+    genres: work.genres?.length ? work.genres : work.medium === 'book' ? subjectsToGenres(work.subjects) : [],
     ratings: (work.publicRatings ?? []).map((r) => ({
       provider: (r.provider as MediaItem['ratings'][0]['provider']) || 'other',
       score: r.score,
@@ -117,7 +118,7 @@ export function catalogWorkToMediaItem(work: CatalogWork): MediaItem {
     wikidataDirectorBio: undefined,
     subtitle: work.subtitle,
     authors: work.bookDetails?.authors,
-    pageCount: undefined,
+    pageCount: work.bookDetails?.pageCountMedian,
     languages: work.languages,
     editionCount: work.bookDetails?.editionCount,
   };

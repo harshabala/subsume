@@ -13,6 +13,10 @@ interface TvMazeShow {
   rating: { average: number | null };
   image: { medium: string; original: string } | null;
   summary: string | null;
+  runtime?: number | null;
+  averageRuntime?: number | null;
+  network?: { name?: string } | null;
+  webChannel?: { name?: string } | null;
 }
 
 interface TvMazeSearchResult {
@@ -22,6 +26,15 @@ interface TvMazeSearchResult {
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]+>/g, '');
+}
+
+function showRuntime(show: TvMazeShow): number | undefined {
+  const r = show.averageRuntime ?? show.runtime;
+  return typeof r === 'number' && r > 0 ? r : undefined;
+}
+
+function showNetwork(show: TvMazeShow): string | undefined {
+  return show.network?.name || show.webChannel?.name || undefined;
 }
 
 function mapShowToMediaItem(show: TvMazeShow): MediaItem {
@@ -46,6 +59,14 @@ function mapShowToMediaItem(show: TvMazeShow): MediaItem {
     posterUrl: show.image?.medium || '',
     backdropUrl: show.image?.original || undefined,
     overview: show.summary ? stripHtml(show.summary) : '',
+    ...(showRuntime(show) ? { runtimeMinutes: showRuntime(show) } : {}),
+    ...(showNetwork(show) ? { network: showNetwork(show) } : {}),
+    fieldSources: {
+      year: 'tvmaze:premiered',
+      overview: 'tvmaze:summary',
+      ...(showRuntime(show) ? { runtimeMinutes: 'tvmaze:averageRuntime/runtime' } : {}),
+      ...(showNetwork(show) ? { network: 'tvmaze:network/webChannel' } : {}),
+    },
   };
 }
 

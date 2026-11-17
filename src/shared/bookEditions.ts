@@ -114,3 +114,62 @@ export function sortEditionsPreferredFirst<T extends { id: string }>(
   const rest = editions.filter((e) => e.id !== preferredEditionId);
   return [...preferred, ...rest];
 }
+
+export interface ChooseEditionOptions {
+  /** Edition already tied to the page the user saved from (e.g. resolved from the page's ISBN). */
+  preferredId?: string;
+  /** ISBN seen on the page; an edition carrying it wins. */
+  isbn?: string;
+  /** 3-letter language code of the reader's UI language (e.g. "eng"). */
+  language?: string;
+}
+
+export interface ChosenEdition {
+  edition: BookEdition;
+  /** Human-readable reason, stored as fieldSources.edition. */
+  reason: string;
+}
+
+function completeness(e: BookEdition): number {
+  let n = 0;
+  if (typeof e.pageCount === 'number' && e.pageCount > 0) n++;
+  if (e.coverUrl) n++;
+  if (e.description) n++;
+  if (e.isbn13?.length || e.isbn10?.length) n++;
+  if (e.publisher) n++;
+  if (e.publishedDate) n++;
+  if (e.authors?.length) n++;
+  return n;
+}
+
+/**
+ * Choose one edition deliberately:
+ *  1. the edition already tied to the page (preferredId) or carrying the page's ISBN;
+ *  2. otherwise the most complete edition in the reader's language;
+ *  3. otherwise the most complete edition overall.
+ * Ties keep the first (Open Library order). Returns null when there are no editions.
+ */
+export function chooseEdition(
+  editions: readonly BookEdition[],
+  opts: ChooseEditionOptions = {},
+): ChosenEdition | null {
+  if (editions.length === 0) return null;
+  if (opts.preferredId) {
+    const e = editions.find((x) => x.id === opts.preferredId);
+    if (e) return { edition: e, reason: 'matches the edition tied to the saved page' };
+  }
+  if (opts.isbn) {
+    const want = opts.isbn.replace(/[^0-9Xx]/g, '').toUpperCase();
+    const e = editions.find((x) => [...(x.isbn13 ?? []), ...(x.isbn10 ?? [])].some((i) => i.toUpperCase() === want));
+    if (e) return { edition: e, reason: 'matches the ISBN on the saved page' };
+  }
+  const lang = opts.language?.toLowerCase();
+  const inLang = lang ? editions.filter((e) => e.language?.toLowerCase() === lang) : [];
+  const pool = inLang.length > 0 ? inLang : [...editions];
+  let best = pool[0];
+  for (const e of pool) if (completeness(e) > completeness(best)) best = e;
+  return {
+    edition: best,
+    reason: inLang.length > 0 ? `most complete edition in ${lang}` : 'most complete edition (no edition in the reader language)',
+  };
+}

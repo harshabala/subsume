@@ -21,6 +21,11 @@ export function mergeMediaItems(incoming: MediaItem, existing: MediaItem): Media
     overview: incoming.overview || existing.overview,
     runtimeMinutes: incoming.runtimeMinutes ?? existing.runtimeMinutes,
     originalTitle: incoming.originalTitle || existing.originalTitle,
+    authors: incoming.authors?.length ? incoming.authors : existing.authors,
+    pageCount: incoming.pageCount ?? existing.pageCount,
+    network: incoming.network || existing.network,
+    preferredEditionId: incoming.preferredEditionId || existing.preferredEditionId,
+    fieldSources: { ...existing.fieldSources, ...incoming.fieldSources },
     streamingAvailability:
       incoming.streamingAvailability && incoming.streamingAvailability.length > 0
         ? incoming.streamingAvailability

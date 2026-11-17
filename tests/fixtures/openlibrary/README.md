@@ -1,0 +1,1 @@
+These four files are REAL Open Library responses recorded on 2026-11-17 (keyless, no trimming; search recorded with the `fields` list in src/background/openLibrary.ts). Earlier hand-written versions carried fields the real API does not return by default, which hid thin book records from tests. Google Books fixtures in ../googlebooks are synthetic-shape (no keyless endpoint).
