@@ -389,7 +389,7 @@ export const recommendationHandlers: MessageHandlerMap = {
           resolvedFlat.push({
             tmdbId: r.workId,
             title: r.media.canonicalTitle,
-            year: r.media.year,
+            year: r.media.year ?? 0,
             type: r.media.type === 'book' || r.media.type === 'tv' ? r.media.type : 'movie',
             posterUrl: r.media.posterUrl || undefined,
             ratings: r.media.ratings,

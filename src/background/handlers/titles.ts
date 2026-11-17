@@ -74,7 +74,7 @@ async function enrichWithFreeApis(item: MediaItem): Promise<MediaItem> {
 
   // Enrich overview from Wikipedia only when missing (avoids unnecessary fetch on keyed TMDb results)
   if (!enriched.overview) {
-    const summary = await fetchWikipediaSummary(item.canonicalTitle, item.year).catch(() => null);
+    const summary = await fetchWikipediaSummary(item.canonicalTitle, item.year ?? 0).catch(() => null);
     if (summary) {
       enriched = { ...enriched, wikidataSummary: summary, overview: summary };
     }
@@ -384,7 +384,7 @@ export const titleHandlers: MessageHandlerMap = {
     const match: PosterMatch = {
       tmdbId: tmdbIdPart,
       title: media.canonicalTitle,
-      year: media.year,
+      year: media.year ?? 0,
       type: media.type,
       posterPath: media.posterUrl || null,
       ratings: media.ratings,

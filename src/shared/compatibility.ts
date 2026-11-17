@@ -43,7 +43,7 @@ export function mediaItemToCatalogWork(item: MediaItem): CatalogWork {
     medium,
     canonicalTitle: item.canonicalTitle,
     originalTitle: item.originalTitle,
-    firstReleaseYear: item.year,
+    firstReleaseYear: item.year ?? undefined,
     description: item.overview,
     genres: item.genres ?? [],
     images: {
@@ -68,7 +68,7 @@ export function mediaItemToCatalogWork(item: MediaItem): CatalogWork {
       medium === 'book'
         ? {
             authors: (item as MediaItem & { authors?: string[] }).authors ?? [],
-            firstPublishedYear: item.year,
+            firstPublishedYear: item.year ?? undefined,
           }
         : undefined,
     publicRatings: (item.ratings ?? []).map((r) => ({
@@ -96,7 +96,7 @@ export function catalogWorkToMediaItem(work: CatalogWork): MediaItem {
     canonicalTitle: work.canonicalTitle,
     originalTitle: work.originalTitle,
     type: type as MediaType,
-    year: work.firstReleaseYear ?? 0,
+    year: work.firstReleaseYear ?? null,
     genres: work.genres ?? [],
     ratings: (work.publicRatings ?? []).map((r) => ({
       provider: (r.provider as MediaItem['ratings'][0]['provider']) || 'other',

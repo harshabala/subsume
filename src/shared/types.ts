@@ -43,7 +43,8 @@ export interface MediaItem {
   canonicalTitle: string;
   originalTitle?: string;
   type: MediaType;
-  year: number;
+  /** Release/first-publication year. null = unknown (never 0). Pre-1800 years are valid. */
+  year: number | null;
   genres: string[];
   ratings: MediaRating[];
   providers: MediaExternalId[];

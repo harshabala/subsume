@@ -1,6 +1,6 @@
 # Expected fields per page and medium
 
-Status: **draft for the owner to approve** (north-star plan, workstream 1). The audit script
+Status: **accepted by the coordinator on 2026-11-17** on the owner's instruction (north-star plan, workstream 1). Settled: cards show a creator line (director / series creator or network where the model has one / author); detail shows runtime (film) or page count (book); series fields with no model field are dropped, not invented; unknown year is stored as null and shown as "Year unknown" (a designed gap, not a failure of the field); pre-1800 years are valid. The audit script
 (`npm run audit:pages`, `scripts/audit_pages.py`, constant `EXPECTED`) checks exactly this table.
 Basis: scenario 1 of the plan ("cover, author, year, page count and description appear on Home,
 Library, Search and Stats exactly as a film's poster, director, year and runtime do").

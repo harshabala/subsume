@@ -30,7 +30,7 @@ function mediaToDigestItem(item: MediaItem, reason: string): WeeklyDigestItem {
   return {
     mediaId: item.id,
     title: item.canonicalTitle,
-    year: item.year,
+    year: item.year ?? 0,
     type: item.type,
     reason,
     platforms: getPlatformNames(item),

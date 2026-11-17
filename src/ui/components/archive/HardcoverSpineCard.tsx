@@ -1,3 +1,4 @@
+import { yearOrUnknown, yearText } from '@/shared/year';
 import { useState, useEffect, useRef, useCallback } from 'preact/hooks';
 import { LibraryItem, MediaItem, LibraryStatus } from '@/shared/types';
 import {
@@ -107,7 +108,7 @@ export function HardcoverSpineCard({
             >
               {mediumLabel}
             </span>
-            {media?.year ? <span>{media.year}</span> : null}
+            <span data-year-unknown={yearText(media?.year) ? undefined : 'true'}>{yearOrUnknown(media?.year)}</span>
             {media?.ratings?.find((r) => r.provider === 'tmdb') && (
               <span className="sanctuary-card-badge">
                 TMDb {media.ratings.find((r) => r.provider === 'tmdb')!.score.toFixed(1)}

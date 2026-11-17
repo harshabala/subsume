@@ -25,12 +25,13 @@ function stripHtml(html: string): string {
 }
 
 function mapShowToMediaItem(show: TvMazeShow): MediaItem {
-  const year = show.premiered ? parseInt(show.premiered.substring(0, 4), 10) : 0;
+  const parsedYear = show.premiered ? parseInt(show.premiered.substring(0, 4), 10) : NaN;
+  const year = Number.isNaN(parsedYear) ? null : parsedYear;
   return {
     id: `tvmaze_tv_${show.id}`,
     canonicalTitle: show.name,
     type: 'tv',
-    year: isNaN(year) ? 0 : year,
+    year,
     genres: show.genres || [],
     ratings: show.rating?.average != null
       ? [{ provider: 'tvmaze', score: show.rating.average, votes: 0 }]

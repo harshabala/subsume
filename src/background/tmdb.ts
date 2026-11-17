@@ -187,8 +187,8 @@ function mapTmdbToMediaItem(
 ): MediaItem {
   const title = (type === 'movie' ? result.title : result.name) || 'Unknown Title';
   const releaseDate = (type === 'movie' ? result.release_date : result.first_air_date) || '';
-  const parsedYear = releaseDate ? parseInt(releaseDate.substring(0, 4), 10) : 0;
-  const year = isNaN(parsedYear) ? 0 : parsedYear;
+  const parsedYear = releaseDate ? parseInt(releaseDate.substring(0, 4), 10) : NaN;
+  const year = isNaN(parsedYear) ? null : parsedYear;
   
   const genres = (result.genre_ids || [])
     .map((id) => GENRE_MAP[id])
@@ -416,7 +416,7 @@ export async function enrichMediaWithStreaming(
  */
 export async function enrichMediaWithOmdbRatings(item: MediaItem): Promise<MediaItem> {
   if (item.type === 'book') return item;
-  const omdbRatings = await fetchOmdbRatings(item.canonicalTitle, item.year, item.type);
+  const omdbRatings = await fetchOmdbRatings(item.canonicalTitle, item.year ?? 0, item.type);
   if (omdbRatings.length === 0) {
     return item;
   }

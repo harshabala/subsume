@@ -1,3 +1,4 @@
+import { yearOrUnknown, yearText } from '@/shared/year';
 import { MediaItem } from '@/shared/types';
 import { mediumLabel } from '@/shared/productCopy';
 import '../styles/recommendations.css';
@@ -40,7 +41,7 @@ export function RecommendationMediaCard({
            <div>
              <h4 className="media-card-title">{media.canonicalTitle}</h4>
              <div className="media-card-meta">
-               {media.year ? <span>{media.year}</span> : null}
+               <span data-year-unknown={yearText(media.year) ? undefined : 'true'}>{yearOrUnknown(media.year)}</span>
                <span className="recommendation-type-badge-inline">{typeLabel}</span>
                {tmdbRating && (
                   <span className="media-card-rating">

@@ -1,3 +1,4 @@
+import { yearOrUnknown, yearText } from '@/shared/year';
 import { ComponentChildren } from 'preact';
 import { MediaItem } from '@/shared/types';
 import { mediumLabel, ADD_TO_ARCHIVE_LABEL, IN_ARCHIVE_LABEL } from '@/shared/productCopy';
@@ -68,7 +69,7 @@ export function SanctuaryMediaCard({
           >
             {typeLabel}
           </span>
-          {media.year ? <span>{media.year}</span> : null}
+          <span data-year-unknown={yearText(media.year) ? undefined : 'true'}>{yearOrUnknown(media.year)}</span>
         </div>
       )}
       {synopsis ? <p className="sanctuary-card-synopsis">{synopsis}</p> : null}

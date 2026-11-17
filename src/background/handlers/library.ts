@@ -303,7 +303,7 @@ export const libraryHandlers: MessageHandlerMap = {
       const { min, max } = req.yearRange;
       joined = joined.filter(({ media }) => {
         const year = media.year;
-        return Number.isFinite(year) && year >= min && year <= max;
+        return typeof year === 'number' && Number.isFinite(year) && year >= min && year <= max;
       });
     }
 

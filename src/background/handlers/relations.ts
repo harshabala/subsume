@@ -111,7 +111,7 @@ async function maybeEnrichFromWikidata(workId: string, media: MediaItem): Promis
     const hints = await fetchWikidataAdaptations({
       imdbId: imdb,
       title: media.canonicalTitle,
-      year: media.year,
+      year: media.year ?? undefined,
       medium: media.type,
     });
     if (hints.length === 0) return;

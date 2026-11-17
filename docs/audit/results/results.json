@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-16 10:03:17",
+ "generatedAt": "2026-11-17 10:45:25",
  "pages": {
   "onboarding": {
    "all": {
-    "ready_ms": 165,
+    "ready_ms": 141,
     "bad_text": [],
     "chars": 687,
     "unstubbed_requests": 6
@@ -11,24 +11,24 @@
   },
   "library": {
    "all": {
-    "cards": 35,
-    "ready_ms": 292,
+    "cards": 39,
+    "ready_ms": 255,
     "bad_text": [],
-    "chars": 3270
+    "chars": 3636
    }
   },
   "home": {
    "all": {
-    "cards": 14,
+    "cards": 12,
     "shown_by_medium": {
      "movie": 5,
      "tv": 1,
      "book": 6
     },
-    "hero": "NO. 001\nAmerica's Funniest People\n\nAdd a film or book to your journal\n\n\"Series premiere: America's Funniest People debuts Mon, Nov 16\"\nREFLECT\nARCHIVE",
-    "ready_ms": 115,
+    "hero": "TMDb 8.5\nNO. 001\nParasite\n\nDirected by Bong Joon Ho\n\n\"All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until…\"\nREFLECT\nARCHIVE",
+    "ready_ms": 132,
     "bad_text": [],
-    "chars": 1958
+    "chars": 1617
    }
   },
   "recommendations": {
@@ -40,14 +40,14 @@
      "book": 2
     },
     "hero": null,
-    "ready_ms": 112,
+    "ready_ms": 126,
     "bad_text": [],
     "chars": 1346
    }
   },
   "stats": {
    "all": {
-    "ready_ms": 70,
+    "ready_ms": 83,
     "bad_text": [],
     "chars": 779
    }
@@ -156,7 +156,7 @@
       "placeholder": false
      }
     ],
-    "ready_ms": 27,
+    "ready_ms": 44,
     "bad_text": [],
     "chars": 601
    }
@@ -164,14 +164,14 @@
   "alerts": {
    "all": {
     "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nALERTS\nPremiere Alerts\n\nSet a programme of genres, platforms, keywords, or book authors. We will notify you when new screen releases or matching books appear.\n\nCREATE ALERT\nAudit book alert\n\nBooks · \"Intermezzo\" · author: \"Rooney\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit series alert\n\nSeries · \"dark\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit film alert\n\nFilm · \"night\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE",
-    "ready_ms": 61,
+    "ready_ms": 79,
     "bad_text": [],
     "chars": 486
    }
   },
   "new-releases": {
    "all": {
-    "ready_ms": 62,
+    "ready_ms": 67,
     "bad_text": [],
     "chars": 436,
     "unstubbed_requests": 0,
@@ -180,7 +180,7 @@
   },
   "settings": {
    "all": {
-    "ready_ms": 63,
+    "ready_ms": 74,
     "bad_text": [],
     "chars": 785,
     "unstubbed_requests": 3,
@@ -206,7 +206,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 621
+    "ready_ms": 638
    },
    "search": {
     "saved": true,
@@ -215,7 +215,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7539
+    "ready_ms": 7614
    }
   },
   "seed_pather_panchali": {
@@ -235,7 +235,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 186
+    "ready_ms": 169
    },
    "search": {
     "saved": true,
@@ -244,7 +244,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7684
+    "ready_ms": 7569
    }
   },
   "seed_charulata": {
@@ -264,7 +264,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 180
    },
    "search": {
     "saved": true,
@@ -273,7 +273,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7557
+    "ready_ms": 7612
    },
    "home": {
     "shown": true,
@@ -305,7 +305,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 176
    },
    "search": {
     "saved": true,
@@ -314,7 +314,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7545
+    "ready_ms": 7563
    }
   },
   "seed_kireedam": {
@@ -334,7 +334,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 160
+    "ready_ms": 178
    },
    "search": {
     "saved": true,
@@ -343,7 +343,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7535
+    "ready_ms": 7538
    }
   },
   "seed_spadikam": {
@@ -363,7 +363,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 179
    },
    "search": {
     "saved": true,
@@ -372,7 +372,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7551
+    "ready_ms": 7624
    },
    "home": {
     "shown": true,
@@ -404,7 +404,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 196
    },
    "search": {
     "saved": true,
@@ -413,7 +413,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7568
+    "ready_ms": 7570
    }
   },
   "seed_iruvar": {
@@ -433,7 +433,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 172
    },
    "search": {
     "saved": true,
@@ -442,7 +442,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7610
+    "ready_ms": 7555
    }
   },
   "seed_vikram": {
@@ -462,7 +462,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 190
+    "ready_ms": 185
    },
    "search": {
     "saved": true,
@@ -471,7 +471,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7709
+    "ready_ms": 7578
    },
    "home": {
     "shown": true,
@@ -503,7 +503,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 172
+    "ready_ms": 155
    },
    "search": {
     "saved": true,
@@ -512,7 +512,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7670
+    "ready_ms": 7586
    }
   },
   "seed_meiyazhagan": {
@@ -532,7 +532,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 174
    },
    "search": {
     "saved": true,
@@ -541,7 +541,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7601
+    "ready_ms": 7558
    }
   },
   "seed_parasite": {
@@ -561,7 +561,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 184
+    "ready_ms": 165
    },
    "search": {
     "saved": true,
@@ -570,7 +570,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7574
+    "ready_ms": 7554
    },
    "home": {
     "shown": true,
@@ -602,7 +602,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 201
    },
    "search": {
     "saved": true,
@@ -611,7 +611,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7542
+    "ready_ms": 7610
    }
   },
   "seed_everything_everywhere": {
@@ -631,7 +631,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 194
    },
    "search": {
     "saved": true,
@@ -640,7 +640,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7588
+    "ready_ms": 7622
    }
   },
   "seed_free_solo": {
@@ -660,7 +660,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 522
+    "ready_ms": 175
    },
    "search": {
     "saved": true,
@@ -669,7 +669,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7595
+    "ready_ms": 7577
    },
    "home": {
     "shown": true,
@@ -701,7 +701,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 168
    },
    "search": {
     "saved": true,
@@ -710,16 +710,48 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7533
+    "ready_ms": 7619
    }
   },
   "synth_film_no_poster": {
    "library": {
-    "saved": false,
-    "note": "save failed: Invalid media item payload"
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "year:not-stored",
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "year:not-stored",
+     "creator:not-stored",
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 146
    },
    "search": {
-    "saved": false
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "cover:not-stored",
+     "year:not-stored",
+     "creator:not-stored",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 1,
+    "ready_ms": 7609
    }
   },
   "synth_film_dead_poster": {
@@ -742,7 +774,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 175
+    "ready_ms": 176
    },
    "search": {
     "saved": true,
@@ -754,7 +786,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7586
+    "ready_ms": 7708
    },
    "recommendations": {
     "shown": true,
@@ -778,7 +810,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 179
    },
    "search": {
     "saved": true,
@@ -787,7 +819,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7573
+    "ready_ms": 7583
    }
   },
   "tv_dark": {
@@ -803,7 +835,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 179
+    "ready_ms": 171
    },
    "search": {
     "saved": true,
@@ -812,7 +844,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7561
+    "ready_ms": 7582
    }
   },
   "tv_money_heist": {
@@ -828,7 +860,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 182
    },
    "search": {
     "saved": true,
@@ -837,7 +869,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7522
+    "ready_ms": 7599
    },
    "recommendations": {
     "shown": true,
@@ -859,7 +891,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 188
    },
    "search": {
     "saved": true,
@@ -868,7 +900,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7548
+    "ready_ms": 7539
    }
   },
   "tv_twin_peaks": {
@@ -884,7 +916,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 181
    },
    "search": {
     "saved": true,
@@ -893,7 +925,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7544
+    "ready_ms": 7744
    }
   },
   "tv_severance": {
@@ -909,7 +941,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 175
+    "ready_ms": 185
    },
    "search": {
     "saved": true,
@@ -918,7 +950,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7660
+    "ready_ms": 7821
    },
    "home": {
     "shown": true,
@@ -946,7 +978,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 183
+    "ready_ms": 154
    },
    "search": {
     "saved": true,
@@ -955,7 +987,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7584
+    "ready_ms": 7781
    }
   },
   "tv_fleabag": {
@@ -971,7 +1003,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 173
+    "ready_ms": 168
    },
    "search": {
     "saved": true,
@@ -980,16 +1012,44 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7561
+    "ready_ms": 7568
    }
   },
   "book_the_great_gatsby": {
    "library": {
-    "saved": false,
-    "note": "save failed: Invalid media item payload"
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored",
+     "size:stored-not-shown",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 174
    },
    "search": {
-    "saved": false
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored",
+     "description:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 105
    }
   },
   "book_pride_and_prejudice": {
@@ -1011,7 +1071,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 204
+    "ready_ms": 152
    },
    "search": {
     "saved": true,
@@ -1024,24 +1084,45 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 104
-   },
-   "home": {
-    "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
-    "wrong": [],
-    "images_failed": 0
+    "ready_ms": 107
    }
   },
   "book_norwegian_wood": {
    "library": {
-    "saved": false,
-    "note": "save failed: Invalid media item payload"
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored",
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 180
    },
    "search": {
-    "saved": false
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "year:not-stored",
+     "creator:not-stored",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 19,
+    "ready_ms": 106
    }
   },
   "book_cien_años_de_soledad": {
@@ -1063,7 +1144,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 186
+    "ready_ms": 187
    },
    "search": {
     "saved": true,
@@ -1105,7 +1186,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 184
    },
    "search": {
     "saved": true,
@@ -1117,7 +1198,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 109
    },
    "home": {
     "shown": true,
@@ -1147,7 +1228,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 183
+    "ready_ms": 170
    },
    "search": {
     "saved": true,
@@ -1159,7 +1240,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 106
    },
    "home": {
     "shown": true,
@@ -1189,7 +1270,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 189
    },
    "search": {
     "saved": true,
@@ -1201,7 +1282,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 12,
-    "ready_ms": 105
+    "ready_ms": 104
    },
    "recommendations": {
     "shown": true,
@@ -1231,7 +1312,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 177
+    "ready_ms": 196
    },
    "search": {
     "saved": true,
@@ -1256,11 +1337,44 @@
   },
   "book_the_odyssey_homer": {
    "library": {
-    "saved": false,
-    "note": "save failed: Invalid media item payload"
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
+   },
+   "library-detail": {
+    "shown": true,
+    "missing": [
+     "description:not-stored",
+     "size:not-stored",
+     "genres:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "ready_ms": 200
    },
    "search": {
-    "saved": false
+    "saved": true,
+    "shown": true,
+    "missing": [
+     "creator:stored-not-shown",
+     "description:not-stored"
+    ],
+    "wrong": [],
+    "images_failed": 0,
+    "results": 20,
+    "ready_ms": 105
+   },
+   "home": {
+    "shown": true,
+    "missing": [
+     "year:stored-not-shown"
+    ],
+    "wrong": [],
+    "images_failed": 0
    }
   },
   "book_intermezzo_sally_rooney": {
@@ -1282,7 +1396,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 180
+    "ready_ms": 179
    },
    "search": {
     "saved": true,
@@ -1318,7 +1432,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 135
+    "ready_ms": 138
    },
    "search": {
     "saved": true,
@@ -1362,7 +1476,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 174
+    "ready_ms": 169
    },
    "search": {
     "saved": true,
@@ -1404,7 +1518,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 173
+    "ready_ms": 181
    },
    "search": {
     "saved": true,
@@ -1416,7 +1530,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 19,
-    "ready_ms": 106
+    "ready_ms": 105
    }
   },
   "book_zzqxv_unmatched_page_candidate": {
@@ -1527,8 +1641,10 @@
    "note": ""
   },
   "synth_film_no_poster": {
-   "ok": false,
-   "note": "save failed: Invalid media item payload"
+   "ok": true,
+   "mediaId": "seed_audit_film_no_poster",
+   "status": "watched",
+   "note": ""
   },
   "synth_film_dead_poster": {
    "ok": true,
@@ -1585,8 +1701,10 @@
    "note": ""
   },
   "book_the_great_gatsby": {
-   "ok": false,
-   "note": "save failed: Invalid media item payload"
+   "ok": true,
+   "mediaId": "openlibrary_work_OL468431W",
+   "status": "to-watch",
+   "note": ""
   },
   "book_pride_and_prejudice": {
    "ok": true,
@@ -1595,8 +1713,10 @@
    "note": ""
   },
   "book_norwegian_wood": {
-   "ok": false,
-   "note": "save failed: Invalid media item payload"
+   "ok": true,
+   "mediaId": "openlibrary_work_OL46167829W",
+   "status": "watched",
+   "note": ""
   },
   "book_cien_años_de_soledad": {
    "ok": true,
@@ -1629,8 +1749,10 @@
    "note": ""
   },
   "book_the_odyssey_homer": {
-   "ok": false,
-   "note": "save failed: Invalid media item payload"
+   "ok": true,
+   "mediaId": "openlibrary_work_OL61982W",
+   "status": "watched",
+   "note": ""
   },
   "book_intermezzo_sally_rooney": {
    "ok": true,
@@ -1668,13 +1790,13 @@
  ],
  "stats": {
   "meta": [
-   "23 experienced",
+   "26 experienced",
    "0 hrs on screen",
-   "6 books",
+   "8 books",
    "7.0 avg rating"
   ],
   "book_panel": [
-   "6 finished",
+   "8 finished",
    "0 currently reading",
    "0 did not finish",
    "435 pages among them"
@@ -1686,7 +1808,7 @@
    "History 3 titles",
    "Action 3 titles"
   ],
-  "watched": 23
+  "watched": 26
  },
  "page_errors": [],
  "console_errors": [
@@ -1700,6 +1822,7 @@
   "https://api.trakt.tv/movies/trending?limit=10",
   "https://api.trakt.tv/search/movie?query=96&limit=10",
   "https://api.trakt.tv/search/movie?query=Audit%20Fixture%20Film%20With%20Dead%20Poster&limit=10",
+  "https://api.trakt.tv/search/movie?query=Audit%20Fixture%20Film%20Without%20Poster&limit=10",
   "https://api.trakt.tv/search/movie?query=Charulata&limit=10",
   "https://api.trakt.tv/search/movie?query=Drishyam&limit=10",
   "https://api.trakt.tv/search/movie?query=Everything%20Everywhere%20All%20at%20Once&limit=10",
@@ -1735,6 +1858,7 @@
   "https://api.tvmaze.com/schedule/web?country=US",
   "https://api.tvmaze.com/search/shows?q=96",
   "https://api.tvmaze.com/search/shows?q=Audit%20Fixture%20Film%20With%20Dead%20Poster",
+  "https://api.tvmaze.com/search/shows?q=Audit%20Fixture%20Film%20Without%20Poster",
   "https://api.tvmaze.com/search/shows?q=Charulata",
   "https://api.tvmaze.com/search/shows?q=Chernobyl",
   "https://api.tvmaze.com/search/shows?q=Dark",
@@ -1759,17 +1883,16 @@
   "https://api.tvmaze.com/search/shows?q=Twin%20Peaks",
   "https://api.tvmaze.com/search/shows?q=Vikram",
   "https://api.tvmaze.com/shows/1",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People_(2026_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/America's_Funniest_People_(TV_series)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit_(2026_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Sweet_Deceit_(TV_series)",
   "https://openlibrary.org/search.json?q=Arundhati%20Roy&limit=8",
   "https://openlibrary.org/search.json?q=Kalki%20Kirushnamoorthy&limit=8",
   "https://openlibrary.org/search.json?q=Kathy%20Acker&limit=8",
   "https://openlibrary.org/search.json?q=Ramanlal%20Vasantlal%20Desai&limit=8",
   "https://openlibrary.org/search.json?q=Salman%20Rushdie&limit=8",
+  "https://openlibrary.org/search.json?q=author%3A%22Arundhati%20Roy%22&limit=4",
+  "https://openlibrary.org/search.json?q=author%3A%22Kalki%20Kirushnamoorthy%22&limit=4",
+  "https://openlibrary.org/search.json?q=author%3A%22Kathy%20Acker%22&limit=4",
+  "https://openlibrary.org/search.json?q=author%3A%22Ramanlal%20Vasantlal%20Desai%22&limit=4",
+  "https://openlibrary.org/search.json?q=author%3A%22Salman%20Rushdie%22&limit=4",
   "https://openlibrary.org/works/OL2714378W/editions.json?limit=25",
   "https://query.wikidata.org/sparql?query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP31%20wd%3AQ11424%20%7D%20LIMIT%201&format=json"
  ],
@@ -1886,6 +2009,55 @@
     "eng"
    ],
    "editionCount": 8
+  },
+  "openlibrary_work_OL61982W": {
+   "id": "openlibrary_work_OL61982W",
+   "canonicalTitle": "Ὀδύσσεια",
+   "type": "book",
+   "year": 1488,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL61982W",
+     "url": "https://openlibrary.org/works/OL61982W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/9045853-L.jpg",
+   "authors": [
+    "Ὅμηρος"
+   ],
+   "languages": [
+    "slo",
+    "fin",
+    "chi",
+    "rus",
+    "por",
+    "mul",
+    "lat",
+    "per",
+    "dan",
+    "gle",
+    "spa",
+    "gre",
+    "cat",
+    "ukr",
+    "ara",
+    "swe",
+    "fre",
+    "dut",
+    "ger",
+    "ita",
+    "und",
+    "pol",
+    "heb",
+    "rum",
+    "arm",
+    "eng",
+    "grc"
+   ],
+   "editionCount": 1067
   },
   "openlibrary_work_OL2714378W": {
    "id": "openlibrary_work_OL2714378W",
@@ -2028,6 +2200,24 @@
    ],
    "editionCount": 209
   },
+  "openlibrary_work_OL46167829W": {
+   "id": "openlibrary_work_OL46167829W",
+   "canonicalTitle": "Norwegian Wood",
+   "type": "book",
+   "year": null,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL46167829W",
+     "url": "https://openlibrary.org/works/OL46167829W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/isbn/9780375704024-L.jpg",
+   "authors": [],
+   "preferredEditionId": "openlibrary_edition_OL62712563M"
+  },
   "openlibrary_work_OL66554W": {
    "id": "openlibrary_work_OL66554W",
    "canonicalTitle": "Pride and Prejudice",
@@ -2047,6 +2237,26 @@
    "authors": [],
    "pageCount": 435,
    "preferredEditionId": "openlibrary_edition_OL37076991M"
+  },
+  "openlibrary_work_OL468431W": {
+   "id": "openlibrary_work_OL468431W",
+   "canonicalTitle": "The Great Gatsby",
+   "type": "book",
+   "year": null,
+   "genres": [],
+   "ratings": [],
+   "providers": [
+    {
+     "provider": "openlibrary",
+     "externalId": "OL468431W",
+     "url": "https://openlibrary.org/works/OL468431W"
+    }
+   ],
+   "posterUrl": "https://covers.openlibrary.org/b/id/13028546-L.jpg",
+   "overview": "Here is a novel, glamorous, ironical, compassionate – a marvelous fusion into unity of the curious incongruities of the life of the period – which reveals a hero like no other – one who could live at no other time and in no other place. But he will live as a character, we surmise, as long as the memory of any reader lasts.\r\n\r\n\"There was something gorgeous about him, some heightened sensitivity to the promises of life.... It was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again.\"\r\n\r\nIt is the story of this Jay Gatsby who came so mysteriously to West Egg, of his sumptuous entertainments, and of his love for Daisy Buchanan – a story that ranges from pure lyrical beauty to sheer brutal realism, and is infused with a sense of the strangeness of human circumstance in a heedless universe.\r\n\r\nIt is a magical, living book, blended of irony, romance, and mysticism.\r\n\r\n\\--first edition jacket\r\n\r\n---\r\n\r\nAlso contained in:\r\n\r\n- [The Fitzgerald Reader](https://openlibrary.org/works/OL468551W/The_Fitzgerald_Reader)\r\n- [Three Novels of F. Scott Fitzgerald](https://openlibrary.org/works/OL468557W)",
+   "authors": [],
+   "pageCount": 180,
+   "preferredEditionId": "openlibrary_edition_OL23109860M"
   },
   "tvmaze_tv_16149": {
    "id": "tvmaze_tv_16149",
@@ -2276,6 +2486,16 @@
    "posterUrl": "https://image.tmdb.org/t/p/w500/DEADIMG.jpg",
    "overview": "Audit fixture synopsis (synthetic). Poster URL deliberately returns 404.",
    "runtimeMinutes": 95
+  },
+  "seed_audit_film_no_poster": {
+   "id": "seed_audit_film_no_poster",
+   "canonicalTitle": "Audit Fixture Film Without Poster",
+   "type": "movie",
+   "year": null,
+   "genres": [],
+   "ratings": [],
+   "providers": [],
+   "posterUrl": ""
   },
   "seed_my_octopus_teacher": {
    "id": "seed_my_octopus_teacher",

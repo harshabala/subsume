@@ -85,7 +85,7 @@ export async function buildTasteProfileForMedium(medium: TasteMedium): Promise<W
     const excerpt = noteSource ? noteSource.slice(0, 100) : undefined;
     return {
       title: media.canonicalTitle,
-      year: media.year,
+      year: media.year ?? 0,
       genres: media.genres,
       userRating: libraryItem.userRating ?? 0,
       noteExcerpt: libraryItem.notes ? libraryItem.notes.slice(0, 100) : excerpt,
@@ -103,7 +103,7 @@ export async function buildTasteProfileForMedium(medium: TasteMedium): Promise<W
     .sort((a, b) => {
       const ratingDiff = (b.libraryItem.userRating ?? 0) - (a.libraryItem.userRating ?? 0);
       if (ratingDiff !== 0) return ratingDiff;
-      return b.media.year - a.media.year;
+      return (b.media.year ?? 0) - (a.media.year ?? 0);
     })
     .slice(0, 20);
 
@@ -131,7 +131,7 @@ export async function buildTasteProfileForMedium(medium: TasteMedium): Promise<W
 
   const wishlist = validWishlist.map((pair) => ({
     title: pair.media.canonicalTitle,
-    year: pair.media.year,
+    year: pair.media.year ?? 0,
     genres: pair.media.genres,
     userRating: pair.libraryItem.userRating ?? 0,
     noteExcerpt: pair.libraryItem.emotionalRecall?.slice(0, 100),

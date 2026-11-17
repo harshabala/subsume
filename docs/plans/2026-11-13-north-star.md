@@ -128,3 +128,10 @@ held (1); capture under ten seconds for both media (1); clean first run (1); own
 feel (1); published (1).
 
 Today: 7 by the owner's own estimate, which the audit in workstream 1 will confirm or correct.
+
+## Coordinator decisions, 2026-11-17 (made on the owner's instruction to settle open product calls)
+
+- `docs/audit/expected-fields.md` is accepted. Settled: library and home cards show a creator line (director for films, creator or network for series where the model has it, author for books); the detail view shows runtime for films and page count for books; series fields with no model field are dropped from the expected list, not invented.
+- A title with an unknown year, or a year before 1800, must be saveable. Unknown is stored as `null`, never 0, and shown as the designed gap "Year unknown". Pre-1800 years are valid.
+- The audit stays keyless for now.
+- Round-2 order: (1) year handling, (2) one record shape for every medium, (3) every page medium-aware, (4) offline search delay and per-page time budgets, (5) after-report `docs/audit/2026-11-17-after.md`.

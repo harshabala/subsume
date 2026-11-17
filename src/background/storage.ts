@@ -1,3 +1,4 @@
+import { isValidYear, normalizeYear } from '@/shared/year';
 import { openDB, DBSchema, IDBPDatabase } from 'idb';
 import {
   MediaItem,
@@ -180,7 +181,7 @@ interface SubsumeDB extends DBSchema {
 }
 
 const DB_NAME = 'subsume-db';
-const DB_VERSION = 4;
+const DB_VERSION = 5;
 /** chrome.storage.local flag set after v3→v4 domain migration completes. */
 export const MIGRATION_V4_COMPLETE_KEY = 'subsume_migration_v4_complete';
 
@@ -617,7 +618,7 @@ async function dualWritePerson(db: IDBPDatabase<SubsumeDB>, person: PersonItem):
 export function getDb() {
   if (!dbPromise) {
     dbPromise = openDB<SubsumeDB>(DB_NAME, DB_VERSION, {
-      upgrade(db, oldVersion) {
+      async upgrade(db, oldVersion, _newVersion, transaction) {
         if (oldVersion < 1) {
           // Media Store
           const mediaStore = db.createObjectStore('media', { keyPath: 'id' });
@@ -647,6 +648,26 @@ export function getDb() {
         if (oldVersion < 4) {
           createV4Stores(db);
         }
+
+        if (oldVersion >= 1 && oldVersion < 5) {
+          // v5: unknown year is null, never 0.
+          for (const storeName of ['media', 'works'] as const) {
+            if (!db.objectStoreNames.contains(storeName)) continue;
+            const store = transaction.objectStore(storeName);
+            let cursor = await store.openCursor();
+            while (cursor) {
+              const rec = cursor.value as unknown as Record<string, unknown>;
+              const field = storeName === 'media' ? 'year' : 'firstReleaseYear';
+              if (rec[field] === 0) {
+                const next = { ...rec };
+                if (storeName === 'media') next[field] = null;
+                else delete next[field];
+                await cursor.update(next as never);
+              }
+              cursor = await cursor.continue();
+            }
+          }
+        }
       },
     }).then(async (db) => {
       await migrateV3ToV4IfNeeded(db);
@@ -661,7 +682,8 @@ export function getDb() {
 
 // ─── Media Interface ─────────────────────────────────────────────────
 
-export async function putMediaItem(item: MediaItem): Promise<void> {
+export async function putMediaItem(rawItem: MediaItem): Promise<void> {
+  const item = { ...rawItem, year: normalizeYear(rawItem.year) };
   const db = await getDb();
   if (!db.objectStoreNames.contains('works')) {
     await db.put('media', item);
@@ -680,7 +702,8 @@ export async function putMediaItem(item: MediaItem): Promise<void> {
 export async function putMediaItems(items: MediaItem[]): Promise<void> {
   const db = await getDb();
   const tx = db.transaction(['media', 'works'], 'readwrite');
-  for (const item of items) {
+  for (const rawItem of items) {
+    const item = { ...rawItem, year: normalizeYear(rawItem.year) };
     await tx.objectStore('media').put(item);
     const mapped = mediaItemToCatalogWork(item);
     const existing = await tx.objectStore('works').get(item.id);
@@ -1024,8 +1047,8 @@ export function isValidMediaItem(m: unknown): m is MediaItem {
   // type must be a valid MediaType
   if (!VALID_MEDIA_TYPES.has(item.type as string)) return false;
   // year must be a finite number in a plausible range
-  if (typeof item.year !== 'number' || !Number.isFinite(item.year)) return false;
-  if (item.year < 1800 || item.year > 2100) return false;
+  // Unknown year is null; pre-1800 years are valid (classic books). Legacy 0 is tolerated and normalised on write.
+  if (!isValidYear(item.year)) return false;
   // Wave 4: require a non-empty title so sparse forgeries cannot land in IDB
   if (typeof item.canonicalTitle !== 'string' || item.canonicalTitle.trim().length === 0) {
     return false;

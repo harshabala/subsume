@@ -1,3 +1,4 @@
+import { yearOrUnknown, yearText } from '@/shared/year';
 import { useState, useCallback } from 'preact/hooks';
 import { sendMessage } from '@/shared/messages';
 import { MessageType, MediaItem, MediaType } from '@/shared/types';
@@ -185,7 +186,7 @@ export function Search() {
                   <span className="sanctuary-card-badge medium-badge" data-medium={item.type}>
                     {mediumLabel(item.type)}
                   </span>
-                  <span>{item.year || 'ARCHIVAL'}</span>
+                  <span data-year-unknown={yearText(item.year) ? undefined : 'true'}>{yearOrUnknown(item.year)}</span>
                   {item.ratings[0] && (
                     <span style={{ color: 'var(--text-artwork)' }}>
                       SCORE {item.ratings[0].score.toFixed(1)}

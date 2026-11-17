@@ -152,10 +152,10 @@ export function FilmographyView({ person: initialPerson, onBack, onUnfollow }: F
     const items = [...filteredItems];
     items.sort((a, b) => {
       if (sortBy === 'year-desc') {
-        return b.year - a.year;
+        return (b.year ?? 0) - (a.year ?? 0);
       }
       if (sortBy === 'year-asc') {
-        return a.year - b.year;
+        return (a.year ?? 0) - (b.year ?? 0);
       }
       if (sortBy === 'rating') {
         const aScore = a.ratings.find((r) => r.provider === 'tmdb')?.score || 0;

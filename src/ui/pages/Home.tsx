@@ -1,3 +1,4 @@
+import { yearOrUnknown, yearText } from '@/shared/year';
 import { useState, useEffect } from 'preact/hooks';
 import { sendMessage } from '@/shared/messages';
 import {
@@ -84,7 +85,7 @@ function feedItemToDigestPick(item: DiscoveryFeedItem): DigestPick {
       id: item.id,
       canonicalTitle: item.title,
       type: item.type,
-      year: item.year,
+      year: item.year || null,
       genres: [],
       ratings: item.rating ? [{ provider: 'tvmaze', score: item.rating, votes: 0 }] : [],
       providers: item.url ? [{ provider: item.source === 'trakt' ? 'trakt' : 'tvmaze', externalId: item.id, url: item.url }] : [],
@@ -745,7 +746,7 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                           }
                           meta={
                             <div className="sanctuary-card-meta">
-                              {pick.year ? <span>{pick.year}</span> : null}
+                              <span data-year-unknown={yearText(pick.year) ? undefined : 'true'}>{yearOrUnknown(pick.year)}</span>
                               {rating && <span>{rating}</span>}
                             </div>
                           }
@@ -764,7 +765,7 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                               <PlatformChips availability={availability} max={3} compact />
                             </div>
                             <div className="sanctuary-card-meta">
-                              {pick.year ? <span>{pick.year}</span> : null}
+                              <span data-year-unknown={yearText(pick.year) ? undefined : 'true'}>{yearOrUnknown(pick.year)}</span>
                               {rating && <span>{rating}</span>}
                             </div>
                           </div>
