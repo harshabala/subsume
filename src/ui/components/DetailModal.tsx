@@ -1,4 +1,4 @@
-import { yearOrUnknown, yearText } from '@/shared/year';
+import { yearOrUnknown } from '@/shared/year';
 import { useEffect, useState, useRef, useCallback } from 'preact/hooks';
 import { MediaItem, LibraryItem, LibraryStatus, MessageType } from '@/shared/types';
 import type { BookEdition, WorkRelationType } from '@/shared/catalogTypes';
