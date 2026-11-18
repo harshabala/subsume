@@ -754,7 +754,12 @@ export async function searchMediaByQuery(
   return combined
     .filter((item) => {
       if (type && item.type !== type) return false;
-      return item.canonicalTitle.toLowerCase().includes(normalized);
+      const title = item.canonicalTitle.toLowerCase();
+      if (title.includes(normalized) || normalized.includes(title)) return true;
+      if (item.originalTitle && (item.originalTitle.toLowerCase().includes(normalized) || normalized.includes(item.originalTitle.toLowerCase()))) return true;
+      const authors = (item.authors || []).map((a) => a.toLowerCase());
+      if (authors.some((a) => normalized.includes(a) || a.includes(normalized))) return true;
+      return false;
     })
     .slice(0, limit);
 }

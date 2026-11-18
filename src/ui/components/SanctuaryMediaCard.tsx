@@ -58,9 +58,26 @@ export function SanctuaryMediaCard({
 
   const typeLabel = mediumLabel(media.type);
 
+  const creatorLine = (() => {
+    if (media.type === 'book') {
+      const author = media.authors?.[0];
+      return author ? `By ${author}` : null;
+    }
+    if (media.type === 'movie') {
+      const director = (media.wikidataDirectorBio || '').split(',')[0].trim();
+      return director ? `Directed by ${director}` : null;
+    }
+    if (media.type === 'tv') {
+      const creator = (media.wikidataDirectorBio || '').split(',')[0].trim();
+      return creator ? `Created by ${creator}` : null;
+    }
+    return null;
+  })();
+
   const body = (
     <div className="sanctuary-card-content">
       <h4 className="sanctuary-card-title">{displayTitle}</h4>
+      {creatorLine && <p className="sanctuary-card-creator">{creatorLine}</p>}
       {meta ?? (
         <div className="sanctuary-card-meta">
           <span

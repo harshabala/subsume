@@ -287,16 +287,38 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
 
   const digestBadge = weeklyDigest?.llmGenerated ? 'House Curated' : 'Editorial Selection';
 
+  const recentlyReflected = libraryItems
+    .filter(({ library }) => hasEmotionalData(library))
+    .sort((a, b) => b.library.updatedAt - a.library.updatedAt)
+    .slice(0, 6);
+
   const heroFromFeed = discoveryFeed?.items[0]
     ? feedItemToDigestPick(discoveryFeed.items[0]).media
     : null;
+  const userHeroItem =
+    recentlyReflected[0]?.media ||
+    libraryItems[0]?.media ||
+    null;
   const heroMedia =
+    userHeroItem ||
     weeklyPicks.find((p) => p.media)?.media ||
     picks[0]?.media ||
     heroFromFeed ||
     null;
   const heroTitle = heroMedia?.canonicalTitle || EMPTY_HOME_HERO_TITLE;
-  const heroDirector = heroMedia?.wikidataDirectorBio || EMPTY_HOME_HERO_PROMPT;
+  const heroDirector = (() => {
+    if (!heroMedia) return EMPTY_HOME_HERO_PROMPT;
+    if (heroMedia.type === 'book') {
+      const author = heroMedia.authors?.[0];
+      return author ? `Written by ${author}` : 'Author unknown';
+    }
+    if (heroMedia.type === 'tv') {
+      const creator = (heroMedia.wikidataDirectorBio || '').split(',')[0].trim();
+      return creator ? `Created by ${creator}` : 'Series creator unknown';
+    }
+    const director = (heroMedia.wikidataDirectorBio || '').split(',')[0].trim();
+    return director ? `Directed by ${director}` : 'Director unknown';
+  })();
   const heroRating = heroMedia ? pickRating(heroMedia) : null;
   const heroLibraryMatch = libraryItems.find(({ media }) => media.id === heroMedia?.id);
   const heroReflection = heroLibraryMatch
@@ -310,11 +332,6 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
       : EMPTY_HOME_HERO_QUOTE;
   const heroPoster = heroMedia?.posterUrl || '';
   const canReflect = Boolean(heroMedia);
-
-  const recentlyReflected = libraryItems
-    .filter(({ library }) => hasEmotionalData(library))
-    .sort((a, b) => b.library.updatedAt - a.library.updatedAt)
-    .slice(0, 6);
 
   return (
     <div className="page-container sanctuary-page focus-pull-active">
@@ -338,9 +355,7 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                 <span className="plaque-index">No. 001</span>
               </div>
               <h3 className="plaque-title">{heroTitle}</h3>
-              <p className="plaque-director">
-                {heroMedia?.wikidataDirectorBio ? `Directed by ${heroDirector}` : heroDirector}
-              </p>
+              <p className="plaque-director">{heroDirector}</p>
               <blockquote
                 className={`plaque-quote${heroIsReflection ? ' plaque-quote--reflection' : ''}`}
               >
@@ -568,6 +583,9 @@ export function Home({ onNavigate, onOpenCapture }: HomeProps) {
                       />
                       <div className="recently-reflected-meta">
                         <div className="recently-reflected-title">{media.canonicalTitle}</div>
+                        <div className="recently-reflected-year" data-year-unknown={yearText(media.year) ? undefined : 'true'}>
+                          {yearOrUnknown(media.year)}
+                        </div>
                         <div className="recently-reflected-aura" aria-hidden="true">
                           <span style={{ background: 'var(--color-awe)', flex: spectrum.awe }} />
                           <span style={{ background: 'var(--color-melancholy)', flex: spectrum.melancholy }} />

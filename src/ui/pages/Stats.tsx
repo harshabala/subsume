@@ -54,7 +54,10 @@ export function Stats({ onNavigate }: StatsProps = {}) {
 
   const totalWatched = watchedItems.length;
 
-  const totalMinutes = watchedItems.reduce((acc, item) => acc + (item.media?.runtimeMinutes || 0), 0);
+  const watchedScreen = watchedItems.filter(i => i.media?.type !== 'book');
+  const screenWithRuntime = watchedScreen.filter(i => (i.media?.runtimeMinutes || 0) > 0);
+  const unknownRuntimeCount = watchedScreen.length - screenWithRuntime.length;
+  const totalMinutes = screenWithRuntime.reduce((acc, item) => acc + (item.media?.runtimeMinutes || 0), 0);
   const totalHours = Math.round(totalMinutes / 60);
 
   const ratedItems = watchedItems.filter(i => i.library.userRating !== undefined);
@@ -88,6 +91,8 @@ export function Stats({ onNavigate }: StatsProps = {}) {
     () => computeBookReadingStats(toBookStatsItems(items)),
     [items],
   );
+  const finishedBooks = items.filter(i => i.media?.type === 'book' && i.library.status === 'watched').length;
+  const unknownPagesCount = Math.max(0, finishedBooks - bookStats.pagesKnownFor);
   const showBookReading = hasBookReadingActivity(bookStats);
   const hasProgramme = totalWatched > 0 || showBookReading;
 
@@ -142,8 +147,11 @@ export function Stats({ onNavigate }: StatsProps = {}) {
             </div>
             <span className="stats-meta-sep" aria-hidden="true">·</span>
             <div className="stats-meta-item" role="listitem">
-              <span className="stats-meta-value">{totalHours}</span>
-              <span className="stats-meta-label">hrs on screen</span>
+              <span className="stats-meta-value">{totalHours > 0 ? totalHours : '—'}</span>
+              <span className="stats-meta-label">
+                hrs on screen
+                {unknownRuntimeCount > 0 && ` (unknown for ${unknownRuntimeCount} ${unknownRuntimeCount === 1 ? 'title' : 'titles'})`}
+              </span>
             </div>
             {booksCount > 0 && (
               <>
@@ -180,10 +188,21 @@ export function Stats({ onNavigate }: StatsProps = {}) {
                   <span className="stats-book-value">{bookStats.abandoned}</span>
                   <span className="stats-book-label">{STATS_BOOK_ABANDONED_LABEL}</span>
                 </div>
-                {bookStats.totalPages != null && bookStats.totalPages > 0 && (
+                {bookStats.totalPages != null && bookStats.totalPages > 0 ? (
                   <div className="stats-book-stat" role="listitem">
                     <span className="stats-book-value accent">{bookStats.totalPages.toLocaleString()}</span>
-                    <span className="stats-book-label">{STATS_BOOK_PAGES_LABEL}</span>
+                    <span className="stats-book-label">
+                      {STATS_BOOK_PAGES_LABEL}
+                      {unknownPagesCount > 0 && ` (unknown for ${unknownPagesCount} ${unknownPagesCount === 1 ? 'title' : 'titles'})`}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="stats-book-stat" role="listitem">
+                    <span className="stats-book-value accent">—</span>
+                    <span className="stats-book-label">
+                      {STATS_BOOK_PAGES_LABEL}
+                      {finishedBooks > 0 ? ` (unknown for ${finishedBooks} ${finishedBooks === 1 ? 'title' : 'titles'})` : ''}
+                    </span>
                   </div>
                 )}
               </div>

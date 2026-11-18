@@ -10,7 +10,7 @@ import type {
   CatalogWork,
   DetectionCandidate,
 } from '@/shared/catalogTypes';
-import { catalogWorkToMediaItem } from '@/shared/compatibility';
+import { catalogWorkToMediaItem, mediaItemToCatalogWork } from '@/shared/compatibility';
 import { isValidIsbn, toIsbn13 } from '@/shared/isbn';
 import { sortEditionsPreferredFirst } from '@/shared/bookEditions';
 import {
@@ -25,6 +25,7 @@ import {
   putRelationship,
   isValidMediaItem,
   intentForStatus,
+  searchMediaByQuery,
 } from '../storage';
 import { isValidMediaId } from '@/shared/mediaIds';
 import { mergeMediaItems } from '../mediaMerge';
@@ -100,10 +101,22 @@ export const bookHandlers: MessageHandlerMap = {
 
     if (medium === 'book' || medium === 'all') {
       try {
+        const storedBooks = await searchMediaByQuery(query, 'book', limit);
+        for (const item of storedBooks) {
+          const key = bookDedupeKey(mediaItemToCatalogWork(item));
+          seenKeys.add(key);
+          results.push({ work: item, score: 1.0 });
+        }
+      } catch (err) {
+        logger.warn('[Subsume] Local book search failed:', err);
+      }
+
+      try {
         const ol = await loadOpenLibrary();
         const books = await ol.searchOpenLibrary({ query, limit });
         for (const hit of books) {
           const key = bookDedupeKey(hit.work);
+          if (seenKeys.has(key)) continue;
           seenKeys.add(key);
           const media = catalogWorkToMediaItem(hit.work);
           media.type = 'book';

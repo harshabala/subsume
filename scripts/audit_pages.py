@@ -236,7 +236,8 @@ def check(spec, rec, card, mode):
                 miss.append("medium:not-rendered")
         elif f == "year":
             if not rec.get("year"):
-                miss.append("year:not-stored")
+                if "year unknown" not in low:
+                    miss.append("year:gap-not-shown")
             elif str(rec["year"]) not in text:
                 miss.append("year:stored-not-shown")
         elif f == "creator":
@@ -462,6 +463,40 @@ def main():
         shutil.rmtree(profile, ignore_errors=True)
     json.dump(results, open(os.path.join(args.out, "results.json"), "w"), indent=1, ensure_ascii=False)
     print("wrote", os.path.join(args.out, "results.json"))
+
+    PAGE_BUDGETS_MS = {
+        "onboarding": 1000,
+        "stats": 800,
+        "people": 800,
+        "alerts": 800,
+        "new-releases": 800,
+        "settings": 800,
+        "home": 1000,
+        "recommendations": 800,
+        "library": 1000,
+        "search": 2000,
+    }
+    violations = []
+    for page_name, max_ms in PAGE_BUDGETS_MS.items():
+        if page_name == "search":
+            search_times = [
+                v["search"]["ready_ms"]
+                for v in results["perTitle"].values()
+                if "search" in v and v["search"].get("ready_ms") is not None
+            ]
+            if search_times:
+                med = sorted(search_times)[len(search_times) // 2]
+                if med > max_ms:
+                    violations.append(f"search median {med}ms exceeds budget {max_ms}ms")
+        else:
+            p_data = results["pages"].get(page_name, {}).get("all", {})
+            ready_ms = p_data.get("ready_ms")
+            if ready_ms is not None and ready_ms > max_ms:
+                violations.append(f"{page_name} {ready_ms}ms exceeds budget {max_ms}ms")
+
+    if violations:
+        print("FAIL: Time budget exceeded:\n  " + "\n  ".join(violations), file=sys.stderr)
+        return 1
     return 0
 
 

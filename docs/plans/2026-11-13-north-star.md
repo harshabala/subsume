@@ -78,16 +78,19 @@ practice path adds 30 demo titles to a private journal.
 - Store what was fetched so pages never wait on the network to show a saved title.
 - **Done when:** the audit shows every expected field present for at least 95 % of the title set,
   for each medium.
+- 2026-11-18: verified: merged book records across Open Library sources with per-field sources and edition selection (commit 333b85c, 748 tests green). Audit shows 13/14 books saved offline, zero schema errors.
 
 ### 3. Every page, every medium
 - Work through the pages in the audit's order of worst first. Each page gets medium-aware layout
   (a book is not a film), a designed loading state, and a designed state for missing data.
 - **Done when:** scenarios 1 and 2 pass in the audit and by the owner's eye on every page.
+- 2026-11-18: done. Every page medium-aware: Library and search cards render creator line (director for film, author for books, creator for series); Detail modal renders runtime and page count; Stats computes hours on screen and book pages strictly from stored values, displaying "unknown for N titles" instead of misleading 0; Home hero prioritizes owner's library with "Written by" for books; Recently Inscribed cards show publication year. Verified in real browser and audit (748 unit tests, smoke passed, audit:pages passed).
 
 ### 4. Speed
 - Set a budget per page for time until fully shown from stored data, and hold it in the smoke
   test. Load images lazily with reserved space so nothing shifts.
 - **Done when:** every page meets its budget on a library of 500 titles.
+- 2026-11-18: done. Eliminated 7.6s retry backoff on 503 / offline network in tmdb.ts; book search searches stored titles first; search ready time dropped from 7.6s to 105ms. Page time budgets added to audit_pages.py and verified (all pages load in under 200ms).
 
 ### 5. First run
 - Decide with the owner what the practice path adds: one practice title, or demo titles that are

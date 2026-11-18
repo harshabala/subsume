@@ -17,8 +17,18 @@ def launch_extension_context(p, profile: str, viewport=None):
         viewport=viewport or {"width": 1280, "height": 900},
         args=[f"--disable-extensions-except={DIST}", f"--load-extension={DIST}", "--headless=new"],
     )
-    if os.environ.get("CHROME_PATH"):
-        launch["executable_path"] = os.environ["CHROME_PATH"]
+    chrome = os.environ.get("CHROME_PATH")
+    if not chrome:
+        candidates = [
+            os.path.expanduser("~/Library/Caches/ms-playwright/chromium-1223/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"),
+            os.path.expanduser("~/.codeium/windsurf/ws-browser/chromium-1169/chrome-mac/Chromium.app/Contents/MacOS/Chromium"),
+        ]
+        for c in candidates:
+            if os.path.exists(c):
+                chrome = c
+                break
+    if chrome:
+        launch["executable_path"] = chrome
     ctx = p.chromium.launch_persistent_context(profile, **launch)
     return ctx
 

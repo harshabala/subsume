@@ -1,34 +1,34 @@
 {
- "generatedAt": "2026-11-17 10:58:33",
+ "generatedAt": "2026-11-18 20:30:03",
  "pages": {
   "onboarding": {
    "all": {
-    "ready_ms": 160,
+    "ready_ms": 147,
     "bad_text": [],
     "chars": 687,
-    "unstubbed_requests": 6
+    "unstubbed_requests": 3
    }
   },
   "library": {
    "all": {
     "cards": 39,
-    "ready_ms": 317,
+    "ready_ms": 96,
     "bad_text": [],
-    "chars": 3620
+    "chars": 4304
    }
   },
   "home": {
    "all": {
-    "cards": 19,
+    "cards": 12,
     "shown_by_medium": {
      "movie": 5,
      "tv": 1,
      "book": 6
     },
-    "hero": "NO. 001\nBeat Bobby Flay: Holiday Throwdown\n\nAdd a film or book to your journal\n\n\"Season 5 premiere airing Tue, Nov 17\"\nREFLECT\nARCHIVE",
-    "ready_ms": 581,
+    "hero": "NO. 001\nMidnight's Children\n\nWritten by Salman Rushdie\n\n\"Audit reflection.\"\nREFLECT\nARCHIVE",
+    "ready_ms": 79,
     "bad_text": [],
-    "chars": 2702
+    "chars": 1695
    }
   },
   "recommendations": {
@@ -40,16 +40,16 @@
      "book": 2
     },
     "hero": null,
-    "ready_ms": 230,
+    "ready_ms": 97,
     "bad_text": [],
     "chars": 1367
    }
   },
   "stats": {
    "all": {
-    "ready_ms": 115,
+    "ready_ms": 67,
     "bad_text": [],
-    "chars": 783
+    "chars": 830
    }
   },
   "people": {
@@ -156,7 +156,7 @@
       "placeholder": false
      }
     ],
-    "ready_ms": 193,
+    "ready_ms": 24,
     "bad_text": [],
     "chars": 601
    }
@@ -164,14 +164,14 @@
   "alerts": {
    "all": {
     "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nALERTS\nPremiere Alerts\n\nSet a programme of genres, platforms, keywords, or book authors. We will notify you when new screen releases or matching books appear.\n\nCREATE ALERT\nAudit book alert\n\nBooks · \"Intermezzo\" · author: \"Rooney\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit series alert\n\nSeries · \"dark\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit film alert\n\nFilm · \"night\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE",
-    "ready_ms": 133,
+    "ready_ms": 69,
     "bad_text": [],
     "chars": 486
    }
   },
   "new-releases": {
    "all": {
-    "ready_ms": 97,
+    "ready_ms": 71,
     "bad_text": [],
     "chars": 436,
     "unstubbed_requests": 0,
@@ -180,7 +180,7 @@
   },
   "settings": {
    "all": {
-    "ready_ms": 123,
+    "ready_ms": 64,
     "bad_text": [],
     "chars": 785,
     "unstubbed_requests": 3,
@@ -193,9 +193,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -206,7 +204,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 663
+    "ready_ms": 244
    },
    "search": {
     "saved": true,
@@ -215,16 +213,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 8769
+    "ready_ms": 106
    }
   },
   "seed_pather_panchali": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -235,7 +231,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 208
+    "ready_ms": 155
    },
    "search": {
     "saved": true,
@@ -244,16 +240,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7750
+    "ready_ms": 104
    }
   },
   "seed_charulata": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -264,7 +258,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 212
+    "ready_ms": 148
    },
    "search": {
     "saved": true,
@@ -273,7 +267,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7763
+    "ready_ms": 103
    },
    "home": {
     "shown": true,
@@ -292,9 +286,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -305,7 +297,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 201
+    "ready_ms": 162
    },
    "search": {
     "saved": true,
@@ -314,16 +306,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7566
+    "ready_ms": 104
    }
   },
   "seed_kireedam": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -334,7 +324,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 235
+    "ready_ms": 148
    },
    "search": {
     "saved": true,
@@ -343,16 +333,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7566
+    "ready_ms": 104
    }
   },
   "seed_spadikam": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -363,7 +351,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 226
+    "ready_ms": 161
    },
    "search": {
     "saved": true,
@@ -372,7 +360,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7650
+    "ready_ms": 107
    },
    "home": {
     "shown": true,
@@ -391,9 +379,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -404,7 +390,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 214
+    "ready_ms": 162
    },
    "search": {
     "saved": true,
@@ -413,16 +399,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7661
+    "ready_ms": 104
    }
   },
   "seed_iruvar": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -433,7 +417,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 202
+    "ready_ms": 152
    },
    "search": {
     "saved": true,
@@ -442,16 +426,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7587
+    "ready_ms": 105
    }
   },
   "seed_vikram": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -462,7 +444,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 209
+    "ready_ms": 177
    },
    "search": {
     "saved": true,
@@ -471,7 +453,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7606
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -490,9 +472,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -503,7 +483,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 248
+    "ready_ms": 161
    },
    "search": {
     "saved": true,
@@ -512,16 +492,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7577
+    "ready_ms": 105
    }
   },
   "seed_meiyazhagan": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -532,7 +510,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 229
+    "ready_ms": 159
    },
    "search": {
     "saved": true,
@@ -541,16 +519,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7659
+    "ready_ms": 105
    }
   },
   "seed_parasite": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -561,7 +537,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 198
+    "ready_ms": 145
    },
    "search": {
     "saved": true,
@@ -570,7 +546,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7788
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
@@ -589,9 +565,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -602,7 +576,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 214
+    "ready_ms": 148
    },
    "search": {
     "saved": true,
@@ -611,16 +585,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7711
+    "ready_ms": 104
    }
   },
   "seed_everything_everywhere": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -631,7 +603,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 213
+    "ready_ms": 147
    },
    "search": {
     "saved": true,
@@ -640,16 +612,14 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 8859
+    "ready_ms": 106
    }
   },
   "seed_free_solo": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -660,7 +630,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 203
+    "ready_ms": 161
    },
    "search": {
     "saved": true,
@@ -669,7 +639,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7688
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -688,9 +658,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -701,7 +669,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 216
+    "ready_ms": 166
    },
    "search": {
     "saved": true,
@@ -710,7 +678,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7757
+    "ready_ms": 104
    }
   },
   "synth_film_no_poster": {
@@ -719,7 +687,6 @@
     "shown": true,
     "missing": [
      "cover:not-stored",
-     "year:not-stored",
      "creator:not-stored"
     ],
     "wrong": [],
@@ -729,7 +696,6 @@
     "shown": true,
     "missing": [
      "cover:not-stored",
-     "year:not-stored",
      "creator:not-stored",
      "description:not-stored",
      "size:not-stored",
@@ -737,21 +703,20 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 160
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "cover:not-stored",
-     "year:not-stored",
      "creator:not-stored",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7629
+    "ready_ms": 105
    }
   },
   "synth_film_dead_poster": {
@@ -769,12 +734,11 @@
     "shown": true,
     "missing": [
      "cover:stored-not-shown",
-     "creator:not-stored",
-     "size:stored-not-shown"
+     "creator:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 228
+    "ready_ms": 185
    },
    "search": {
     "saved": true,
@@ -786,7 +750,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7806
+    "ready_ms": 108
    },
    "recommendations": {
     "shown": true,
@@ -810,7 +774,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 259
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
@@ -819,7 +783,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7670
+    "ready_ms": 105
    }
   },
   "tv_dark": {
@@ -835,7 +799,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 315
+    "ready_ms": 166
    },
    "search": {
     "saved": true,
@@ -844,7 +808,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7584
+    "ready_ms": 116
    }
   },
   "tv_money_heist": {
@@ -860,7 +824,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 247
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
@@ -869,7 +833,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7584
+    "ready_ms": 104
    },
    "recommendations": {
     "shown": true,
@@ -891,7 +855,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 212
+    "ready_ms": 144
    },
    "search": {
     "saved": true,
@@ -900,7 +864,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7581
+    "ready_ms": 107
    }
   },
   "tv_twin_peaks": {
@@ -916,7 +880,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 215
+    "ready_ms": 180
    },
    "search": {
     "saved": true,
@@ -925,7 +889,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7579
+    "ready_ms": 104
    }
   },
   "tv_severance": {
@@ -941,7 +905,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 219
+    "ready_ms": 178
    },
    "search": {
     "saved": true,
@@ -950,7 +914,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7580
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
@@ -978,7 +942,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 195
+    "ready_ms": 147
    },
    "search": {
     "saved": true,
@@ -987,7 +951,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7634
+    "ready_ms": 104
    }
   },
   "tv_fleabag": {
@@ -1003,7 +967,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 217
+    "ready_ms": 161
    },
    "search": {
     "saved": true,
@@ -1012,39 +976,32 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 7841
+    "ready_ms": 104
    }
   },
   "book_the_great_gatsby": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 220
+    "ready_ms": 169
    },
    "search": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown",
-     "description:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "results": 20,
-    "ready_ms": 132
+    "results": 16,
+    "ready_ms": 105
    }
   },
   "book_pride_and_prejudice": {
@@ -1060,25 +1017,22 @@
    "library-detail": {
     "shown": true,
     "missing": [
-     "creator:not-stored",
-     "size:stored-not-shown"
+     "creator:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 237
+    "ready_ms": 216
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "year:stored-not-shown",
-     "creator:not-stored",
-     "description:stored-not-shown"
+     "creator:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "results": 20,
-    "ready_ms": 107
+    "results": 19,
+    "ready_ms": 104
    }
   },
   "book_norwegian_wood": {
@@ -1101,7 +1055,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 203
+    "ready_ms": 153
    },
    "search": {
     "saved": true,
@@ -1112,40 +1066,33 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "results": 19,
-    "ready_ms": 108
+    "results": 12,
+    "ready_ms": 104
    }
   },
   "book_cien_años_de_soledad": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 219
+    "ready_ms": 188
    },
    "search": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown",
-     "description:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "results": 20,
-    "ready_ms": 273
+    "results": 17,
+    "ready_ms": 103
    },
    "recommendations": {
     "shown": true,
@@ -1158,9 +1105,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -1173,25 +1118,22 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 272
+    "ready_ms": 191
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "creator:stored-not-shown",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 122
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1200,38 +1142,29 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 259
+    "ready_ms": 163
    },
    "search": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown",
-     "description:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "results": 20,
-    "ready_ms": 105
+    "results": 18,
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1240,9 +1173,7 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
@@ -1250,63 +1181,55 @@
     "shown": true,
     "missing": [
      "description:not-stored",
-     "size:stored-not-shown",
      "genres:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 215
+    "ready_ms": 159
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "creator:stored-not-shown",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "results": 12,
-    "ready_ms": 105
+    "results": 10,
+    "ready_ms": 104
    }
   },
   "book_don_quixote": {
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:stored-not-shown"
+     "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 221
+    "ready_ms": 142
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "creator:stored-not-shown",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 108
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1315,38 +1238,31 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 234
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "creator:stored-not-shown",
      "description:stored-not-shown"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 107
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1355,32 +1271,25 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 226
+    "ready_ms": 169
    },
    "search": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown",
-     "description:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
     "results": 2,
-    "ready_ms": 115
+    "ready_ms": 104
    },
    "recommendations": {
     "shown": true,
@@ -1394,8 +1303,7 @@
     "saved": true,
     "shown": true,
     "missing": [
-     "cover:not-stored",
-     "creator:stored-not-shown"
+     "cover:not-stored"
     ],
     "wrong": [],
     "images_failed": 0
@@ -1410,26 +1318,24 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 156
+    "ready_ms": 151
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
      "cover:not-stored",
-     "creator:stored-not-shown",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
     "results": 2,
-    "ready_ms": 109
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
     "missing": [
-     "cover:not-stored",
-     "year:stored-not-shown"
+     "cover:not-stored"
     ],
     "wrong": [],
     "images_failed": 0
@@ -1439,38 +1345,29 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
-    "missing": [
-     "size:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 256
+    "ready_ms": 168
    },
    "search": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown",
-     "description:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 547
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
-    "missing": [
-     "year:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    }
@@ -1479,33 +1376,29 @@
    "library": {
     "saved": true,
     "shown": true,
-    "missing": [
-     "creator:stored-not-shown"
-    ],
+    "missing": [],
     "wrong": [],
     "images_failed": 0
    },
    "library-detail": {
     "shown": true,
     "missing": [
-     "description:not-stored",
-     "size:stored-not-shown"
+     "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 227
+    "ready_ms": 159
    },
    "search": {
     "saved": true,
     "shown": true,
     "missing": [
-     "creator:stored-not-shown",
      "description:not-stored"
     ],
     "wrong": [],
     "images_failed": 0,
-    "results": 19,
-    "ready_ms": 162
+    "results": 16,
+    "ready_ms": 104
    }
   },
   "book_zzqxv_unmatched_page_candidate": {
@@ -1766,7 +1659,7 @@
  "stats": {
   "meta": [
    "26 experienced",
-   "5 hrs on screen",
+   "5 hrs on screen (unknown for 12 titles)",
    "8 books",
    "7.0 avg rating"
   ],
@@ -1774,7 +1667,7 @@
    "8 finished",
    "0 currently reading",
    "0 did not finish",
-   "1,626 pages among them"
+   "1,626 pages among them (unknown for 3 titles)"
   ],
   "genres": [
    "Drama 13 titles",
@@ -1858,21 +1751,6 @@
   "https://api.tvmaze.com/search/shows?q=Twin%20Peaks",
   "https://api.tvmaze.com/search/shows?q=Vikram",
   "https://api.tvmaze.com/shows/1",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons_(2015_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/7_Little_Johnstons_(TV_series)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown_(2022_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Beat_Bobby_Flay%3A_Holiday_Throwdown_(TV_series)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown_(2026_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Big_Bargain_Holiday_Showdown_(TV_series)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter_(2026_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/Love_%26_Hip_Hop%3A_The_Final_Chapter_(TV_series)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle_(2020_film)",
-  "https://en.wikipedia.org/api/rest_v1/page/summary/The_Circle_(TV_series)",
   "https://openlibrary.org/search.json?q=Arundhati%20Roy&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/search.json?q=Fiction&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/search.json?q=Kalki%20Kirushnamoorthy&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
@@ -1880,6 +1758,11 @@
   "https://openlibrary.org/search.json?q=Ramanlal%20Vasantlal%20Desai&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/search.json?q=Romance&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/search.json?q=Salman%20Rushdie&limit=8&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=author%3A%22Arundhati%20Roy%22&limit=4&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=author%3A%22Kalki%20Kirushnamoorthy%22&limit=4&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=author%3A%22Kathy%20Acker%22&limit=4&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=author%3A%22Ramanlal%20Vasantlal%20Desai%22&limit=4&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
+  "https://openlibrary.org/search.json?q=author%3A%22Salman%20Rushdie%22&limit=4&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/search.json?q=key%3A%2Fworks%2FOL2714378W&limit=1&fields=key,title,subtitle,author_name,author_key,first_publish_year,cover_i,cover_edition_key,edition_count,isbn,subject,language,number_of_pages_median,publisher,first_sentence",
   "https://openlibrary.org/works/OL2714378W.json",
   "https://openlibrary.org/works/OL2714378W/editions.json?limit=25",

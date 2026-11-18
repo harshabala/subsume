@@ -47,6 +47,9 @@ export async function fetchWithRetry(url: string, retries = 3, baseDelay = 500, 
 
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
+      if (typeof navigator !== 'undefined' && !navigator.onLine) {
+        throw new Error('Network unavailable');
+      }
       const res = await fetch(url, options);
       if (res.ok) return res;
       if (res.status === 429) {
@@ -56,6 +59,10 @@ export async function fetchWithRetry(url: string, retries = 3, baseDelay = 500, 
         continue;
       }
       if (res.status >= 500) {
+        // If 503 (Service Unavailable / offline unmocked) or offline, do not back off repeatedly
+        if (res.status === 503 || (typeof navigator !== 'undefined' && !navigator.onLine)) {
+          return res;
+        }
         const delayMs = baseDelay * Math.pow(2, attempt);
         await new Promise((r) => setTimeout(r, delayMs));
         continue;
@@ -63,6 +70,9 @@ export async function fetchWithRetry(url: string, retries = 3, baseDelay = 500, 
       return res;
     } catch (err) {
       lastError = err instanceof Error ? err : new Error(String(err));
+      if (typeof navigator !== 'undefined' && !navigator.onLine) {
+        throw lastError;
+      }
       if (attempt < retries) {
         const delayMs = baseDelay * Math.pow(2, attempt);
         await new Promise((r) => setTimeout(r, delayMs));

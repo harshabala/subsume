@@ -57,6 +57,22 @@ export function HardcoverSpineCard({
   // Static excerpt on the open control — avoid nested buttons (expand lives in detail modal)
   const cardInscription = reflectionExcerpt ? truncateForExcerpt(reflectionExcerpt) : null;
 
+  const creatorLine = (() => {
+    if (isBook) {
+      const author = media?.authors?.[0];
+      return author ? `By ${author}` : null;
+    }
+    if (medium === 'movie') {
+      const director = (media?.wikidataDirectorBio || '').split(',')[0].trim();
+      return director ? `Directed by ${director}` : null;
+    }
+    if (medium === 'tv') {
+      const creator = (media?.wikidataDirectorBio || '').split(',')[0].trim();
+      return creator ? `Created by ${creator}` : null;
+    }
+    return null;
+  })();
+
   useEffect(() => {
     setDraftRating(committedRating ?? 5);
     lastCommittedRatingRef.current = committedRating;
@@ -101,6 +117,7 @@ export function HardcoverSpineCard({
         </div>
         <div className="sanctuary-card-content">
           <h4 className="media-card-title">{media?.canonicalTitle || 'Untitled'}</h4>
+          {creatorLine && <p className="media-card-creator">{creatorLine}</p>}
           <div className="media-card-meta">
             <span
               className="sanctuary-card-badge medium-badge"

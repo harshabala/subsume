@@ -703,12 +703,29 @@ export function DetailModal({
 
             {isBook && media.authors && media.authors.length > 0 && (
               <p className="sanctuary-detail-authors" style={{ margin: '0.25rem 0 0', opacity: 0.85 }}>
-                {media.authors.join(', ')}
+                By {media.authors.join(', ')}
+              </p>
+            )}
+            {!isBook && media.wikidataDirectorBio && (
+              <p className="sanctuary-detail-director" style={{ margin: '0.25rem 0 0', opacity: 0.85 }}>
+                {media.type === 'tv' ? 'Created by ' : 'Directed by '}{media.wikidataDirectorBio.split(',')[0].trim()}
               </p>
             )}
 
             <div className="sanctuary-detail-ratings">
               <span className="sanctuary-detail-year">{yearOrUnknown(media.year)}</span>
+              {media.runtimeMinutes ? (
+                <>
+                  <span>·</span>
+                  <span className="sanctuary-detail-runtime">{media.runtimeMinutes} min</span>
+                </>
+              ) : null}
+              {isBook && (media.pageCount || (typeof totalPages === 'number' && totalPages > 0)) ? (
+                <>
+                  <span>·</span>
+                  <span className="sanctuary-detail-pages">{media.pageCount || totalPages} pages</span>
+                </>
+              ) : null}
               {!isBook && (
                 <>
                   <span>·</span>
