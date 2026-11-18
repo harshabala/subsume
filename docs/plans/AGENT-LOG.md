@@ -24,7 +24,7 @@ Looked at in the browser:
 - On Library: verified cards show director/author creator lines cleanly below title in monospace typography.
 - On Stats: verified honesty banner displays "— hrs on screen (unknown for 13 titles)" rather than "0 hrs on screen".
 
-Commits: <pending commit>
+Commits: 0da5a35
 Not verified: Live TMDb / Google Books API calls (offline audit environment has no external API keys).
 Needs the owner: Owner TMDb API key for live film runtimes in audit; decision on demo titles in first-run library.
 Plan score: 7/10 -> 8.5/10 (audit exists, speed budgets held < 200ms, designed loading & missing states present, capture 4.68s).
