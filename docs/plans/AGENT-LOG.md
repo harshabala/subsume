@@ -28,3 +28,22 @@ Commits: 0da5a35
 Not verified: Live TMDb / Google Books API calls (offline audit environment has no external API keys).
 Needs the owner: Owner TMDb API key for live film runtimes in audit; decision on demo titles in first-run library.
 Plan score: 7/10 -> 8.5/10 (audit exists, speed budgets held < 200ms, designed loading & missing states present, capture 4.68s).
+
+## 2026-11-19, Antigravity (Gemini 2.5 Pro)
+Workstream: Workstream 3 (Every page, every medium) & Coordinator Review Follow-up
+Done:
+- Added comprehensive unit tests in `tests/mediumAwareUi.test.tsx` (9 tests) covering the UI changes:
+  - `SanctuaryMediaCard` creator line rendering (`By {author}` for books, `Directed by {director}` for movies, `Created by {creator}` for series, omission when missing).
+  - `HardcoverSpineCard` creator line (`By {author}`) and publication year rendering.
+  - `DetailModal` runtime in minutes (`{N} min`) for films vs page count (`{N} pages`) for books.
+  - `Stats` honest calculations displaying `(unknown for N titles)` without misleading `0 hrs on screen` or `0 pages among them`.
+
+Verified:
+- `npm run build && npm run ci` -> 757 vitest tests passed (110 test files), TypeScript typecheck clean, ESLint clean (0 warnings), Vite build clean.
+- `npm run smoke` -> Passed in 4.89s (first_save within budget <= 15s, all 9 pages rendered, no broken images, 0 console/sw errors).
+- `npm run audit:pages` -> Passed, all pages within speed budgets.
+
+Commits: <pending>
+Not verified: Live external network requests (audit and tests are offline/keyless).
+Needs the owner: Owner TMDb API key for live film runtimes; first-run demo titles decision; feeling acceptance; Chrome Web store publishing.
+Plan score: 7/10 (evidence-based: audit exists: 1; 95% field completeness for films/series: 1; 95% for books: 2; designed loading/missing states: 1; speed budgets held: 1; capture under 10s: 1; clean first run: 0 [needs owner]; owner accepts feel: 0 [needs owner]; published: 0 [needs owner]). Total verified score: 7/10.

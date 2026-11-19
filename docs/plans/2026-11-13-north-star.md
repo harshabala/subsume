@@ -85,6 +85,7 @@ practice path adds 30 demo titles to a private journal.
   (a book is not a film), a designed loading state, and a designed state for missing data.
 - **Done when:** scenarios 1 and 2 pass in the audit and by the owner's eye on every page.
 - 2026-11-18: done. Every page medium-aware: Library and search cards render creator line (director for film, author for books, creator for series); Detail modal renders runtime and page count; Stats computes hours on screen and book pages strictly from stored values, displaying "unknown for N titles" instead of misleading 0; Home hero prioritizes owner's library with "Written by" for books; Recently Inscribed cards show publication year. Verified in real browser and audit (748 unit tests, smoke passed, audit:pages passed).
+- 2026-11-19: added unit tests for medium-aware cards, detail modal, and honest stats in tests/mediumAwareUi.test.tsx (757 vitest unit tests passing across 110 test files).
 
 ### 4. Speed
 - Set a budget per page for time until fully shown from stored data, and hold it in the smoke
