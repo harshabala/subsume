@@ -43,7 +43,7 @@ Verified:
 - `npm run smoke` -> Passed in 4.89s (first_save within budget <= 15s, all 9 pages rendered, no broken images, 0 console/sw errors).
 - `npm run audit:pages` -> Passed, all pages within speed budgets.
 
-Commits: <pending>
+Commits: 5e8d11e
 Not verified: Live external network requests (audit and tests are offline/keyless).
 Needs the owner: Owner TMDb API key for live film runtimes; first-run demo titles decision; feeling acceptance; Chrome Web store publishing.
 Plan score: 7/10 (evidence-based: audit exists: 1; 95% field completeness for films/series: 1; 95% for books: 2; designed loading/missing states: 1; speed budgets held: 1; capture under 10s: 1; clean first run: 0 [needs owner]; owner accepts feel: 0 [needs owner]; published: 0 [needs owner]). Total verified score: 7/10.
