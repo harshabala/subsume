@@ -47,3 +47,41 @@ Commits: 5e8d11e
 Not verified: Live external network requests (audit and tests are offline/keyless).
 Needs the owner: Owner TMDb API key for live film runtimes; first-run demo titles decision; feeling acceptance; Chrome Web store publishing.
 Plan score: 7/10 (evidence-based: audit exists: 1; 95% field completeness for films/series: 1; 95% for books: 2; designed loading/missing states: 1; speed budgets held: 1; capture under 10s: 1; clean first run: 0 [needs owner]; owner accepts feel: 0 [needs owner]; published: 0 [needs owner]). Total verified score: 7/10.
+
+## 2026-11-21, Antigravity (Gemini 2.5 Pro)
+Workstream: Workstream 5 (Clean first run & Guided First-Use Journey)
+Done:
+- Seeded demo library titles on first run when library is empty so fresh installs immediately showcase rich book, movie, and TV items.
+- Added non-blocking, responsive `GuidedTour` companion component with 4-step first-use journey:
+  1. Save a title (extension icon & poetic reflection).
+  2. Find it in your library (medium-aware spines & director/author labels).
+  3. Fast, private search (instant local title/creator matching).
+  4. See your stats & milestones (reading pages, viewing time, top genres).
+- Added direct in-tour navigation actions ("Go to Library", "Open Search", "View Stats") alongside step indicators and Next/Back/Skip/Finish controls.
+- Made tour dismissable, persistent in `UserPreferences.guidedTourCompleted`, and skippable.
+- Added "Replay guided tour" buttons in `Settings` under both the "Start here" welcome panel and the "Backup & sync" data management section.
+- Added comprehensive unit tests in `tests/guidedTour.test.tsx` (7 tests) verifying rendering, step advancement, back-navigation, action navigation, skip dismissal, and replay lifecycle.
+
+Verified:
+- `npm run build && npm run ci` -> 764 vitest tests passed (111 test files), TypeScript typecheck clean, ESLint clean (0 warnings), Vite build clean.
+- `npm run smoke` -> Passed in 4.80s (first_save within budget <= 15s, all 9 pages rendered, no broken images, 0 console/sw errors).
+- `npm run audit:pages` -> Passed, all 40 titles audited across all pages, speed budgets held (< 200ms).
+
+Review pack:
+- Screenshots:
+  - `docs/screenshots/page-home.png` (sha: e7706ca7fc20ea72df699a0d0ae3676c85c200a3)
+  - `docs/screenshots/page-library.png` (sha: 8abdcaf61ccf60a7e33e0cad7d731f6f7e869963)
+  - `docs/screenshots/page-search.png` (sha: 2a8e9fe528a95972756cf96fa3589aeb4b002366)
+  - `docs/screenshots/page-stats.png` (sha: b573a26734f32a587ad95ec3b9458d3552cf2dd9)
+  - `docs/screenshots/page-settings.png` (sha: f681267f70c0646a699e1eb770b0ed27fdcc2b1e)
+- Five-line walkthrough:
+  Line 1: First-run onboarding now automatically seeds the demo library with canonical films, series, and books so fresh installs are never blank.
+  Line 2: A non-blocking guided tour floating card introduces the core loop: saving a title on the web, finding it in the library, private offline-first search, and reading stats.
+  Line 3: Users can progress through the 4 steps, jump directly to relevant views, skip at any point, or finish smoothly without blocking page interactions.
+  Line 4: Settings provides immediate "Replay guided tour" actions under both "Start here" and "Data & Sync" panels for instant discovery review.
+  Line 5: All 764 unit tests, smoke verification (4.80s first save), and page audits pass with 0 errors across all 9 pages.
+
+Commits: 9bbfd9c
+Not verified: Live external network requests (audit and tests are offline/keyless).
+Needs the owner: Owner feel review; Chrome Web Store release publishing.
+Plan score: 8/10 (evidence-based: audit exists: 1; 95% field completeness for films/series: 1; 95% for books: 2; designed loading/missing states: 1; speed budgets held: 1; capture under 10s: 1; clean first run: 1 [demo library + guided tour complete]; owner accepts feel: 0 [needs owner]; published: 0 [needs owner]). Total verified score: 8/10.
