@@ -41,9 +41,10 @@ import '../styles/settings-oauth.css';
 
 export interface SettingsProps {
   onNavigate?: (page: 'search' | 'home' | 'library') => void;
+  onReplayTour?: () => void;
 }
 
-export function Settings({ onNavigate }: SettingsProps = {}) {
+export function Settings({ onNavigate, onReplayTour }: SettingsProps = {}) {
   const { showNotice } = useNotice();
   const [prefs, setPrefs] = useState<UserPreferences | null>(null);
   const [saving, setSaving] = useState(false);
@@ -1266,6 +1267,23 @@ export function Settings({ onNavigate }: SettingsProps = {}) {
                 </p>
               )}
             </div>
+
+            <div>
+              <span className="settings-field-label">Guided First-Use Journey</span>
+              <p className="settings-panel-hint">
+                Walk through the guided tour again to review how to save titles, explore the library, search, and see honest stats.
+              </p>
+              {onReplayTour && (
+                <button
+                  type="button"
+                  className="btn-sanctuary-restraint"
+                  data-testid="replay-tour-btn-data"
+                  onClick={onReplayTour}
+                >
+                  Replay guided tour
+                </button>
+              )}
+            </div>
           </div>
         </div>
         )}
@@ -1314,6 +1332,16 @@ export function Settings({ onNavigate }: SettingsProps = {}) {
                 onClick={() => onNavigate('home')}
               >
                 Go to Discovery
+              </button>
+            )}
+            {onReplayTour && (
+              <button
+                type="button"
+                className="btn-sanctuary-restraint"
+                data-testid="replay-tour-btn"
+                onClick={onReplayTour}
+              >
+                Replay guided tour
               </button>
             )}
           </div>

@@ -180,6 +180,11 @@ export interface UserPreferences {
   cinemaAtmosphere?: CinemaAtmosphere;
   onboardingComplete: boolean;
   /**
+   * True after the user completes or skips the guided first-use tour.
+   * Replayable from Settings anytime.
+   */
+  guidedTourCompleted?: boolean;
+  /**
    * True after the user creates their first archive inscription (ADD_TO_LIST).
    * Default false for new installs; drives first-inscription gate + Discovery banner.
    */

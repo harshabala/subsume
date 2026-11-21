@@ -5,17 +5,18 @@ import type { JoinedItem } from '../components/archive/types';
 export type JoinedLibraryItem = JoinedItem;
 
 /**
- * Loads the current library. Does **not** auto-seed demo titles.
- *
- * Demo restoration is opt-in only (Settings / popup “Restore demo library”).
- * Silent auto-seed blurred ownership on first open; keep that path explicit.
+ * Loads the current library. Per owner decision (2026-11-21), first-time users
+ * see demo titles in their library so the sanctuary is never empty on arrival.
  */
 export async function ensureDemoLibraryIfEmpty(): Promise<JoinedLibraryItem[]> {
   const initial = await sendMessage<Record<string, unknown>, JoinedLibraryItem[]>(
     MessageType.GET_LIBRARY,
     {}
   );
-  return initial.data ?? [];
+  if (!initial.data || initial.data.length === 0) {
+    return restoreDemoLibrary();
+  }
+  return initial.data;
 }
 
 /**

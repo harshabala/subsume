@@ -14,6 +14,7 @@ import {
   FirstInscriptionGate,
   FIRST_INSCRIPTION_GATE_SESSION_KEY,
 } from './components/FirstInscriptionGate';
+import { GuidedTour } from './components/GuidedTour';
 import { sendMessage } from '../shared/messages';
 import { MessageType, UserPreferences } from '../shared/types';
 import { usePrefetch, prefetchPage, prefetchProps, type Page } from './hooks/usePrefetch';
@@ -111,6 +112,20 @@ export function App() {
       return false;
     }
   });
+  const [tourActive, setTourActive] = useState(false);
+
+  const handleDismissTour = async () => {
+    setTourActive(false);
+    if (prefs && !prefs.guidedTourCompleted) {
+      const updated = { ...prefs, guidedTourCompleted: true };
+      setPrefs(updated);
+      try {
+        await sendMessage(MessageType.SET_PREFERENCES, updated);
+      } catch (e) {
+        console.error('[Subsume] Failed to save tour completion preference:', e);
+      }
+    }
+  };
 
   const prefersReducedMotion = useCallback(
     () =>
@@ -256,6 +271,7 @@ export function App() {
       onboardingComplete: true,
     };
     try {
+      await sendMessage(MessageType.RESTORE_DEMO_LIBRARY, {});
       await sendMessage(MessageType.SET_PREFERENCES, newPrefs);
       setPrefs(newPrefs);
       // Land on Discovery with first-inscription prompt — never empty Archive
@@ -352,6 +368,7 @@ export function App() {
     const skippedAt = Date.now();
     const newPrefs = { ...prefs, firstInscriptionSkippedAt: skippedAt };
     try {
+      await sendMessage(MessageType.RESTORE_DEMO_LIBRARY, {});
       await sendMessage(MessageType.SET_PREFERENCES, newPrefs);
       setPrefs(newPrefs);
     } catch (err) {
@@ -387,7 +404,15 @@ export function App() {
       case 'alerts':
         return <Alerts />;
       case 'settings':
-        return <Settings onNavigate={setCurrentPage} />;
+        return (
+          <Settings
+            onNavigate={setCurrentPage}
+            onReplayTour={() => {
+              setTourActive(true);
+              setCurrentPage('home');
+            }}
+          />
+        );
     }
   };
 
@@ -401,6 +426,9 @@ export function App() {
           }}
           onPracticeTitle={handleGatePracticeTitle}
         />
+      )}
+      {prefs.onboardingComplete && (tourActive || (!prefs.guidedTourCompleted && currentPage === 'home')) && !showFirstInscriptionGate && (
+        <GuidedTour onDismiss={handleDismissTour} onNavigate={setCurrentPage} />
       )}
       <FilmGrain variant="app" />
       <header className="app-nav-shell">

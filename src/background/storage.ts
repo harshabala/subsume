@@ -855,6 +855,7 @@ export const DEFAULT_PREFS: UserPreferences = {
   theme: 'dark',
   screenplayDockEnabled: false,
   onboardingComplete: false,
+  guidedTourCompleted: false,
   firstInscriptionComplete: false,
   omdbApiKey: undefined,
   // Books expansion defaults (all media on)
