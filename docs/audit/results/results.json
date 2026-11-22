@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-11-21 15:59:40",
+ "generatedAt": "2026-11-22 13:11:59",
  "pages": {
   "onboarding": {
    "all": {
-    "ready_ms": 147,
+    "ready_ms": 162,
     "bad_text": [],
     "chars": 687,
-    "unstubbed_requests": 6
+    "unstubbed_requests": 3
    }
   },
   "library": {
    "all": {
     "cards": 39,
-    "ready_ms": 130,
+    "ready_ms": 85,
     "bad_text": [],
     "chars": 4304
    }
@@ -26,7 +26,7 @@
      "book": 6
     },
     "hero": "NO. 001\nMidnight's Children\n\nWritten by Salman Rushdie\n\n\"Audit reflection.\"\nREFLECT\nARCHIVE",
-    "ready_ms": 147,
+    "ready_ms": 165,
     "bad_text": [],
     "chars": 1962
    }
@@ -40,14 +40,14 @@
      "book": 2
     },
     "hero": null,
-    "ready_ms": 85,
+    "ready_ms": 74,
     "bad_text": [],
     "chars": 1367
    }
   },
   "stats": {
    "all": {
-    "ready_ms": 89,
+    "ready_ms": 82,
     "bad_text": [],
     "chars": 830
    }
@@ -156,7 +156,7 @@
       "placeholder": false
      }
     ],
-    "ready_ms": 40,
+    "ready_ms": 25,
     "bad_text": [],
     "chars": 601
    }
@@ -164,14 +164,14 @@
   "alerts": {
    "all": {
     "text": "Subsume\nARCHIVE\nDISCOVERY\nSETTINGS\nSEARCH\nRECOMMENDATIONS\nNOW SHOWING\nCREATORS\nALERTS\nPremiere Alerts\n\nSet a programme of genres, platforms, keywords, or book authors. We will notify you when new screen releases or matching books appear.\n\nCREATE ALERT\nAudit book alert\n\nBooks · \"Intermezzo\" · author: \"Rooney\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit series alert\n\nSeries · \"dark\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE\nAudit film alert\n\nFilm · \"night\"\n\nLAST CHECKED: NEVER\n\nACTIVE\nDELETE",
-    "ready_ms": 78,
+    "ready_ms": 83,
     "bad_text": [],
     "chars": 486
    }
   },
   "new-releases": {
    "all": {
-    "ready_ms": 77,
+    "ready_ms": 79,
     "bad_text": [],
     "chars": 436,
     "unstubbed_requests": 0,
@@ -180,7 +180,7 @@
   },
   "settings": {
    "all": {
-    "ready_ms": 96,
+    "ready_ms": 64,
     "bad_text": [],
     "chars": 785,
     "unstubbed_requests": 3,
@@ -204,7 +204,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 609
+    "ready_ms": 631
    },
    "search": {
     "saved": true,
@@ -213,7 +213,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 108
+    "ready_ms": 114
    }
   },
   "seed_pather_panchali": {
@@ -231,7 +231,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 192
+    "ready_ms": 177
    },
    "search": {
     "saved": true,
@@ -240,7 +240,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 110
    }
   },
   "seed_charulata": {
@@ -258,7 +258,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 193
+    "ready_ms": 151
    },
    "search": {
     "saved": true,
@@ -297,7 +297,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 164
+    "ready_ms": 172
    },
    "search": {
     "saved": true,
@@ -324,7 +324,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 183
+    "ready_ms": 155
    },
    "search": {
     "saved": true,
@@ -351,7 +351,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 182
+    "ready_ms": 171
    },
    "search": {
     "saved": true,
@@ -360,7 +360,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -390,7 +390,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 148
+    "ready_ms": 194
    },
    "search": {
     "saved": true,
@@ -399,7 +399,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "seed_iruvar": {
@@ -417,7 +417,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 171
+    "ready_ms": 186
    },
    "search": {
     "saved": true,
@@ -426,7 +426,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "seed_vikram": {
@@ -444,7 +444,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 159
+    "ready_ms": 186
    },
    "search": {
     "saved": true,
@@ -483,7 +483,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 158
+    "ready_ms": 152
    },
    "search": {
     "saved": true,
@@ -492,7 +492,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 106
    }
   },
   "seed_meiyazhagan": {
@@ -510,7 +510,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 185
+    "ready_ms": 182
    },
    "search": {
     "saved": true,
@@ -519,7 +519,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 105
    }
   },
   "seed_parasite": {
@@ -537,7 +537,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 178
+    "ready_ms": 193
    },
    "search": {
     "saved": true,
@@ -576,7 +576,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 171
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
@@ -585,7 +585,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "seed_everything_everywhere": {
@@ -603,7 +603,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 175
    },
    "search": {
     "saved": true,
@@ -612,7 +612,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 107
    }
   },
   "seed_free_solo": {
@@ -630,7 +630,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 167
+    "ready_ms": 183
    },
    "search": {
     "saved": true,
@@ -639,7 +639,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    },
    "home": {
     "shown": true,
@@ -669,7 +669,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 183
+    "ready_ms": 174
    },
    "search": {
     "saved": true,
@@ -678,7 +678,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "synth_film_no_poster": {
@@ -703,7 +703,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 137
+    "ready_ms": 135
    },
    "search": {
     "saved": true,
@@ -738,7 +738,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 145
+    "ready_ms": 178
    },
    "search": {
     "saved": true,
@@ -750,7 +750,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 109
    },
    "recommendations": {
     "shown": true,
@@ -799,7 +799,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 163
+    "ready_ms": 148
    },
    "search": {
     "saved": true,
@@ -808,7 +808,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 105
    }
   },
   "tv_money_heist": {
@@ -824,7 +824,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 144
+    "ready_ms": 374
    },
    "search": {
     "saved": true,
@@ -855,7 +855,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 146
+    "ready_ms": 176
    },
    "search": {
     "saved": true,
@@ -864,7 +864,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "tv_twin_peaks": {
@@ -880,7 +880,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 148
+    "ready_ms": 174
    },
    "search": {
     "saved": true,
@@ -889,7 +889,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 105
+    "ready_ms": 104
    }
   },
   "tv_severance": {
@@ -905,7 +905,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 197
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
@@ -914,7 +914,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 103
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -942,7 +942,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 191
+    "ready_ms": 183
    },
    "search": {
     "saved": true,
@@ -967,7 +967,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 176
+    "ready_ms": 186
    },
    "search": {
     "saved": true,
@@ -976,7 +976,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 1,
-    "ready_ms": 104
+    "ready_ms": 105
    }
   },
   "book_the_great_gatsby": {
@@ -992,7 +992,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 175
+    "ready_ms": 191
    },
    "search": {
     "saved": true,
@@ -1001,7 +1001,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 16,
-    "ready_ms": 104
+    "ready_ms": 148
    }
   },
   "book_pride_and_prejudice": {
@@ -1021,7 +1021,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 256
+    "ready_ms": 221
    },
    "search": {
     "saved": true,
@@ -1055,7 +1055,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 169
+    "ready_ms": 182
    },
    "search": {
     "saved": true,
@@ -1067,7 +1067,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 12,
-    "ready_ms": 104
+    "ready_ms": 107
    }
   },
   "book_cien_años_de_soledad": {
@@ -1083,7 +1083,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 168
+    "ready_ms": 181
    },
    "search": {
     "saved": true,
@@ -1118,7 +1118,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 163
+    "ready_ms": 193
    },
    "search": {
     "saved": true,
@@ -1129,7 +1129,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 104
+    "ready_ms": 103
    },
    "home": {
     "shown": true,
@@ -1151,7 +1151,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 163
+    "ready_ms": 197
    },
    "search": {
     "saved": true,
@@ -1185,7 +1185,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 164
+    "ready_ms": 250
    },
    "search": {
     "saved": true,
@@ -1196,7 +1196,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 10,
-    "ready_ms": 104
+    "ready_ms": 105
    }
   },
   "book_don_quixote": {
@@ -1214,7 +1214,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 188
+    "ready_ms": 157
    },
    "search": {
     "saved": true,
@@ -1247,7 +1247,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 165
+    "ready_ms": 325
    },
    "search": {
     "saved": true,
@@ -1258,7 +1258,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 103
+    "ready_ms": 105
    },
    "home": {
     "shown": true,
@@ -1289,7 +1289,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 2,
-    "ready_ms": 108
+    "ready_ms": 104
    },
    "recommendations": {
     "shown": true,
@@ -1354,7 +1354,7 @@
     "missing": [],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 181
+    "ready_ms": 150
    },
    "search": {
     "saved": true,
@@ -1363,7 +1363,7 @@
     "wrong": [],
     "images_failed": 0,
     "results": 20,
-    "ready_ms": 105
+    "ready_ms": 106
    },
    "home": {
     "shown": true,
@@ -1387,7 +1387,7 @@
     ],
     "wrong": [],
     "images_failed": 0,
-    "ready_ms": 179
+    "ready_ms": 158
    },
    "search": {
     "saved": true,
