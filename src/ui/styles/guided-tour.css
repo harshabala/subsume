@@ -25,7 +25,12 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  animation: tourCardEnter 0.22s ease-out;
+  animation: tourCardEnter 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.guided-tour-card.is-dismissing {
+  animation: tourCardExit 0.14s cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
 @keyframes tourCardEnter {
@@ -39,9 +44,29 @@
   }
 }
 
+@keyframes tourCardExit {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .guided-tour-card {
+  .guided-tour-card,
+  .guided-tour-card.is-dismissing {
     animation: none;
+  }
+  .guided-tour-dot,
+  .guided-tour-action-btn,
+  .guided-tour-back-btn,
+  .guided-tour-next-btn,
+  .guided-tour-skip-btn {
+    transition: none !important;
+    transform: none !important;
   }
 }
 
@@ -146,7 +171,7 @@
   height: 8px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.18);
-  transition: all 0.2s;
+  transition: width 0.18s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.18s ease-out, border-radius 0.18s ease-out;
 }
 
 .guided-tour-dot.active {
@@ -169,4 +194,12 @@
 .guided-tour-next-btn {
   font-size: 0.85rem;
   padding: 0.45rem 1rem;
+  transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.15s ease, color 0.15s ease;
+}
+
+.guided-tour-back-btn:active,
+.guided-tour-next-btn:active,
+.guided-tour-action-btn:active,
+.guided-tour-skip-btn:active {
+  transform: scale(0.97);
 }

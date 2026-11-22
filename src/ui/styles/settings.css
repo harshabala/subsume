@@ -242,8 +242,13 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.12s cubic-bezier(0.16, 1, 0.3, 1);
   box-sizing: border-box;
+}
+
+.btn-sanctuary-primary:active,
+.btn-sanctuary-gold:active {
+  transform: scale(0.98);
 }
 
 .btn-sanctuary-primary:focus-visible,
@@ -270,11 +275,15 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.12s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+
+.btn-sanctuary-restraint:active {
+  transform: scale(0.98);
 }
 
 .btn-sanctuary-restraint:focus-visible {
@@ -561,6 +570,13 @@
   .alerts-form-panel--enter,
   .alerts-form-panel--exiting {
     animation: none;
+  }
+  .btn-sanctuary-primary,
+  .btn-sanctuary-gold,
+  .btn-sanctuary-restraint,
+  .btn-sanctuary-danger {
+    transition: none !important;
+    transform: none !important;
   }
 }
 
