@@ -85,3 +85,21 @@ Commits: 9bbfd9c
 Not verified: Live external network requests (audit and tests are offline/keyless).
 Needs the owner: Owner feel review; Chrome Web Store release publishing.
 Plan score: 8/10 (evidence-based: audit exists: 1; 95% field completeness for films/series: 1; 95% for books: 2; designed loading/missing states: 1; speed budgets held: 1; capture under 10s: 1; clean first run: 1 [demo library + guided tour complete]; owner accepts feel: 0 [needs owner]; published: 0 [needs owner]). Total verified score: 8/10.
+
+## 2026-11-22, Antigravity (Gemini 2.5 Pro)
+Workstream: Motion Design Principles Audit (/design-motion-principles)
+Done:
+- Evaluated Subsume against the three motion designers (Emil Kowalski primary, Jakub Krehel secondary, Jhey Tompkins selective).
+- Applied tactile `:active` micro-interaction scaling (`transform: scale(0.98)` / `scale(0.97)`) on primary, outline, and tour buttons with snappy `cubic-bezier(0.16, 1, 0.3, 1)` easing.
+- Replaced standard linear/ease-out tour transitions with custom spring bezier `cubic-bezier(0.16, 1, 0.3, 1)` and added smooth progress dot width and background transitions.
+- Fully guarded all transforms and transitions with `@media (prefers-reduced-motion: reduce)`.
+
+Verified:
+- `npm run build && npm run ci` -> 764 vitest tests passed (111 test files), TypeScript clean, ESLint clean, Vite build clean.
+- `npm run smoke` -> Passed in 5.52s (all 9 pages rendered, no broken images, 0 console/sw errors).
+- `npm run audit:pages` -> Passed, all 40 titles audited across all pages, speed budgets held (< 200ms).
+
+Commits: af7b898
+Not verified: Live external network requests (offline keyless).
+Needs the owner: Owner feel review; Chrome Web Store release publishing.
+Plan score: 8.5/10.
