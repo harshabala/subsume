@@ -13,7 +13,7 @@
   --bg-sunken: #121212;
   --fg-base: #ffffff;
   --fg-muted: #969696;
-  --fg-subtle: #666666;
+  --fg-subtle: #8a8a8a;
   --primary: #da291c;
   --primary-soft: rgba(218, 41, 28, 0.10);
   --primary-hover: #9d2211;
@@ -36,7 +36,7 @@
   --text-artwork: #d2d2d2;
   --text-title: #969696;
   --text-meta: #8f8f8f;
-  --text-control: #666666;
+  --text-control: #8a8a8a;
   --text-sanctuary: var(--text-reflection);
   --outline: var(--text-meta);
 

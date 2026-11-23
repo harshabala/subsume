@@ -123,3 +123,18 @@ Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 8.5/10.
 
+## 2026-11-23, Antigravity (Gemini 3.8 Flash)
+Workstream: Impeccable Audit Remediation (Finding 1)
+Done:
+- Fixed dark-mode subtle text contrast failure in `src/shared/tokens.css` and `src/shared/shadowTokens.ts`.
+- Updated `--fg-subtle` and `--text-control` from `#666666` (3.05:1) to `#8a8a8a` (achieves 4.8:1 contrast on #181818, meeting WCAG AA 4.5:1 floor).
+
+Verified:
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+
+Commits: pending
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 9.0/10.
+
+
