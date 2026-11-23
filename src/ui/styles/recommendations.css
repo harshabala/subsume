@@ -70,7 +70,7 @@
   top: 4px;
   left: 4px;
   font-family: var(--font-ui);
-  font-size: 9px;
+  font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 2px 6px;
@@ -82,7 +82,7 @@
 
 .recommendation-type-badge-inline {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-meta);
@@ -95,7 +95,7 @@
   min-width: 44px;
   padding: var(--spacing-xs, 4px) var(--spacing-sm, 8px);
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-meta);
@@ -122,7 +122,7 @@
 }
 
 .recommendation-media-card-genre {
-  font-size: 10px;
+  font-size: 0.6875rem;
   padding: 2px 6px;
   background: var(--bg-plaque);
   border: 1px solid var(--border-restraint);
@@ -165,7 +165,7 @@
 }
 
 .curator-note-title {
-  font-size: 9px;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
 }
 
@@ -247,7 +247,7 @@
   top: 6px;
   right: 6px;
   font-family: var(--font-ui);
-  font-size: 9px;
+  font-size: 0.6875rem;
   letter-spacing: 0.08em;
   background: var(--bg-plaque);
   border: 1px solid var(--border-restraint);
@@ -294,7 +294,7 @@
 }
 
 .recommendation-ai-card-seed-pill {
-  font-size: 10px;
+  font-size: 0.6875rem;
   color: var(--fg-subtle);
   background: var(--bg-sunken);
   border: 1px solid var(--border);
@@ -621,7 +621,7 @@
 }
 
 .recommendations-rule-group-icon {
-  font-size: 10px;
+  font-size: 0.6875rem;
   color: var(--primary);
   transition: transform 0.2s ease;
   display: inline-block;
@@ -742,7 +742,7 @@
 
 .recommendation-ai-card-seed-pill {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   letter-spacing: 0.05em;
   color: var(--text-meta);
   background: var(--bg-sanctuary);
@@ -781,7 +781,7 @@
 .recommendations-regen-btn {
   min-height: var(--hit-target-min, 40px);
   padding: 6px 14px;
-  font-size: 10px;
+  font-size: 0.6875rem;
   display: inline-flex;
   align-items: center;
   box-sizing: border-box;

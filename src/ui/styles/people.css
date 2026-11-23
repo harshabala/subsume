@@ -514,7 +514,7 @@
   left: 8px;
   background: var(--gold);
   color: var(--badge-on-gold-fg);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 700;
   padding: 3px 6px;
   border-radius: 4px;
@@ -527,7 +527,7 @@
   right: 8px;
   background: var(--badge-overlay-bg);
   color: var(--card-fg);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 600;
   padding: 3px 6px;
   border-radius: 4px;
@@ -722,7 +722,7 @@
 
 .people-unfollow-confirm-label {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-meta);
@@ -735,7 +735,7 @@
   min-height: var(--hit-target-min, 40px);
   padding: 6px 12px;
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   border-radius: 2px;
@@ -823,7 +823,7 @@
 
 .people-sanctuary-sync {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   color: var(--text-meta);
   margin-top: 8px;
   letter-spacing: 0.1em;

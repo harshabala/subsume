@@ -837,7 +837,7 @@ const HOVER_CARD_STYLES = `
     padding: 1px var(--spacing-sm);
     border-radius: var(--radius-sm);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 0.6875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -876,7 +876,7 @@ const HOVER_CARD_STYLES = `
   .subsume-rating-label {
     color: var(--text-meta);
     font-weight: 500;
-    font-size: 10px;
+    font-size: 0.6875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -899,7 +899,7 @@ const HOVER_CARD_STYLES = `
     background: var(--primary-soft);
     border: 1px solid var(--color-accent-border);
     border-radius: var(--radius-md);
-    font-size: 10px;
+    font-size: 0.6875rem;
     font-weight: 600;
     color: var(--primary);
   }
@@ -955,7 +955,7 @@ const HOVER_CARD_STYLES = `
   }
 
   .subsume-library-label {
-    font-size: 9px;
+    font-size: 0.6875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--text-meta);

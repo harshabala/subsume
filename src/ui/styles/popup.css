@@ -79,7 +79,7 @@
 
 .popup-tagline {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -167,7 +167,7 @@
 
 .popup-stat-label {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -206,7 +206,7 @@
 
 .popup-section-title {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -280,7 +280,7 @@
 .popup-status-badge {
   padding: 1px 5px;
   border-radius: 4px;
-  font-size: 9px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -547,7 +547,7 @@
 .slider-header {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 500;
@@ -627,7 +627,7 @@
 }
 
 .vibe-label {
-  font-size: 10px;
+  font-size: 0.6875rem;
   color: var(--fg-base);
   text-shadow: 0 1px 2px color-mix(in oklch, var(--bg-base) 65%, transparent);
   font-weight: 600;
@@ -688,7 +688,7 @@
 }
 
 .intent-selector-label {
-  font-size: 10px;
+  font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 500;

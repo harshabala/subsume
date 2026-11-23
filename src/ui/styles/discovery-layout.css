@@ -225,7 +225,7 @@
 
 .discovery-pulse-label {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -284,7 +284,7 @@
 .discovery-feed-kicker {
   display: block;
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-meta);
@@ -411,7 +411,7 @@
 
 .discovery-feed-source {
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -526,7 +526,7 @@
   content: 'Your reflection';
   display: block;
   font-family: var(--font-ui);
-  font-size: 9px;
+  font-size: 0.6875rem;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.14em;

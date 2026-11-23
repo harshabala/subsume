@@ -164,10 +164,29 @@ Done:
 Verified:
 - `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
 
+Commits: ae56756
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 9.0/10.
+
+## 2026-11-23, Antigravity (Gemini 3.8 Flash)
+Workstream: Impeccable Audit Remediation (Finding 5)
+Done:
+- Clamped sub-11px microtext to minimum 11px floor (`0.6875rem`) across:
+  - `src/ui/styles/popup.css`: tagline, stat labels, section titles, status badges, slider header, vibe label, intent selector label
+  - `src/ui/styles/discovery-layout.css`: pulse label, feed kicker, feed source, quote reflection kicker
+  - `src/ui/styles/recommendations.css`: recommendation type badges, dismiss btn, genres, curator note, card ratings, seed pills, regen btn
+  - `src/ui/styles/people.css`: filmography poster badges, unfollow confirmation labels/buttons, sanctuary sync label
+  - `src/content/hoverCard.tsx`: chips, rating labels, status pills, library label
+
+Verified:
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+
 Commits: pending
 Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 9.0/10.
+
 
 
 
