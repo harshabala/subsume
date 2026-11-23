@@ -103,3 +103,23 @@ Commits: af7b898
 Not verified: Live external network requests (offline keyless).
 Needs the owner: Owner feel review; Chrome Web Store release publishing.
 Plan score: 8.5/10.
+
+## 2026-11-23, Antigravity (Gemini 2.5 Pro)
+Workstream: Security Review & Remediation (SEC-SS-01)
+Done:
+- Addressed SEC-SS-01: Clarified storage security model copy to prevent user misunderstanding regarding zero-knowledge encryption.
+- Selected Option (a): Updated UI tour copy (`src/ui/components/GuidedTour.tsx`), storage documentation (`README.md`), and module docstring (`src/shared/keyCrypto.ts`) from "encrypted" to "obfuscated on disk" with WebCrypto AES-GCM.
+- Clarified in README that notes, ratings, and reflections in IndexedDB are not encrypted or obfuscated.
+- Added comprehensive unit test `tests/securityCopy.test.ts` verifying copy accuracy and prohibiting over-claiming encryption.
+
+Verified:
+- `npx vitest run tests/securityCopy.test.ts` -> 2 tests passed.
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+- `npm run smoke` -> Smoke verification passed (first save 5.67s, all 9 pages rendered, 0 console/sw errors).
+- `npm run audit:pages` -> Page audit passed across all catalogue items.
+
+Commits: 9e59593
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 8.5/10.
+

@@ -1,5 +1,5 @@
 /**
- * Per-install API key encryption using WebCrypto AES-GCM.
+ * Per-install API key obfuscation on disk using WebCrypto AES-GCM.
  *
  * Security boundary & limitation:
  * This wraps sensitive API keys at rest using a per-install key stored separately

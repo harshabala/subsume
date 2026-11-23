@@ -27,7 +27,7 @@ export const GUIDED_TOUR_STEPS: GuidedTourStep[] = [
     title: 'Find it in your library',
     lead: 'Hardcover spines, cinematic cards, and format filters',
     description:
-      'Your collection is preserved with hardcover book spines, poster cards, and format tabs. Everything you save stays local, encrypted, and private.',
+      'Your collection is preserved with hardcover book spines, poster cards, and format tabs. Everything you save stays local, obfuscated on disk, and private.',
     actionLabel: 'Open Library',
     actionPage: 'library',
     icon: '☵',
