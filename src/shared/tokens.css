@@ -475,9 +475,9 @@
     --status-watched-bg: rgba(22, 163, 74, 0.1);
     --status-watched-fg: #16a34a;
     --status-watched-border: rgba(22, 163, 74, 0.2);
-    --status-abandoned-bg: rgba(197, 48, 48, 0.1);
-    --status-abandoned-fg: #c53030;
-    --status-abandoned-border: rgba(197, 48, 48, 0.2);
+    --status-abandoned-bg: rgba(120, 113, 108, 0.1);
+    --status-abandoned-fg: #78716c;
+    --status-abandoned-border: rgba(120, 113, 108, 0.2);
     --status-active: #16a34a;
     --status-active-glow: rgba(22, 163, 74, 0.35);
     --status-rating-fg: #b45309;
@@ -603,7 +603,7 @@
     --status-to-watch-fg: #2563eb;
     --status-watching-fg: #b45309;
     --status-watched-fg: #16a34a;
-    --status-abandoned-fg: #c53030;
+    --status-abandoned-fg: #78716c;
     --status-rating-fg: #b45309;
   }
 }

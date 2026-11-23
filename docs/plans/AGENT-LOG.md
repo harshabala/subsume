@@ -132,9 +132,24 @@ Done:
 Verified:
 - `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
 
+Commits: c463758
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 9.0/10.
+
+## 2026-11-23, Antigravity (Gemini 3.8 Flash)
+Workstream: Impeccable Audit Remediation (Finding 2)
+Done:
+- Fixed light-mode status token collision in `src/shared/tokens.css` (lines 478-480 and 606).
+- Changed `--status-abandoned-fg` from `#c53030` (red) to stone `#78716c`, aligning with the strict 3-channel red rule (Brand #da291c ≠ Danger #ea580c ≠ Abandoned Stone #78716c) and updated background and border alphas to match stone.
+
+Verified:
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+
 Commits: pending
 Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 9.0/10.
+
 
 
