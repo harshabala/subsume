@@ -53,11 +53,11 @@
 }
 
 .first-inscription-gate-practice:hover {
-  border-color: var(--accent, #c4a574);
+  border-color: var(--accent, var(--primary));
 }
 
 .first-inscription-gate-practice:focus-visible {
-  border-color: var(--accent, #c4a574);
+  border-color: var(--accent, var(--primary));
   outline: 2px solid var(--ring, var(--primary));
   outline-offset: 2px;
 }

@@ -153,7 +153,7 @@
   padding: 1.25rem;
   box-sizing: border-box;
   background:
-    linear-gradient(160deg, var(--bg-plaque, hsl(30 8% 14%)) 0%, var(--bg-sanctuary, hsl(30 10% 8%)) 100%);
+    linear-gradient(160deg, var(--bg-plaque, #1e1e1e) 0%, var(--bg-sanctuary, #181818) 100%);
   border: 1px solid var(--border-restraint, var(--card-border));
 }
 

@@ -182,10 +182,26 @@ Done:
 Verified:
 - `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
 
-Commits: pending
+Commits: 6065ba6
 Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 9.0/10.
+
+## 2026-11-23, Antigravity (Gemini 3.8 Flash)
+Workstream: Impeccable Audit Remediation (Finding 6)
+Done:
+- Removed legacy Wave 1 gold and amber fallbacks:
+  - `src/ui/styles/first-inscription-gate.css:56,60`: replaced `#c4a574` fallback with `var(--primary)`
+  - `src/ui/styles/discovery-layout.css:156`: replaced warm amber `hsl(30 8% 14%)` and `hsl(30 10% 8%)` fallbacks with Cinema Black tokens (`#1e1e1e` and `#181818`)
+
+Verified:
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+
+Commits: b10df01
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 9.0/10.
+
 
 
 
