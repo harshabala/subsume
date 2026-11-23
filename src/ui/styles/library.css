@@ -161,7 +161,7 @@
 }
 
 .library-empty-state-icon {
-  color: var(--primary);
+  color: var(--brand-text-soft, #ff6b5c);
   margin-bottom: 1.25rem;
 }
 

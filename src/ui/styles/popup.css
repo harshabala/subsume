@@ -438,7 +438,7 @@
 }
 
 .suggestion-year {
-  color: var(--primary, #da291c);
+  color: var(--brand-text-soft, #ff6b5c);
   font-family: var(--font-mono);
   font-size: 11px;
   margin-left: 10px;

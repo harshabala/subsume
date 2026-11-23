@@ -146,10 +146,29 @@ Done:
 Verified:
 - `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
 
+Commits: 22997cc
+Not verified: Live external network requests (offline keyless).
+Needs the owner: None.
+Plan score: 9.0/10.
+
+## 2026-11-23, Antigravity (Gemini 3.8 Flash)
+Workstream: Impeccable Audit Remediation (Finding 3)
+Done:
+- Replaced raw `--primary: #da291c` text usages on dark backgrounds with `--brand-text-soft: #ff6b5c` (WCAG AA compliant contrast on dark surfaces):
+  - `src/ui/styles/library.css:164`: `.library-empty-state-icon`
+  - `src/ui/styles/global.css:348`: `.modal-badge`
+  - `src/ui/styles/people.css:127`: `.person-card-photo-placeholder`
+  - `src/ui/styles/popup.css:441`: `.suggestion-year`
+  - `src/shared/tokens.css:257`: `--intent-memory-fg` dark mode token
+
+Verified:
+- `npm run ci` -> 766 tests passed (112 test files), typecheck clean, lint clean, vite build passed.
+
 Commits: pending
 Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 9.0/10.
+
 
 
 

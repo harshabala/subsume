@@ -254,7 +254,7 @@
   --status-rating-fg: #fbbf24;
   --status-dot-default: hsl(0, 0%, 80%);
   --status-dot-watching: hsl(140, 60%, 50%);
-  --intent-memory-fg: #da291c;
+  --intent-memory-fg: var(--brand-text-soft, #ff6b5c);
   --intent-memory-border: rgba(218, 41, 28, 0.35);
   --intent-revisit-fg: hsl(200, 70%, 65%);
   --intent-revisit-border: hsla(200, 70%, 65%, 0.3);
