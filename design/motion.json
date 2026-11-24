@@ -1,0 +1,435 @@
+{
+  "$description": "Motion tokens, every @keyframes (with steps and source) and reduced-motion handling.",
+  "keyframes": {
+    "alerts-form-enter": [
+      {
+        "source": "src/ui/styles/settings.css:547",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(-6px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "alerts-form-exit": [
+      {
+        "source": "src/ui/styles/settings.css:558",
+        "steps": {
+          "from": "opacity: 1; transform: translateY(0);",
+          "to": "opacity: 0; transform: translateY(-6px);"
+        }
+      }
+    ],
+    "aura-save-settle": [
+      {
+        "source": "src/ui/styles/emotional-components.css:133",
+        "steps": {
+          "0%": "opacity: 0.82; transform: scale(0.985);",
+          "100%": "opacity: 1; transform: scale(1);",
+          "45%": "opacity: 1; transform: scale(1.015);"
+        }
+      }
+    ],
+    "discoveryFeedIn": [
+      {
+        "source": "src/ui/styles/discovery-layout.css:333",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(8px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "empty-projector-beam": [
+      {
+        "source": "src/ui/styles/emotional-components.css:313",
+        "steps": {
+          "0%": "opacity: 0; clip-path: circle(0% at 50% 50%);",
+          "100%": "opacity: 0; clip-path: circle(78% at 50% 50%);",
+          "35%": "opacity: 0.9; clip-path: circle(48% at 50% 50%);"
+        }
+      }
+    ],
+    "empty-projector-frame": [
+      {
+        "source": "src/ui/styles/emotional-components.css:328",
+        "steps": {
+          "from": "opacity: 0; clip-path: inset(42% 42% 42% 42%);",
+          "to": "opacity: 1; clip-path: inset(0 0 0 0);"
+        }
+      }
+    ],
+    "empty-projector-in": [
+      {
+        "source": "src/ui/styles/emotional-components.css:302",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(6px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "fadeInSanctuary": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:215",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(10px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "home-digest-enter": [
+      {
+        "source": "src/ui/styles/discovery-layout.css:539",
+        "steps": {
+          "from": "opacity: 0; filter: blur(8px);",
+          "to": "opacity: 1; filter: blur(0);"
+        }
+      }
+    ],
+    "inline-notice-enter": [
+      {
+        "source": "src/ui/components/inline-notice.css:21",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(-6px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "inline-notice-exit": [
+      {
+        "source": "src/ui/components/inline-notice.css:32",
+        "steps": {
+          "from": "opacity: 1; transform: translateY(0);",
+          "to": "opacity: 0; transform: translateY(-6px);"
+        }
+      }
+    ],
+    "libraryCardIn": [
+      {
+        "source": "src/ui/styles/library.css:11",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(8px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "modal-enter": [
+      {
+        "source": "src/ui/styles/global.css:276",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(4px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "onboarding-step-enter": [
+      {
+        "source": "src/ui/styles/onboarding.css:218",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(6px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "poetic-backdrop-enter": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:374",
+        "steps": {
+          "from": "opacity: 0;",
+          "to": "opacity: 1;"
+        }
+      }
+    ],
+    "poetic-backdrop-exit": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:379",
+        "steps": {
+          "from": "opacity: 1;",
+          "to": "opacity: 0;"
+        }
+      }
+    ],
+    "poetic-modal-enter": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:384",
+        "steps": {
+          "from": "opacity: 0; transform: scale(0.96) translateY(8px);",
+          "to": "opacity: 1; transform: scale(1) translateY(0);"
+        }
+      }
+    ],
+    "poetic-modal-exit": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:395",
+        "steps": {
+          "from": "opacity: 1; transform: scale(1) translateY(0);",
+          "to": "opacity: 0; /* Spatial reverse of enter for consistency */ transform: scale(0.96) translateY(8px);"
+        }
+      }
+    ],
+    "poetic-pulse": [
+      {
+        "source": "src/ui/styles/poetic-sanctuary.css:136",
+        "steps": {
+          "0%, 100%": "opacity: 0.35; transform: scale(0.95);",
+          "50%": "opacity: 1; transform: scale(1);"
+        }
+      }
+    ],
+    "popup-suggestion-enter": [
+      {
+        "source": "src/ui/styles/popup.css:377",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(6px);",
+          "to": "opacity: 1; transform: translateY(0);"
+        }
+      }
+    ],
+    "popupSlide": [
+      {
+        "source": "src/ui/styles/popup.css:39",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(8px) scale(0.98);",
+          "to": "opacity: 1; transform: translateY(0) scale(1);"
+        }
+      }
+    ],
+    "recommendations-crossfade-in": [
+      {
+        "source": "src/ui/styles/recommendations.css:11",
+        "steps": {
+          "from": "opacity: 0;",
+          "to": "opacity: 1;"
+        }
+      }
+    ],
+    "sanctuary-backdrop-enter": [
+      {
+        "source": "src/styles/sanctuary.css:627",
+        "steps": {
+          "from": "opacity: 0;",
+          "to": "opacity: 1;"
+        }
+      }
+    ],
+    "sanctuary-backdrop-exit": [
+      {
+        "source": "src/styles/sanctuary.css:632",
+        "steps": {
+          "from": "opacity: 1;",
+          "to": "opacity: 0;"
+        }
+      }
+    ],
+    "sanctuary-modal-enter": [
+      {
+        "source": "src/styles/sanctuary.css:637",
+        "steps": {
+          "from": "opacity: 0; transform: scale(0.96) translateY(8px);",
+          "to": "opacity: 1; transform: scale(1) translateY(0);"
+        }
+      }
+    ],
+    "sanctuary-modal-exit": [
+      {
+        "source": "src/styles/sanctuary.css:648",
+        "steps": {
+          "from": "opacity: 1; transform: scale(1) translateY(0);",
+          "to": "opacity: 0; /* Spatial reverse of enter for consistency */ transform: scale(0.96) translateY(8px);"
+        }
+      }
+    ],
+    "sanctuary-notice-enter": [
+      {
+        "source": "src/ui/styles/sanctuary-shared.css:12",
+        "steps": {
+          "from": "opacity: 0;",
+          "to": "opacity: 1;"
+        }
+      }
+    ],
+    "save-ceremony-gold-line": [
+      {
+        "source": "src/ui/styles/emotional-components.css:179",
+        "steps": {
+          "0%": "transform: scaleX(0); opacity: 0;",
+          "100%": "transform: scaleX(1); opacity: 0;",
+          "20%": "opacity: 1;",
+          "70%": "transform: scaleX(1); opacity: 1;"
+        }
+      }
+    ],
+    "subsume-pulse": [
+      {
+        "source": "src/ui/styles/recommendations.css:1",
+        "steps": {
+          "0%, 100%": "opacity: 1;",
+          "50%": "opacity: 0.4;"
+        }
+      }
+    ],
+    "subsume-skeleton-pulse": [
+      {
+        "source": "src/content/hoverCard.tsx:771",
+        "steps": {
+          "0%, 100%": "opacity: 1;",
+          "50%": "opacity: 0.4;"
+        }
+      },
+      {
+        "source": "src/ui/styles/layout.css:124",
+        "steps": {
+          "0%, 100%": "opacity: 1;",
+          "50%": "opacity: 0.45;"
+        }
+      }
+    ],
+    "subsume-ui-spin": [
+      {
+        "source": "src/ui/styles/layout.css:110",
+        "steps": {
+          "to": "transform: rotate(360deg);"
+        }
+      }
+    ],
+    "tourCardEnter": [
+      {
+        "source": "src/ui/styles/guided-tour.css:36",
+        "steps": {
+          "from": "opacity: 0; transform: translateY(12px) scale(0.98);",
+          "to": "opacity: 1; transform: translateY(0) scale(1);"
+        }
+      }
+    ],
+    "tourCardExit": [
+      {
+        "source": "src/ui/styles/guided-tour.css:47",
+        "steps": {
+          "from": "opacity: 1; transform: translateY(0) scale(1);",
+          "to": "opacity: 0; transform: translateY(8px) scale(0.98);"
+        }
+      }
+    ]
+  },
+  "motion_tokens": {
+    "--duration-curtain": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "280ms",
+      "source": "src/shared/tokens.css:104"
+    },
+    "--duration-curtain-close": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "220ms",
+      "source": "src/shared/tokens.css:106"
+    },
+    "--duration-fast": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "130ms",
+      "source": "src/shared/tokens.css:73"
+    },
+    "--duration-instant": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "100ms",
+      "source": "src/shared/tokens.css:72"
+    },
+    "--duration-normal": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "220ms",
+      "source": "src/shared/tokens.css:74"
+    },
+    "--duration-slow": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "260ms",
+      "source": "src/shared/tokens.css:75"
+    },
+    "--duration-soft-settle": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "duration",
+      "$value": "280ms",
+      "source": "src/shared/tokens.css:103"
+    },
+    "--ease-focus-pull": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "source": "src/shared/tokens.css:90"
+    },
+    "--ease-out": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "cubicBezier",
+      "$value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "source": "src/shared/tokens.css:76"
+    },
+    "--ease-soft-settle": {
+      "$extensions": {
+        "modes": {}
+      },
+      "$type": "cubicBezier",
+      "$value": "linear( 0, 0.25 20%, 0.5 40%, 0.7 58%, 0.85 74%, 0.94 88%, 0.98 96%, 1 )",
+      "source": "src/shared/tokens.css:93"
+    }
+  },
+  "reduced_motion_sources": [
+    "src/content/bookOverlay.ts:249",
+    "src/content/dock.ts:214",
+    "src/content/dock.ts:282",
+    "src/content/hoverCard.tsx:1109",
+    "src/content/hoverCard.tsx:574",
+    "src/content/overlay.ts:175",
+    "src/styles/sanctuary.css:1319",
+    "src/styles/sanctuary.css:2935",
+    "src/styles/sanctuary.css:3730",
+    "src/styles/sanctuary.css:660",
+    "src/ui/App.tsx:133",
+    "src/ui/components/DetailModal.tsx:63",
+    "src/ui/components/FilmGrain.tsx:11",
+    "src/ui/components/FilmGrain.tsx:22",
+    "src/ui/components/NoticeProvider.tsx:24",
+    "src/ui/components/PoeticCaptureCanvas.tsx:40",
+    "src/ui/components/inline-notice.css:43",
+    "src/ui/hooks/useSpringDrawer.ts:55",
+    "src/ui/pages/Alerts.tsx:26",
+    "src/ui/styles/discovery-layout.css:554",
+    "src/ui/styles/emotional-components.css:197",
+    "src/ui/styles/emotional-components.css:415",
+    "src/ui/styles/emotional-components.css:480",
+    "src/ui/styles/first-inscription-gate.css:100",
+    "src/ui/styles/global.css:619",
+    "src/ui/styles/global.css:645",
+    "src/ui/styles/guided-tour.css:58",
+    "src/ui/styles/layout.css:407",
+    "src/ui/styles/library.css:28",
+    "src/ui/styles/onboarding.css:229",
+    "src/ui/styles/poetic-sanctuary.css:413",
+    "src/ui/styles/popup.css:405",
+    "src/ui/styles/popup.css:657",
+    "src/ui/styles/popup.css:945",
+    "src/ui/styles/recommendations.css:24",
+    "src/ui/styles/sanctuary-shared.css:21",
+    "src/ui/styles/settings-nav.css:287",
+    "src/ui/styles/settings.css:569",
+    "src/ui/styles/sidebar.css:292"
+  ]
+}
