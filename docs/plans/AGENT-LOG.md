@@ -202,6 +202,15 @@ Not verified: Live external network requests (offline keyless).
 Needs the owner: None.
 Plan score: 9.0/10.
 
+## 2026-11-25, Antigravity (Gemini)
+Workstream: UI/UX Pro Max Audit Remediation
+Done:
+- `src/shared/tokens.css`: darkened `--fg-subtle` and `--text-control` from `#8f8f8f` to `#595959` in light mode for >= 4.5:1 contrast.
+- `src/ui/styles/guided-tour.css`: replaced hardcoded `#ff8585` and `rgba(255, 255, 255, ...)` with theme-aware CSS variables and a `[data-theme="light"]` override.
+- `src/ui/styles/settings-nav.css`: replaced hardcoded `hsla(0, 0%, 100%, ...)` backgrounds with `var(--bg-hover)` / `var(--bg-overlay)` fallbacks.
+Verified:
+- `npm run ci`: typecheck clean, lint clean, 112 test files passed (766 tests passed), vite build passed.
+
 
 
 

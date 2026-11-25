@@ -87,8 +87,12 @@
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: #ff8585;
+  color: var(--guided-tour-badge-fg, #ff8585);
   text-transform: uppercase;
+}
+
+[data-theme="light"] .guided-tour-badge {
+  color: var(--primary-hover, #9d2211);
 }
 
 .guided-tour-icon {
@@ -108,8 +112,8 @@
 
 .guided-tour-skip-btn:hover,
 .guided-tour-skip-btn:focus-visible {
-  color: var(--text-primary, #ffffff);
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--fg-base, #ffffff);
+  background: var(--bg-hover, rgba(255, 255, 255, 0.08));
   outline: none;
 }
 
@@ -170,7 +174,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
+  background: var(--border, rgba(255, 255, 255, 0.18));
   transition: width 0.18s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.18s ease-out, border-radius 0.18s ease-out;
 }
 

@@ -350,7 +350,7 @@
     --bg-sunken: #ebebeb;
     --fg-base: #181818;
     --fg-muted: #666666;
-    --fg-subtle: #8f8f8f;
+    --fg-subtle: #595959;
     --primary: #da291c;
     --primary-soft: rgba(218, 41, 28, 0.12);
     --primary-hover: #9d2211;
@@ -368,7 +368,7 @@
     --text-artwork: #3d3a36;
     --text-title: #666666;
     --text-meta: #666666;
-    --text-control: #8f8f8f;
+    --text-control: #595959;
 
     --shadow-sm: 0 1px 3px hsla(240, 18%, 4%, 0.08);
     --shadow-md: 0 4px 16px hsla(240, 18%, 4%, 0.10);
@@ -542,7 +542,7 @@
     --bg-sunken: #ebebeb;
     --fg-base: #181818;
     --fg-muted: #666666;
-    --fg-subtle: #8f8f8f;
+    --fg-subtle: #595959;
     --primary: #da291c;
     --primary-soft: rgba(218, 41, 28, 0.12);
     --primary-hover: #9d2211;
