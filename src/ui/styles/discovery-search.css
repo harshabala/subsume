@@ -99,3 +99,10 @@
   margin-top: var(--spacing-xl);
   max-width: 480px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .discovery-search-input,
+  .discovery-search-filter {
+    transition: none;
+  }
+}

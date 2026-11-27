@@ -189,3 +189,9 @@
     padding-bottom: 8px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .app-subnav-link {
+    transition: none;
+  }
+}

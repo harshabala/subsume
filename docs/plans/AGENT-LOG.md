@@ -211,8 +211,10 @@ Done:
 Verified:
 - `npm run ci`: typecheck clean, lint clean, 112 test files passed (766 tests passed), vite build passed.
 
-
-
-
-
+## 2026-11-27, Antigravity (Gemini)
+Workstream: UI/UX Pro Max Audit Remediation
+Done:
+- `src/ui/styles/app-nav.css`, `src/ui/styles/discovery-search.css`, `src/ui/styles/people.css`: added `@media (prefers-reduced-motion: reduce)` rules disabling transitions on `.app-subnav-link`, `.discovery-search-input`, `.discovery-search-filter`, `.people-tab`, `.people-person-card`, `.people-action-btn`, `.people-secondary-btn`, and `.people-search-input`.
+Verified:
+- `npm run ci`: typecheck clean, lint clean, 112 test files passed (766 tests passed), vite build passed.
 

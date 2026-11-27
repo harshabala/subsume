@@ -991,3 +991,13 @@
   color: var(--text-meta);
   cursor: default;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .people-tab,
+  .people-person-card,
+  .people-action-btn,
+  .people-secondary-btn,
+  .people-search-input {
+    transition: none;
+  }
+}
